@@ -28,5 +28,7 @@ lvgl_project/stm32u5xx_it.o: ..\Core\Src\stm32u5xx_it.c \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_pwr_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_spi.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_spi_ex.h \
+  ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_tim.h \
+  ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_tim_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h \
   ..\Core\Inc\stm32u5xx_it.h

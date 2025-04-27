@@ -21,12 +21,14 @@
 #include "icache.h"
 #include "memorymap.h"
 #include "spi.h"
+#include "tim.h"
 #include "gpio.h"
-
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "bsp_ili9341_4line.h"
+#include "lvgl.h"
+#include "lv_port_disp.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -92,15 +94,33 @@ int main(void)
   MX_GPIO_Init();
   MX_ICACHE_Init();
   MX_SPI1_Init();
+  MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
-	ILI9341_Init();
-	ILI9341_Clear(CYAN);
-  /* USER CODE END 2 */
+//	ILI9341_Init();
+//	ILI9341_Clear(CYAN);
+
+	lv_init();//lvgl初始化
+	lv_port_disp_init();//显示屏初始化(初始化驱动程序）
+  HAL_TIM_Base_Start_IT(&htim6);//开启定时器中断
+	
+	lv_obj_t *btn=lv_btn_create(lv_scr_act());
+	lv_obj_center(btn);
+	lv_obj_set_size(btn,60,60);
+	
+	/* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+//=====每隔5毫秒调用一次=============
+		 static uint8_t msLVGL=0;
+ if(msLVGL++ >= 5)
+ {
+ lv_timer_handler();
+ msLVGL=0;
+ }
+ //=====================================
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -163,7 +183,19 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+ {
+ if(htim->Instance==TIM6)
+ {
+ lv_tick_inc(1);
+ static uint16_t ledTimes=0;
+ if(ledTimes++ >= 500)
+ {
+ HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+ ledTimes=0;
+ }
+ }
+ }
 /* USER CODE END 4 */
 
 /**
