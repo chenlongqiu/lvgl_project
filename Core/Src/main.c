@@ -23,9 +23,10 @@
 #include "spi.h"
 #include "gpio.h"
 
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "bsp_ili9341_4line.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -92,7 +93,8 @@ int main(void)
   MX_ICACHE_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-
+	ILI9341_Init();
+	ILI9341_Clear(CYAN);
   /* USER CODE END 2 */
 
   /* Infinite loop */

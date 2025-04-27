@@ -30,4 +30,4 @@ lvgl_project/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_spi_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h \
   ..\Core\Inc\icache.h ..\Core\Inc\main.h ..\Core\Inc\memorymap.h \
-  ..\Core\Inc\spi.h ..\Core\Inc\gpio.h
+  ..\Core\Inc\spi.h ..\Core\Inc\gpio.h LCD_lib\bsp_ili9341_4line.h

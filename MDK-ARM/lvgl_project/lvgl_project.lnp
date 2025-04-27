@@ -26,6 +26,7 @@
 "lvgl_project\stm32u5xx_hal_spi.o"
 "lvgl_project\stm32u5xx_hal_spi_ex.o"
 "lvgl_project\system_stm32u5xx.o"
+"lvgl_project\bsp_ili9341_4line.o"
 --strict --scatter "lvgl_project\lvgl_project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
