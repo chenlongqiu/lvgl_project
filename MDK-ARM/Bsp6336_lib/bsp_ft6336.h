@@ -9,63 +9,165 @@
 
 #include "main.h"
 #include <stdint.h>
+#include <stdlib.h>
 
-/* I2C 地址定义 */
-#define FT6336_I2C_ADDR         0x38
-#define FT6336_ADDR_READ        0x71
-#define FT6336_ADDR_WRITE       0x70
+//
+#define I2C_ADDR_FT6336 0x38
+//
+#define FT6336_ADDR_READ  0x71
+#define FT6336_ADDR_WRITE 0x70
 
-/* 触摸状态枚举 */
-typedef enum {
-    TOUCH_RELEASE = 0,    // 未触摸
-    TOUCH_PRESS,          // 按下
-    TOUCH_CONTACT         // 持续接触
-} TouchStatus;
+// Touch Parameter
+#define FT6336_PRES_DOWN 0x2
+#define FT6336_COORD_UD 0x1
 
-/* 触摸点数据结构 */
-typedef struct {
-    uint16_t x;           // X坐标
-    uint16_t y;           // Y坐标
-    TouchStatus status;   // 触摸状态
-    uint8_t id;           // 触摸点ID
-} TouchPoint;
+// Registers
+#define FT6336_ADDR_DEVICE_MODE 0x00
 
-/* 触摸设备全局结构体 */
-typedef struct {
-    uint8_t touch_num;    // 当前触摸点数
-    TouchPoint points[2]; // 支持两点触摸
-    uint8_t pressed;      // 全局按压状态
-} FT6336_Dev;
+typedef enum
+{
+    working_mode = 0b000,
+    factory_mode = 0b100,
+} DEVICE_MODE_Enum;
 
-extern FT6336_Dev tp_dev; // 全局触摸设备实例
+#define FT6336_ADDR_GESTURE_ID 0x01
+#define FT6336_ADDR_TD_STATUS 0x02
 
-/* 寄存器地址定义 */
-#define FT6336_REG_DEVICE_MODE         0x00
-#define FT6336_REG_GESTURE_ID          0x01
-#define FT6336_REG_TD_STATUS           0x02
-#define FT6336_REG_TOUCH1_XH           0x03
-#define FT6336_REG_TOUCH1_XL           0x04
-#define FT6336_REG_TOUCH1_YH           0x05
-#define FT6336_REG_TOUCH1_YL           0x06
-#define FT6336_REG_TOUCH2_XH           0x09
-#define FT6336_REG_TOUCH2_XL           0x0A
-#define FT6336_REG_TOUCH2_YH           0x0B
-#define FT6336_REG_TOUCH2_YL           0x0C
-#define FT6336_REG_THRESHOLD           0x80
-#define FT6336_REG_CHIP_ID             0xA3
-#define FT6336_REG_POWER_MODE          0xA5
+#define FT6336_ADDR_TOUCH1_EVENT 0x03
+#define FT6336_ADDR_TOUCH1_ID 0x05
+#define FT6336_ADDR_TOUCH1_X 0x03
+#define FT6336_ADDR_TOUCH1_Y 0x05
+#define FT6336_ADDR_TOUCH1_WEIGHT 0x07
+#define FT6336_ADDR_TOUCH1_MISC 0x08
 
-/* 函数声明 */
-void FT6336_Init(void);
-void FT6336_Scan(void);
-uint8_t FT6336_ReadReg(uint8_t reg);
-void FT6336_WriteReg(uint8_t reg, uint8_t value);
-void FT6336_IRQHandler(void);
+#define FT6336_ADDR_TOUCH2_EVENT 0x09
+#define FT6336_ADDR_TOUCH2_ID 0x0B
+#define FT6336_ADDR_TOUCH2_X 0x09
+#define FT6336_ADDR_TOUCH2_Y 0x0B
+#define FT6336_ADDR_TOUCH2_WEIGHT 0x0D
+#define FT6336_ADDR_TOUCH2_MISC 0x0E
 
-/* 触摸点获取函数 */
-static inline uint8_t FT6336_GetTouchNum(void) { return tp_dev.touch_num; }
-static inline uint16_t FT6336_GetX(uint8_t touch_id) { return tp_dev.points[touch_id].x; }
-static inline uint16_t FT6336_GetY(uint8_t touch_id) { return tp_dev.points[touch_id].y; }
-static inline uint8_t FT6336_IsPressed(void) { return tp_dev.pressed; }
+#define FT6336_ADDR_THRESHOLD 0x80
+#define FT6336_ADDR_FILTER_COE 0x85
+#define FT6336_ADDR_CTRL 0x86
 
-#endif /* __BSP_FT6336_H__ */
+typedef enum
+{
+    keep_active_mode = 0,
+    switch_to_monitor_mode = 1,
+} CTRL_MODE_Enum;
+
+#define FT6336_ADDR_TIME_ENTER_MONITOR 0x87
+#define FT6336_ADDR_ACTIVE_MODE_RATE 0x88
+#define FT6336_ADDR_MONITOR_MODE_RATE 0x89
+
+#define FT6336_ADDR_RADIAN_VALUE 0x91
+#define FT6336_ADDR_OFFSET_LEFT_RIGHT 0x92
+#define FT6336_ADDR_OFFSET_UP_DOWN 0x93
+#define FT6336_ADDR_DISTANCE_LEFT_RIGHT 0x94
+#define FT6336_ADDR_DISTANCE_UP_DOWN 0x95
+#define FT6336_ADDR_DISTANCE_ZOOM 0x96
+
+#define FT6336_ADDR_LIBRARY_VERSION_H 0xA1
+#define FT6336_ADDR_LIBRARY_VERSION_L 0xA2
+#define FT6336_ADDR_CHIP_ID 0xA3
+#define FT6336_ADDR_G_MODE 0xA4
+
+typedef enum
+{
+    pollingMode = 0,
+    triggerMode = 1,
+} G_MODE_Enum;
+#define FT6336_ADDR_POWER_MODE 0xA5
+#define FT6336_ADDR_FIRMARE_ID 0xA6
+#define FT6336_ADDR_FOCALTECH_ID 0xA8
+#define FT6336_ADDR_RELEASE_CODE_ID 0xAF
+#define FT6336_ADDR_STATE 0xBC
+
+// Function Specific Type
+typedef enum
+{
+    touch = 0,
+    stream,
+    release,
+} TouchStatusEnum;
+
+typedef struct
+{
+    TouchStatusEnum status;
+    uint16_t x;
+    uint16_t y;
+} TouchPointType;
+
+typedef struct
+{
+    uint8_t touch_count;
+    TouchPointType tp[2];
+} FT6336_TouchPointType;
+
+/**************************************************************************/
+/*!
+    @brief  FT6336 I2C CTP controller driver
+*/
+/**************************************************************************/
+
+void FT6336_init(void);
+
+uint8_t FT6336_read_device_mode(void);
+void FT6336_write_device_mode(DEVICE_MODE_Enum);
+uint8_t FT6336_read_gesture_id(void);
+uint8_t FT6336_read_td_status(void);
+uint8_t FT6336_read_touch_number(void);
+uint16_t FT6336_read_touch1_x(void);
+uint16_t FT6336_read_touch1_y(void);
+uint8_t FT6336_read_touch1_event(void);
+uint8_t FT6336_read_touch1_id(void);
+uint8_t FT6336_read_touch1_weight(void);
+uint8_t FT6336_read_touch1_misc(void);
+uint16_t FT6336_read_touch2_x(void);
+uint16_t FT6336_read_touch2_y(void);
+uint8_t FT6336_read_touch2_event(void);
+uint8_t FT6336_read_touch2_id(void);
+uint8_t FT6336_read_touch2_weight(void);
+uint8_t FT6336_read_touch2_misc(void);
+
+// Mode Parameter Register
+uint8_t FT6336_read_touch_threshold(void);
+uint8_t FT6336_read_filter_coefficient(void);
+uint8_t FT6336_read_ctrl_mode(void);
+void FT6336_write_ctrl_mode(CTRL_MODE_Enum mode);
+uint8_t FT6336_read_time_period_enter_monitor(void);
+uint8_t FT6336_read_active_rate(void);
+uint8_t FT6336_read_monitor_rate(void);
+
+// Gestrue Parameter Register
+uint8_t FT6336_read_radian_value(void);
+void FT6336_write_radian_value(uint8_t val);
+uint8_t FT6336_read_offset_left_right(void);
+void FT6336_write_offset_left_right(uint8_t val);
+uint8_t FT6336_read_offset_up_down(void);
+void FT6336_write_offset_up_down(uint8_t val);
+uint8_t FT6336_read_distance_left_right(void);
+void FT6336_write_distance_left_right(uint8_t val);
+uint8_t FT6336_read_distance_up_down(void);
+void FT6336_write_distance_up_down(uint8_t val);
+uint8_t FT6336_read_distance_zoom(void);
+void FT6336_write_distance_zoom(uint8_t val);
+
+// System Information
+uint16_t FT6336_read_library_version(void);
+uint8_t FT6336_read_chip_id(void);
+uint8_t FT6336_read_g_mode(void);
+void FT6336_write_g_mode(G_MODE_Enum mode);
+uint8_t FT6336_read_pwrmode(void);
+uint8_t FT6336_read_firmware_id(void);
+uint8_t FT6336_read_focaltech_id(void);
+uint8_t FT6336_read_release_code_id(void);
+uint8_t FT6336_read_state(void);
+
+// Scan Function
+FT6336_TouchPointType FT6336_scan(void);
+//
+void FT6336_irq_fuc(void);
+void FT6336_scan_task(void);	
+#endif

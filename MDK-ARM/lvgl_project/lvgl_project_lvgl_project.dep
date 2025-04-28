@@ -261,7 +261,8 @@ I (..\LVGL\src\extra\widgets\span\lv_span.h)(0x6638D1B6)
 I (..\LVGL\src\extra\widgets\span\..\..\..\lvgl.h)(0x6638D1B6)
 I (..\LVGL\porting\lv_port_disp.h)(0x680E1B39)
 I (..\LVGL\porting\lv_port_indev.h)(0x680F1858)
-I (Bsp6336_lib\bsp_ft6336.h)(0x680F1911)
+I (Bsp6336_lib\bsp_ft6336.h)(0x680F3BEE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
 I (..\lvgl_ui_project\ui.h)(0x680EF54B)
 I (..\lvgl_ui_project\ui_helpers.h)(0x680F2A50)
 I (..\lvgl_ui_project\components\ui_comp.h)(0x680F2A50)
@@ -1770,7 +1771,7 @@ I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart.h)(0x67EA3AC9)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart_ex.h)(0x67EA3AC9)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h)(0x67EA3AC9)
 F (..\LVGL\porting\lv_port_disp.h)(0x680E1B39)()
-F (..\LVGL\porting\lv_port_indev.c)(0x680F3693)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32U5xx/Include -I ../Drivers/CMSIS/Include -I ./LCD_lib -I ../LVGL -I ../LVGL/porting -I ../LVGL/src -I ./Bsp6336_lib -I ../lvgl_ui_project -I ../lvgl_ui_project/components-I./RTE/_lvgl_project-IC:/Users/80657/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/80657/AppData/Local/Arm/Packs/Keil/STM32U5xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32U5xx/Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32U575xx -DUSE_HAL_DRIVER -DSTM32U575xx-o lvgl_project/lv_port_indev.o -MD)
+F (..\LVGL\porting\lv_port_indev.c)(0x680F3EA3)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32U5xx/Include -I ../Drivers/CMSIS/Include -I ./LCD_lib -I ../LVGL -I ../LVGL/porting -I ../LVGL/src -I ./Bsp6336_lib -I ../lvgl_ui_project -I ../lvgl_ui_project/components-I./RTE/_lvgl_project-IC:/Users/80657/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/80657/AppData/Local/Arm/Packs/Keil/STM32U5xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32U5xx/Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32U575xx -DUSE_HAL_DRIVER -DSTM32U575xx-o lvgl_project/lv_port_indev.o -MD)
 I (..\LVGL\porting\lv_port_indev.h)(0x680F1858)
 I (..\LVGL\lvgl.h)(0x6638D1B6)
 I (..\LVGL\src\misc\lv_log.h)(0x6638D1B6)
@@ -1987,7 +1988,7 @@ I (..\LVGL\src\extra\widgets\imgbtn\lv_imgbtn.h)(0x6638D1B6)
 I (..\LVGL\src\extra\widgets\imgbtn\..\..\..\lvgl.h)(0x6638D1B6)
 I (..\LVGL\src\extra\widgets\span\lv_span.h)(0x6638D1B6)
 I (..\LVGL\src\extra\widgets\span\..\..\..\lvgl.h)(0x6638D1B6)
-I (Bsp6336_lib\bsp_ft6336.h)(0x680F1911)
+I (Bsp6336_lib\bsp_ft6336.h)(0x680F3BEE)
 I (..\Core\Inc\main.h)(0x680E0B59)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal.h)(0x67EA3AC9)
 I (..\Core\Inc\stm32u5xx_hal_conf.h)(0x680EF7E0)
@@ -2023,6 +2024,7 @@ I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_tim_ex.h)(0x67EA3AC9)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart.h)(0x67EA3AC9)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart_ex.h)(0x67EA3AC9)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h)(0x67EA3AC9)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
 F (..\LVGL\porting\lv_port_indev.h)(0x680F1858)()
 F (..\LVGL\src\core\lv_disp.c)(0x6638D1B6)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32U5xx/Include -I ../Drivers/CMSIS/Include -I ./LCD_lib -I ../LVGL -I ../LVGL/porting -I ../LVGL/src -I ./Bsp6336_lib -I ../lvgl_ui_project -I ../lvgl_ui_project/components-I./RTE/_lvgl_project-IC:/Users/80657/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/80657/AppData/Local/Arm/Packs/Keil/STM32U5xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32U5xx/Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32U575xx -DUSE_HAL_DRIVER -DSTM32U575xx-o lvgl_project/lv_disp.o -MD)
 I (..\LVGL\src\core\lv_disp.h)(0x6638D1B6)
@@ -25933,8 +25935,8 @@ I (..\lvgl_ui_project\components\ui_comp_scrolldots.h)(0x680EF54B)
 I (..\lvgl_ui_project\components\ui_comp_small_label.h)(0x680EF54B)
 I (..\lvgl_ui_project\components\ui_comp_hook.h)(0x680EF54B)
 I (..\lvgl_ui_project\ui_events.h)(0x680EF54B)
-F (.\Bsp6336_lib\bsp_ft6336.c)(0x680F1F25)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32U5xx/Include -I ../Drivers/CMSIS/Include -I ./LCD_lib -I ../LVGL -I ../LVGL/porting -I ../LVGL/src -I ./Bsp6336_lib -I ../lvgl_ui_project -I ../lvgl_ui_project/components-I./RTE/_lvgl_project-IC:/Users/80657/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/80657/AppData/Local/Arm/Packs/Keil/STM32U5xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32U5xx/Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32U575xx -DUSE_HAL_DRIVER -DSTM32U575xx-o lvgl_project/bsp_ft6336.o -MD)
-I (Bsp6336_lib\bsp_ft6336.h)(0x680F1911)
+F (.\Bsp6336_lib\bsp_ft6336.c)(0x680F3BEE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc -I ../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32U5xx/Include -I ../Drivers/CMSIS/Include -I ./LCD_lib -I ../LVGL -I ../LVGL/porting -I ../LVGL/src -I ./Bsp6336_lib -I ../lvgl_ui_project -I ../lvgl_ui_project/components-I./RTE/_lvgl_project-IC:/Users/80657/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/80657/AppData/Local/Arm/Packs/Keil/STM32U5xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32U5xx/Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32U575xx -DUSE_HAL_DRIVER -DSTM32U575xx-o lvgl_project/bsp_ft6336.o -MD)
+I (Bsp6336_lib\bsp_ft6336.h)(0x680F3BEE)
 I (..\Core\Inc\main.h)(0x680E0B59)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal.h)(0x67EA3AC9)
 I (..\Core\Inc\stm32u5xx_hal_conf.h)(0x680EF7E0)
@@ -25972,6 +25974,7 @@ I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_tim_ex.h)(0x67EA3AC9)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart.h)(0x67EA3AC9)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart_ex.h)(0x67EA3AC9)
 I (..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h)(0x67EA3AC9)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
 I (..\Core\Inc\i2c.h)(0x680EF7DD)
 I (..\Core\Inc\gpio.h)(0x680E0B56)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)

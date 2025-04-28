@@ -223,8 +223,10 @@ lvgl_project/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\LVGL\src\extra\widgets\span\lv_span.h \
   ..\LVGL\src\extra\widgets\span\..\..\..\lvgl.h \
   ..\LVGL\porting\lv_port_disp.h ..\LVGL\porting\lv_port_indev.h \
-  Bsp6336_lib\bsp_ft6336.h ..\lvgl_ui_project\ui.h \
-  ..\lvgl_ui_project\ui.h ..\lvgl_ui_project\ui_helpers.h \
+  Bsp6336_lib\bsp_ft6336.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  ..\lvgl_ui_project\ui.h ..\lvgl_ui_project\ui.h \
+  ..\lvgl_ui_project\ui_helpers.h \
   ..\lvgl_ui_project\components\ui_comp.h \
   ..\lvgl_ui_project\components\..\ui.h \
   ..\lvgl_ui_project\components\ui_comp_alarm_comp.h \

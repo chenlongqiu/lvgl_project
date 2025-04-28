@@ -186,7 +186,9 @@ void lv_port_indev_init(void)
 static void touchpad_init(void)
 {
     /*Your code comes here*/
-	 //FT6336_Init();
+	 // 调用 FT6336 的初始化函数
+    FT6336_init();
+
 }
 
 /*Will be called by the library to read the touchpad*/
@@ -212,15 +214,27 @@ static void touchpad_read(lv_indev_drv_t * indev_drv, lv_indev_data_t * data)
 /*Return true is the touchpad is pressed*/
 static bool touchpad_is_pressed(void)
 {
-	return FT6336_IsPressed();
+	
+    // 通过 FT6336_read_touch_number 函数读取触摸点数量
+    // 如果触摸点数量大于 0，则认为触摸板被按下
+    return (FT6336_read_touch_number() > 0);
 }
 
 /*Get the x and y coordinates if the touchpad is pressed*/
 static void touchpad_get_xy(lv_coord_t * x, lv_coord_t * y)
 {
     /*Your code comes here*/
-  *x = FT6336_GetX(0);
-    *y = FT6336_GetY(0);
+   // 如果触摸板被按下，获取第一个触摸点的 x 和 y 坐标
+    if (touchpad_is_pressed()) {
+        // 使用 FT6336_read_touch1_x 函数获取第一个触摸点的 x 坐标
+        *x = (lv_coord_t)FT6336_read_touch1_x();
+        // 使用 FT6336_read_touch1_y 函数获取第一个触摸点的 y 坐标
+        *y = (lv_coord_t)FT6336_read_touch1_y();
+    } else {
+        // 如果触摸板未被按下，将坐标设为 0
+        *x = 0;
+        *y = 0;
+    }
 }
 
 #if 0
