@@ -188,7 +188,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32U575xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32U5xx/Include;../Drivers/CMSIS/Include;./LCD_lib;../LVGL;../LVGL/porting;../LVGL/src;./Bsp6336_lib;..\lvgl_ui_project;..\lvgl_ui_project\components</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32U5xx/Include;../Drivers/CMSIS/Include;./LCD_lib;../LVGL;../LVGL/porting;../LVGL/src;./Bsp6336_lib;../lvgl_ui_project;../lvgl_ui_project/components;./SHT20_lib;./wifi_lib</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2033,6 +2033,26 @@
               <FileName>bsp_ft6336.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Bsp6336_lib\bsp_ft6336.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SHT20_lib</GroupName>
+          <Files>
+            <File>
+              <FileName>sht20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SHT20_lib\sht20.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>WIFI_lib</GroupName>
+          <Files>
+            <File>
+              <FileName>wifi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\wifi_lib\wifi.c</FilePath>
             </File>
           </Files>
         </Group>

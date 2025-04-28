@@ -35,4 +35,5 @@ lvgl_project/stm32u5xx_it.o: ..\Core\Src\stm32u5xx_it.c \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h \
-  ..\Core\Inc\stm32u5xx_it.h
+  ..\Core\Inc\stm32u5xx_it.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h

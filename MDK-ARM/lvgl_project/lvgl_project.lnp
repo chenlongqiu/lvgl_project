@@ -245,7 +245,9 @@
 "lvgl_project\ui_control1.o"
 "lvgl_project\ui_data.o"
 "lvgl_project\bsp_ft6336.o"
---strict --scatter "lvgl_project\lvgl_project.sct"
+"lvgl_project\sht20.o"
+"lvgl_project\wifi.o"
+--library_type=microlib --strict --scatter "lvgl_project\lvgl_project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "lvgl_project.map" -o lvgl_project\lvgl_project.axf

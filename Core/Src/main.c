@@ -35,6 +35,10 @@
 #include "lv_port_indev.h"
 #include "bsp_ft6336.h"
 #include "ui.h"
+#include "sht20.h"
+#include "wifi.h"
+#include <stdlib.h> 
+#include "stdarg.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,6 +59,11 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+uint8_t RecvBuf[2048];
+	uint8_t buf[128];
+	uint8_t buf2[128];
+//	float temp_threshold = 29.0;  // 初始温度阈值
+//	uint8_t threshold_str[32];       // 添加阈值显示字符串缓冲区
 
 /* USER CODE END PV */
 
@@ -66,7 +75,13 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+int fputc(int ch, FILE *stream)
+{
+    HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 10);
+    return ch;
+}
 
+int flag=0;
 /* USER CODE END 0 */
 
 /**
@@ -103,10 +118,11 @@ int main(void)
   MX_TIM6_Init();
   MX_I2C1_Init();
   MX_USART1_UART_Init();
+  MX_UART5_Init();
   /* USER CODE BEGIN 2 */
-//	ILI9341_Init();
+	
+//===========以下是屏幕的初始化================
 //	ILI9341_Clear(CYAN);
-
 	lv_init();//lvgl初始化
 	lv_port_disp_init();//显示屏初始化(初始化驱动程序）
 	lv_port_indev_init();
@@ -115,9 +131,20 @@ int main(void)
 	
 	// 调用SquareLine生成的界面初始化函数
     ui_init();
-//	lv_obj_t *btn=lv_btn_create(lv_scr_act());
-//	lv_obj_center(btn);
-//	lv_obj_set_size(btn,60,60);
+//===========================================	
+
+//=========以下是温湿度，wifi=====================	
+	uint16_t IR,PS,ALS;
+	float T,RH;	//温湿度
+	
+	ESP8266_Init(); // 初始化模块和WiFi
+	MQTT_Connect_Huawei();// 连接到华为云平台
+	printf("connect succeed\n\r");
+	//1、开启串口5的接收中断
+    HAL_UART_Receive_IT(&huart5,buf,sizeof(buf));
+    //2、开启串口5的空闲中断（接收ESP8266返回的不定长信息）
+    __HAL_UART_ENABLE_IT(&huart5,UART_IT_IDLE);
+//=============================================	
 	
   /* USER CODE END 2 */
 
@@ -125,18 +152,38 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//=====每隔5毫秒调用一次=============
-		 static uint8_t msLVGL=0;
- if(msLVGL++ >= 5)
- {
- lv_timer_handler();
- msLVGL=0;
- }
- //=====================================
-    /* USER CODE END WHILE */
+		 /* USER CODE END WHILE */
+		
+		 /* USER CODE BEGIN 3 */
+		
+//=====调用刷新函数==================
+			lv_timer_handler();			
+//=====================================
+	read_T_RH(&T,&RH);//调用函数
+	sprintf((char*)buf,"tem=%.2f   hum=%.2f\n",T,RH);//输出的内容
+  
+	// ★ 温湿度控制逻辑
+		
+		if(T > 29) // 使用变量阈值
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6, GPIO_PIN_SET);   // 打开风扇
+        else
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6, GPIO_PIN_RESET); // 关闭风扇
 
-    /* USER CODE BEGIN 3 */
-  }
+        if(RH >80.0)
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_SET);   // 打开马达
+        else
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_RESET); // 关闭马达
+
+// 上传数据到云平台
+		MQTT_Publish_SensorData(T, RH);
+	if(flag==1)
+	{
+		printf("transmit succeed:%s\n\r",buf);
+		flag=0;
+	}
+    HAL_Delay(1000);
+  } 
+  
   /* USER CODE END 3 */
 }
 

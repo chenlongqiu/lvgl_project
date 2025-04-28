@@ -234,4 +234,5 @@ lvgl_project/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\lvgl_ui_project\components\ui_comp_scrolldots.h \
   ..\lvgl_ui_project\components\ui_comp_small_label.h \
   ..\lvgl_ui_project\components\ui_comp_hook.h \
-  ..\lvgl_ui_project\ui_events.h
+  ..\lvgl_ui_project\ui_events.h SHT20_lib\sht20.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h wifi_lib\wifi.h
