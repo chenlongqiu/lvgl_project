@@ -4,13 +4,14 @@
  */
 
 /*Copy this file as "lv_port_indev.c" and set this value to "1" to enable content*/
-#if 0
+#if 1
 
 /*********************
  *      INCLUDES
  *********************/
 #include "lv_port_indev.h"
 #include "lvgl.h"
+#include "bsp_ft6336.h"
 
 /*********************
  *      DEFINES
@@ -96,6 +97,7 @@ void lv_port_indev_init(void)
     indev_drv.read_cb = touchpad_read;
     indev_touchpad = lv_indev_drv_register(&indev_drv);
 
+#if 0
     /*------------------
      * Mouse
      * -----------------*/
@@ -169,6 +171,7 @@ void lv_port_indev_init(void)
         {40, 100},  /*Button 1 -> x:40; y:100*/
     };
     lv_indev_set_button_points(indev_button, btn_points);
+#endif
 }
 
 /**********************
@@ -208,20 +211,29 @@ static void touchpad_read(lv_indev_drv_t * indev_drv, lv_indev_data_t * data)
 /*Return true is the touchpad is pressed*/
 static bool touchpad_is_pressed(void)
 {
-    /*Your code comes here*/
-
-    return false;
+    /*Yourcodecomeshere*/
+ if(tp_dev.press_status) /*触摸被按下*/
+ {
+ tp_dev.scan(); /*扫描触摸信息*/
+ return true;
+ }
+ else
+ {
+ tp_dev.tp[0].x=0xFFFF;
+ tp_dev.tp[0].y=0xFFFF;
+ }
+ return false;
 }
 
 /*Get the x and y coordinates if the touchpad is pressed*/
 static void touchpad_get_xy(lv_coord_t * x, lv_coord_t * y)
 {
     /*Your code comes here*/
-
-    (*x) = 0;
-    (*y) = 0;
+ (*x) = 320- tp_dev.tp[0].y;
+ (*y) = tp_dev.tp[0].x;
 }
 
+#if 0
 /*------------------
  * Mouse
  * -----------------*/

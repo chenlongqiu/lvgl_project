@@ -18,10 +18,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "i2c.h"
 #include "icache.h"
 #include "memorymap.h"
 #include "spi.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -29,6 +31,7 @@
 #include "bsp_ili9341_4line.h"
 #include "lvgl.h"
 #include "lv_port_disp.h"
+#include "bsp_ft6336.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,6 +98,8 @@ int main(void)
   MX_ICACHE_Init();
   MX_SPI1_Init();
   MX_TIM6_Init();
+  MX_I2C1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 //	ILI9341_Init();
 //	ILI9341_Clear(CYAN);
@@ -107,7 +112,7 @@ int main(void)
 	lv_obj_center(btn);
 	lv_obj_set_size(btn,60,60);
 	
-	/* USER CODE END 2 */
+  /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */

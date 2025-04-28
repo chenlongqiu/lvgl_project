@@ -24,16 +24,21 @@ lvgl_project/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_cortex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_flash.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_flash_ex.h \
+  ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_i2c.h \
+  ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_i2c_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_pwr.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_pwr_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_spi.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_spi_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_tim.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_tim_ex.h \
+  ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart.h \
+  ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h \
-  ..\Core\Inc\icache.h ..\Core\Inc\main.h ..\Core\Inc\memorymap.h \
-  ..\Core\Inc\spi.h ..\Core\Inc\tim.h ..\Core\Inc\gpio.h \
-  LCD_lib\bsp_ili9341_4line.h ..\LVGL\lvgl.h ..\LVGL\src\misc\lv_log.h \
+  ..\Core\Inc\i2c.h ..\Core\Inc\main.h ..\Core\Inc\icache.h \
+  ..\Core\Inc\memorymap.h ..\Core\Inc\spi.h ..\Core\Inc\tim.h \
+  ..\Core\Inc\usart.h ..\Core\Inc\gpio.h LCD_lib\bsp_ili9341_4line.h \
+  ..\LVGL\lvgl.h ..\LVGL\src\misc\lv_log.h \
   ..\LVGL\src\misc\..\lv_conf_internal.h ..\LVGL\src\lv_conf_kconfig.h \
   ..\LVGL\lv_conf.h ..\LVGL\src\misc\lv_types.h \
   ..\LVGL\src\misc\lv_timer.h ..\LVGL\src\misc\..\hal\lv_hal_tick.h \
@@ -217,4 +222,6 @@ lvgl_project/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\LVGL\src\extra\widgets\imgbtn\..\..\..\lvgl.h \
   ..\LVGL\src\extra\widgets\span\lv_span.h \
   ..\LVGL\src\extra\widgets\span\..\..\..\lvgl.h \
-  ..\LVGL\porting\lv_port_disp.h
+  ..\LVGL\porting\lv_port_disp.h Bsp6336_lib\bsp_ft6336.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h
