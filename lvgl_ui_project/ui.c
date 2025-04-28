@@ -19,9 +19,9 @@ void ui_data_screen_init(void);
 lv_obj_t * ui_data;
 lv_obj_t * ui_Label5;
 lv_obj_t * ui_Label6;
-lv_obj_t * ui_Label7;
+lv_obj_t * ui_Label7;//温度
 lv_obj_t * ui_w1;
-lv_obj_t * ui_Label8;
+lv_obj_t * ui_Label8;//湿度
 lv_obj_t * ui_Chart2;
 void ui_event_Button3(lv_event_t * e);
 lv_obj_t * ui_Button3;
@@ -32,14 +32,14 @@ lv_obj_t * ui_Label11;
 // SCREEN: ui_control1
 void ui_control1_screen_init(void);
 lv_obj_t * ui_control1;
-lv_obj_t * ui_Slider1;
+lv_obj_t * ui_Slider1;//fan
 lv_obj_t * ui_Label1;
 lv_obj_t * ui_Label2;
-lv_obj_t * ui_Switch1;
-lv_obj_t * ui_Switch2;
+lv_obj_t * ui_Switch1;//beep
+lv_obj_t * ui_Switch2;//led
 lv_obj_t * ui_Label3;
 lv_obj_t * ui_Label4;
-lv_obj_t * ui_Slider4;
+lv_obj_t * ui_Slider4;//motor
 void ui_event_Button1(lv_event_t * e);
 lv_obj_t * ui_Button1;
 lv_obj_t * ui_Label9;
