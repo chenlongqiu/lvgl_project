@@ -222,6 +222,14 @@ lvgl_project/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\LVGL\src\extra\widgets\imgbtn\..\..\..\lvgl.h \
   ..\LVGL\src\extra\widgets\span\lv_span.h \
   ..\LVGL\src\extra\widgets\span\..\..\..\lvgl.h \
-  ..\LVGL\porting\lv_port_disp.h Bsp6336_lib\bsp_ft6336.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h
+  ..\LVGL\porting\lv_port_disp.h ..\LVGL\porting\lv_port_indev.h \
+  Bsp6336_lib\bsp_ft6336.h ..\lvgl_ui_project\ui.h \
+  ..\lvgl_ui_project\ui.h ..\lvgl_ui_project\ui_helpers.h \
+  ..\lvgl_ui_project\components\ui_comp.h \
+  ..\lvgl_ui_project\components\..\ui.h \
+  ..\lvgl_ui_project\components\ui_comp_alarm_comp.h \
+  ..\lvgl_ui_project\components\ui_comp_clock_dot.h \
+  ..\lvgl_ui_project\components\ui_comp_scrolldots.h \
+  ..\lvgl_ui_project\components\ui_comp_small_label.h \
+  ..\lvgl_ui_project\components\ui_comp_hook.h \
+  ..\lvgl_ui_project\ui_events.h

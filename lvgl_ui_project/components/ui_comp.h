@@ -6,7 +6,9 @@
 #ifndef _UI_COMP__H
 #define _UI_COMP__H
 
+#include "lvgl.h"
 #include "../ui.h"
+
 
 #ifdef __cplusplus
 extern "C" {

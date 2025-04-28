@@ -220,6 +220,4 @@ lvgl_project/lv_port_indev.o: ..\LVGL\porting\lv_port_indev.c \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_tim_ex.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart.h \
   ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_uart_ex.h \
-  ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h
+  ..\Drivers\STM32U5xx_HAL_Driver\Inc\stm32u5xx_hal_exti.h

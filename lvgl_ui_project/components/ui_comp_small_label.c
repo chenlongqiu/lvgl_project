@@ -21,7 +21,7 @@ lv_obj_t * ui_Small_Label_create(lv_obj_t * comp_parent)
     lv_label_set_text(cui_Small_Label, "12");
     lv_obj_set_style_text_color(cui_Small_Label, lv_color_hex(0x000746), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(cui_Small_Label, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(cui_Small_Label, &lv_font_montserrat_18, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(cui_Small_Label, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_t ** children = lv_mem_alloc(sizeof(lv_obj_t *) * _UI_COMP_SMALL_LABEL_NUM);
     children[UI_COMP_SMALL_LABEL_SMALL_LABEL] = cui_Small_Label;

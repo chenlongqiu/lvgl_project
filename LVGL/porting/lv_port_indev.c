@@ -186,6 +186,7 @@ void lv_port_indev_init(void)
 static void touchpad_init(void)
 {
     /*Your code comes here*/
+	 //FT6336_Init();
 }
 
 /*Will be called by the library to read the touchpad*/
@@ -211,26 +212,15 @@ static void touchpad_read(lv_indev_drv_t * indev_drv, lv_indev_data_t * data)
 /*Return true is the touchpad is pressed*/
 static bool touchpad_is_pressed(void)
 {
-    /*Yourcodecomeshere*/
- if(tp_dev.press_status) /*触摸被按下*/
- {
- tp_dev.scan(); /*扫描触摸信息*/
- return true;
- }
- else
- {
- tp_dev.tp[0].x=0xFFFF;
- tp_dev.tp[0].y=0xFFFF;
- }
- return false;
+	return FT6336_IsPressed();
 }
 
 /*Get the x and y coordinates if the touchpad is pressed*/
 static void touchpad_get_xy(lv_coord_t * x, lv_coord_t * y)
 {
     /*Your code comes here*/
- (*x) = 320- tp_dev.tp[0].y;
- (*y) = tp_dev.tp[0].x;
+  *x = FT6336_GetX(0);
+    *y = FT6336_GetY(0);
 }
 
 #if 0
@@ -418,7 +408,7 @@ static bool button_is_pressed(uint8_t id)
 
     return false;
 }
-
+#endif
 #else /*Enable this file at the top*/
 
 /*This dummy typedef exists purely to silence -Wpedantic.*/

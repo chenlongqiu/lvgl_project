@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32U575xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32U5xx/Include;../Drivers/CMSIS/Include;./LCD_lib;../LVGL;../LVGL/porting;../LVGL/src;./Bsp6336_lib</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32U5xx/Include;../Drivers/CMSIS/Include;./LCD_lib;../LVGL;../LVGL/porting;../LVGL/src;./Bsp6336_lib;..\lvgl_ui_project;..\lvgl_ui_project\components</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1943,6 +1943,88 @@
         </Group>
         <Group>
           <GroupName>LVGL_UI</GroupName>
+          <Files>
+            <File>
+              <FileName>ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_helpers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\ui_helpers.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_comp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\components\ui_comp.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_comp_alarm_comp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\components\ui_comp_alarm_comp.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_comp_clock_dot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\components\ui_comp_clock_dot.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_comp_hook.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\components\ui_comp_hook.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_comp_scrolldots.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\components\ui_comp_scrolldots.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_comp_small_label.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\components\ui_comp_small_label.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_font_Number.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\fonts\ui_font_Number.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_img_chatbox2_png.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\images\ui_img_chatbox2_png.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_img_pattern_png.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\images\ui_img_pattern_png.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_img_weather_1_png.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\images\ui_img_weather_1_png.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_img_weather_2_png.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\images\ui_img_weather_2_png.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_img_weather_3_png.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\images\ui_img_weather_3_png.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_control1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\screens\ui_control1.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl_ui_project\screens\ui_data.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>TOUCH_lib</GroupName>

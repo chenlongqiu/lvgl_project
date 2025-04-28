@@ -28,10 +28,13 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdint.h>    // 标准库
 #include "bsp_ili9341_4line.h"
 #include "lvgl.h"
 #include "lv_port_disp.h"
+#include "lv_port_indev.h"
 #include "bsp_ft6336.h"
+#include "ui.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -106,11 +109,15 @@ int main(void)
 
 	lv_init();//lvgl初始化
 	lv_port_disp_init();//显示屏初始化(初始化驱动程序）
-  HAL_TIM_Base_Start_IT(&htim6);//开启定时器中断
+	lv_port_indev_init();
+	//FT6336_Init();
+	HAL_TIM_Base_Start_IT(&htim6);//开启定时器中断
 	
-	lv_obj_t *btn=lv_btn_create(lv_scr_act());
-	lv_obj_center(btn);
-	lv_obj_set_size(btn,60,60);
+	// 调用SquareLine生成的界面初始化函数
+    ui_init();
+//	lv_obj_t *btn=lv_btn_create(lv_scr_act());
+//	lv_obj_center(btn);
+//	lv_obj_set_size(btn,60,60);
 	
   /* USER CODE END 2 */
 

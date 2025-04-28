@@ -9,8 +9,9 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+#include "lvgl.h"  // LVGL核心库
 #include "ui.h"
+
 
 #define _UI_TEMPORARY_STRING_BUFFER_SIZE 32
 #define _UI_BAR_PROPERTY_VALUE 0
