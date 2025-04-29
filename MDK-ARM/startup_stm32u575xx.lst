@@ -970,17 +970,18 @@ ARM Macro Assembler    Page 15
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M33 --fpu=FPv5-S
 P --depend=lvgl_project\startup_stm32u575xx.d -olvgl_project\startup_stm32u575x
-x.o -I.\RTE\_lvgl_project -IC:\Users\80657\AppData\Local\Arm\Packs\ARM\CMSIS\5.
-5.1\CMSIS\Core\Include -IC:\Users\80657\AppData\Local\Arm\Packs\Keil\STM32U5xx_
-DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32U5xx\Include --predefine="__MICROLIB SET
+x.o -I../Middlewares/Third_Party/CMSIS/RTOS2/Include/ -I.\RTE\_lvgl_project -IC
+:\Users\80657\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include -IC:\U
+sers\80657\AppData\Local\Arm\Packs\Keil\STM32U5xx_DFP\2.1.0\Drivers\CMSIS\Devic
 
 
 
 ARM Macro Assembler    Page 16 
 
 
-A 1" --predefine="__UVISION_VERSION SETA 527" --predefine="_RTE_ SETA 1" --pred
-efine="STM32U575xx SETA 1" --list=startup_stm32u575xx.lst startup_stm32u575xx.s
+e\ST\STM32U5xx\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_V
+ERSION SETA 527" --predefine="_RTE_ SETA 1" --predefine="STM32U575xx SETA 1" --
+list=startup_stm32u575xx.lst startup_stm32u575xx.s
 
 
 
