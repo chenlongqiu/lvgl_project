@@ -57,7 +57,6 @@ Section Cross References
     main.o(.text.main) refers to main.o(.bss.buf) for buf
     main.o(.text.main) refers to stm32u5xx_hal_uart.o(.text.HAL_UART_Receive_IT) for HAL_UART_Receive_IT
     main.o(.text.main) refers to main.o(.rodata.str1.1) for .L.str.3
-    main.o(.text.main) refers to stm32u5xx_hal.o(.text.HAL_Delay) for HAL_Delay
     main.o(.text.main) refers to lv_timer.o(.text.lv_timer_handler) for lv_timer_handler
     main.o(.text.main) refers to sht20.o(.text.read_T_RH) for read_T_RH
     main.o(.text.main) refers to f2d.o(.text) for __aeabi_f2d
@@ -14052,350 +14051,350 @@ Image Symbol Table
     lv_win_constructor                       0x08033e75   Thumb Code   118  lv_win.o(.text.lv_win_constructor)
     [Anonymous Symbol]                       0x08033e74   Section        0  lv_win.o(.text.lv_win_constructor)
     [Anonymous Symbol]                       0x08033eec   Section        0  main.o(.text.main)
-    make_one_button_checked                  0x080341a5   Thumb Code   124  lv_btnmatrix.o(.text.make_one_button_checked)
-    [Anonymous Symbol]                       0x080341a4   Section        0  lv_btnmatrix.o(.text.make_one_button_checked)
-    month_event_cb                           0x08034221   Thumb Code   120  lv_calendar_header_arrow.o(.text.month_event_cb)
-    [Anonymous Symbol]                       0x08034220   Section        0  lv_calendar_header_arrow.o(.text.month_event_cb)
-    month_event_cb                           0x08034299   Thumb Code    54  lv_calendar_header_dropdown.o(.text.month_event_cb)
-    [Anonymous Symbol]                       0x08034298   Section        0  lv_calendar_header_dropdown.o(.text.month_event_cb)
-    my_constructor                           0x080342d1   Thumb Code   232  lv_calendar_header_arrow.o(.text.my_constructor)
-    [Anonymous Symbol]                       0x080342d0   Section        0  lv_calendar_header_arrow.o(.text.my_constructor)
-    my_constructor                           0x080343b9   Thumb Code   184  lv_calendar_header_dropdown.o(.text.my_constructor)
-    [Anonymous Symbol]                       0x080343b8   Section        0  lv_calendar_header_dropdown.o(.text.my_constructor)
-    new_points_alloc                         0x08034471   Thumb Code   756  lv_chart.o(.text.new_points_alloc)
-    [Anonymous Symbol]                       0x08034470   Section        0  lv_chart.o(.text.new_points_alloc)
-    obj_del_core                             0x08034765   Thumb Code   762  lv_obj_tree.o(.text.obj_del_core)
-    [Anonymous Symbol]                       0x08034764   Section        0  lv_obj_tree.o(.text.obj_del_core)
-    opa_scale_anim                           0x08034a61   Thumb Code     8  lv_disp.o(.text.opa_scale_anim)
-    [Anonymous Symbol]                       0x08034a60   Section        0  lv_disp.o(.text.opa_scale_anim)
-    position_knob                            0x08034a69   Thumb Code   180  lv_slider.o(.text.position_knob)
-    [Anonymous Symbol]                       0x08034a68   Section        0  lv_slider.o(.text.position_knob)
-    position_to_selected                     0x08034b1d   Thumb Code    90  lv_dropdown.o(.text.position_to_selected)
-    [Anonymous Symbol]                       0x08034b1c   Section        0  lv_dropdown.o(.text.position_to_selected)
-    pwd_char_hider                           0x08034b79   Thumb Code   160  lv_textarea.o(.text.pwd_char_hider)
-    [Anonymous Symbol]                       0x08034b78   Section        0  lv_textarea.o(.text.pwd_char_hider)
-    pwd_char_hider_anim                      0x08034c19   Thumb Code     2  lv_textarea.o(.text.pwd_char_hider_anim)
-    [Anonymous Symbol]                       0x08034c18   Section        0  lv_textarea.o(.text.pwd_char_hider_anim)
-    pwd_char_hider_anim_ready                0x08034c1d   Thumb Code     6  lv_textarea.o(.text.pwd_char_hider_anim_ready)
-    [Anonymous Symbol]                       0x08034c1c   Section        0  lv_textarea.o(.text.pwd_char_hider_anim_ready)
-    [Anonymous Symbol]                       0x08034c28   Section        0  sht20.o(.text.read_T_RH)
-    refr_area_part                           0x08034d69   Thumb Code  2674  lv_refr.o(.text.refr_area_part)
-    [Anonymous Symbol]                       0x08034d68   Section        0  lv_refr.o(.text.refr_area_part)
-    refr_cursor_area                         0x080357dd   Thumb Code   530  lv_textarea.o(.text.refr_cursor_area)
-    [Anonymous Symbol]                       0x080357dc   Section        0  lv_textarea.o(.text.refr_cursor_area)
-    refr_knob_pos                            0x080359f1   Thumb Code   428  lv_colorwheel.o(.text.refr_knob_pos)
-    [Anonymous Symbol]                       0x080359f0   Section        0  lv_colorwheel.o(.text.refr_knob_pos)
-    refr_obj                                 0x08035b9d   Thumb Code   892  lv_refr.o(.text.refr_obj)
-    [Anonymous Symbol]                       0x08035b9c   Section        0  lv_refr.o(.text.refr_obj)
-    refr_obj_and_children                    0x08035f19   Thumb Code   156  lv_refr.o(.text.refr_obj_and_children)
-    [Anonymous Symbol]                       0x08035f18   Section        0  lv_refr.o(.text.refr_obj_and_children)
-    refr_position                            0x08035fb5   Thumb Code   310  lv_roller.o(.text.refr_position)
-    [Anonymous Symbol]                       0x08035fb4   Section        0  lv_roller.o(.text.refr_position)
-    refr_size_form_row                       0x080360ed   Thumb Code   254  lv_table.o(.text.refr_size_form_row)
-    [Anonymous Symbol]                       0x080360ec   Section        0  lv_table.o(.text.refr_size_form_row)
-    refresh_children_style                   0x080361ed   Thumb Code    62  lv_obj_style.o(.text.refresh_children_style)
-    [Anonymous Symbol]                       0x080361ec   Section        0  lv_obj_style.o(.text.refresh_children_style)
-    report_style_change_core                 0x0803622d   Thumb Code   136  lv_obj_style.o(.text.report_style_change_core)
-    [Anonymous Symbol]                       0x0803622c   Section        0  lv_obj_style.o(.text.report_style_change_core)
-    scr_anim_ready                           0x080362b5   Thumb Code    86  lv_disp.o(.text.scr_anim_ready)
-    [Anonymous Symbol]                       0x080362b4   Section        0  lv_disp.o(.text.scr_anim_ready)
-    scr_load_anim_start                      0x0803630d   Thumb Code    48  lv_disp.o(.text.scr_load_anim_start)
-    [Anonymous Symbol]                       0x0803630c   Section        0  lv_disp.o(.text.scr_load_anim_start)
-    scr_load_internal                        0x0803633d   Thumb Code    88  lv_disp.o(.text.scr_load_internal)
-    [Anonymous Symbol]                       0x0803633c   Section        0  lv_disp.o(.text.scr_load_internal)
-    scroll_anim_ready_cb                     0x08036395   Thumb Code    10  lv_obj_scroll.o(.text.scroll_anim_ready_cb)
-    [Anonymous Symbol]                       0x08036394   Section        0  lv_obj_scroll.o(.text.scroll_anim_ready_cb)
-    scroll_anim_ready_cb                     0x080363a1   Thumb Code    16  lv_roller.o(.text.scroll_anim_ready_cb)
-    [Anonymous Symbol]                       0x080363a0   Section        0  lv_roller.o(.text.scroll_anim_ready_cb)
-    scroll_area_into_view                    0x080363b1   Thumb Code   774  lv_obj_scroll.o(.text.scroll_area_into_view)
-    [Anonymous Symbol]                       0x080363b0   Section        0  lv_obj_scroll.o(.text.scroll_area_into_view)
-    scroll_to_selected_cell                  0x080366b9   Thumb Code   130  lv_table.o(.text.scroll_to_selected_cell)
-    [Anonymous Symbol]                       0x080366b8   Section        0  lv_table.o(.text.scroll_to_selected_cell)
-    scroll_x_anim                            0x0803673d   Thumb Code    76  lv_obj_scroll.o(.text.scroll_x_anim)
-    [Anonymous Symbol]                       0x0803673c   Section        0  lv_obj_scroll.o(.text.scroll_x_anim)
-    scroll_y_anim                            0x08036789   Thumb Code    76  lv_obj_scroll.o(.text.scroll_y_anim)
-    [Anonymous Symbol]                       0x08036788   Section        0  lv_obj_scroll.o(.text.scroll_y_anim)
-    set_ofs_x_anim                           0x080367d5   Thumb Code     8  lv_label.o(.text.set_ofs_x_anim)
-    [Anonymous Symbol]                       0x080367d4   Section        0  lv_label.o(.text.set_ofs_x_anim)
-    set_ofs_y_anim                           0x080367dd   Thumb Code     8  lv_label.o(.text.set_ofs_y_anim)
-    [Anonymous Symbol]                       0x080367dc   Section        0  lv_label.o(.text.set_ofs_y_anim)
-    set_x_anim                               0x080367e5   Thumb Code     6  lv_disp.o(.text.set_x_anim)
-    [Anonymous Symbol]                       0x080367e4   Section        0  lv_disp.o(.text.set_x_anim)
-    set_y_anim                               0x080367ed   Thumb Code     6  lv_disp.o(.text.set_y_anim)
-    [Anonymous Symbol]                       0x080367ec   Section        0  lv_disp.o(.text.set_y_anim)
-    set_y_anim                               0x080367f5   Thumb Code     6  lv_roller.o(.text.set_y_anim)
-    [Anonymous Symbol]                       0x080367f4   Section        0  lv_roller.o(.text.set_y_anim)
-    shadow_blur_corner                       0x080367fd   Thumb Code  1652  lv_draw_sw_rect.o(.text.shadow_blur_corner)
-    [Anonymous Symbol]                       0x080367fc   Section        0  lv_draw_sw_rect.o(.text.shadow_blur_corner)
-    style_init                               0x08036e71   Thumb Code 13274  lv_theme_default.o(.text.style_init)
-    [Anonymous Symbol]                       0x08036e70   Section        0  lv_theme_default.o(.text.style_init)
-    __arm_cp.3_1                             0x08039564   Number         4  lv_theme_default.o(.text.style_init)
-    theme_apply                              0x0803a24d   Thumb Code  1722  lv_theme_basic.o(.text.theme_apply)
-    [Anonymous Symbol]                       0x0803a24c   Section        0  lv_theme_basic.o(.text.theme_apply)
-    theme_apply                              0x0803a909   Thumb Code  4344  lv_theme_default.o(.text.theme_apply)
-    [Anonymous Symbol]                       0x0803a908   Section        0  lv_theme_default.o(.text.theme_apply)
-    tileview_event_cb                        0x0803ba01   Thumb Code   196  lv_tileview.o(.text.tileview_event_cb)
-    [Anonymous Symbol]                       0x0803ba00   Section        0  lv_tileview.o(.text.tileview_event_cb)
-    touchpad_read                            0x0803bac5   Thumb Code    94  lv_port_indev.o(.text.touchpad_read)
-    [Anonymous Symbol]                       0x0803bac4   Section        0  lv_port_indev.o(.text.touchpad_read)
-    trans_anim_cb                            0x0803bb25   Thumb Code   388  lv_obj_style.o(.text.trans_anim_cb)
-    [Anonymous Symbol]                       0x0803bb24   Section        0  lv_obj_style.o(.text.trans_anim_cb)
-    trans_anim_ready_cb                      0x0803bca9   Thumb Code   196  lv_obj_style.o(.text.trans_anim_ready_cb)
-    [Anonymous Symbol]                       0x0803bca8   Section        0  lv_obj_style.o(.text.trans_anim_ready_cb)
-    trans_anim_start_cb                      0x0803bd6d   Thumb Code    62  lv_obj_style.o(.text.trans_anim_start_cb)
-    [Anonymous Symbol]                       0x0803bd6c   Section        0  lv_obj_style.o(.text.trans_anim_start_cb)
-    trans_del                                0x0803bdad   Thumb Code   306  lv_obj_style.o(.text.trans_del)
-    [Anonymous Symbol]                       0x0803bdac   Section        0  lv_obj_style.o(.text.trans_del)
-    transform_point                          0x0803bee1   Thumb Code   274  lv_obj_pos.o(.text.transform_point)
-    [Anonymous Symbol]                       0x0803bee0   Section        0  lv_obj_pos.o(.text.transform_point)
-    [Anonymous Symbol]                       0x0803bff4   Section        0  ui_control1.o(.text.ui_control1_screen_init)
-    [Anonymous Symbol]                       0x0803c5d4   Section        0  ui_data.o(.text.ui_data_screen_init)
-    [Anonymous Symbol]                       0x0803ca0c   Section        0  ui.o(.text.ui_event_Button1)
-    [Anonymous Symbol]                       0x0803ca3c   Section        0  ui.o(.text.ui_event_Button3)
-    [Anonymous Symbol]                       0x0803ca6c   Section        0  ui.o(.text.ui_init)
-    unicode_list_compare                     0x0803cab5   Thumb Code     8  lv_font_fmt_txt.o(.text.unicode_list_compare)
-    [Anonymous Symbol]                       0x0803cab4   Section        0  lv_font_fmt_txt.o(.text.unicode_list_compare)
-    value_changed_event_cb                   0x0803cabd   Thumb Code    64  lv_calendar_header_arrow.o(.text.value_changed_event_cb)
-    [Anonymous Symbol]                       0x0803cabc   Section        0  lv_calendar_header_arrow.o(.text.value_changed_event_cb)
-    value_changed_event_cb                   0x0803cafd   Thumb Code   110  lv_calendar_header_dropdown.o(.text.value_changed_event_cb)
-    [Anonymous Symbol]                       0x0803cafc   Section        0  lv_calendar_header_dropdown.o(.text.value_changed_event_cb)
-    value_update                             0x0803cb6d   Thumb Code   232  lv_arc.o(.text.value_update)
-    [Anonymous Symbol]                       0x0803cb6c   Section        0  lv_arc.o(.text.value_update)
-    year_event_cb                            0x0803cc55   Thumb Code    98  lv_calendar_header_dropdown.o(.text.year_event_cb)
-    [Anonymous Symbol]                       0x0803cc54   Section        0  lv_calendar_header_dropdown.o(.text.year_event_cb)
-    i.__0printf                              0x0803ccb8   Section        0  printfa.o(i.__0printf)
-    i.__0sprintf                             0x0803ccd8   Section        0  printfa.o(i.__0sprintf)
-    i.__scatterload_copy                     0x0803cd00   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x0803cd0e   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x0803cd10   Section       14  handlers.o(i.__scatterload_zeroinit)
-    _fp_digits                               0x0803cd21   Thumb Code   366  printfa.o(i._fp_digits)
-    i._fp_digits                             0x0803cd20   Section        0  printfa.o(i._fp_digits)
-    _printf_core                             0x0803cea5   Thumb Code  1744  printfa.o(i._printf_core)
-    i._printf_core                           0x0803cea4   Section        0  printfa.o(i._printf_core)
-    _printf_post_padding                     0x0803d581   Thumb Code    36  printfa.o(i._printf_post_padding)
-    i._printf_post_padding                   0x0803d580   Section        0  printfa.o(i._printf_post_padding)
-    _printf_pre_padding                      0x0803d5a5   Thumb Code    46  printfa.o(i._printf_pre_padding)
-    i._printf_pre_padding                    0x0803d5a4   Section        0  printfa.o(i._printf_pre_padding)
-    _sputc                                   0x0803d5d3   Thumb Code    10  printfa.o(i._sputc)
-    i._sputc                                 0x0803d5d2   Section        0  printfa.o(i._sputc)
-    i.putchar                                0x0803d5dc   Section        0  putchar.o(i.putchar)
-    i.puts                                   0x0803d5e8   Section        0  puts.o(i.puts)
-    .Lswitch.table.lv_draw_sw_blend_basic.4  0x0803d60c   Data          12  lv_draw_sw_blend.o(.rodata..Lswitch.table.lv_draw_sw_blend_basic.4)
-    LPGPIO_Map                               0x0803d630   Data         128  stm32u5xx_hal_gpio.o(.rodata.LPGPIO_Map)
-    [Anonymous Symbol]                       0x0803d630   Section        0  stm32u5xx_hal_gpio.o(.rodata.LPGPIO_Map)
-    cmaps                                    0x0803d890   Data          40  lv_font_montserrat_14.o(.rodata.cmaps)
-    [Anonymous Symbol]                       0x0803d890   Section        0  lv_font_montserrat_14.o(.rodata.cmaps)
-    UARTEx_SetNbDataToProcess.numerator      0x0803d8b8   Data           8  stm32u5xx_hal_uart_ex.o(.rodata.cst8)
-    UARTEx_SetNbDataToProcess.denominator    0x0803d8c0   Data           8  stm32u5xx_hal_uart_ex.o(.rodata.cst8)
-    day_names_def                            0x0803d8c8   Data          28  lv_calendar.o(.rodata.day_names_def)
-    [Anonymous Symbol]                       0x0803d8c8   Section        0  lv_calendar.o(.rodata.day_names_def)
-    default_kb_ctrl_lc_map                   0x0803d8e4   Data          80  lv_keyboard.o(.rodata.default_kb_ctrl_lc_map)
-    [Anonymous Symbol]                       0x0803d8e4   Section        0  lv_keyboard.o(.rodata.default_kb_ctrl_lc_map)
-    default_kb_ctrl_num_map                  0x0803d934   Data          34  lv_keyboard.o(.rodata.default_kb_ctrl_num_map)
-    [Anonymous Symbol]                       0x0803d934   Section        0  lv_keyboard.o(.rodata.default_kb_ctrl_num_map)
-    default_kb_ctrl_spec_map                 0x0803d956   Data          80  lv_keyboard.o(.rodata.default_kb_ctrl_spec_map)
-    [Anonymous Symbol]                       0x0803d956   Section        0  lv_keyboard.o(.rodata.default_kb_ctrl_spec_map)
-    default_kb_ctrl_uc_map                   0x0803d9a6   Data          80  lv_keyboard.o(.rodata.default_kb_ctrl_uc_map)
-    [Anonymous Symbol]                       0x0803d9a6   Section        0  lv_keyboard.o(.rodata.default_kb_ctrl_uc_map)
-    default_kb_map_lc                        0x0803d9f8   Data         176  lv_keyboard.o(.rodata.default_kb_map_lc)
-    [Anonymous Symbol]                       0x0803d9f8   Section        0  lv_keyboard.o(.rodata.default_kb_map_lc)
-    default_kb_map_num                       0x0803daa8   Data          84  lv_keyboard.o(.rodata.default_kb_map_num)
-    [Anonymous Symbol]                       0x0803daa8   Section        0  lv_keyboard.o(.rodata.default_kb_map_num)
-    default_kb_map_spec                      0x0803dafc   Data         176  lv_keyboard.o(.rodata.default_kb_map_spec)
-    [Anonymous Symbol]                       0x0803dafc   Section        0  lv_keyboard.o(.rodata.default_kb_map_spec)
-    default_kb_map_uc                        0x0803dbac   Data         176  lv_keyboard.o(.rodata.default_kb_map_uc)
-    [Anonymous Symbol]                       0x0803dbac   Section        0  lv_keyboard.o(.rodata.default_kb_map_uc)
-    font_dsc                                 0x0803dc5c   Data          24  lv_font_montserrat_14.o(.rodata.font_dsc)
-    [Anonymous Symbol]                       0x0803dc5c   Section        0  lv_font_montserrat_14.o(.rodata.font_dsc)
-    glyph_bitmap                             0x0803dc74   Data        8832  lv_font_montserrat_14.o(.rodata.glyph_bitmap)
-    [Anonymous Symbol]                       0x0803dc74   Section        0  lv_font_montserrat_14.o(.rodata.glyph_bitmap)
-    glyph_dsc                                0x0803fef4   Data        1264  lv_font_montserrat_14.o(.rodata.glyph_dsc)
-    [Anonymous Symbol]                       0x0803fef4   Section        0  lv_font_montserrat_14.o(.rodata.glyph_dsc)
-    kern_class_values                        0x080403e4   Data        2989  lv_font_montserrat_14.o(.rodata.kern_class_values)
-    [Anonymous Symbol]                       0x080403e4   Section        0  lv_font_montserrat_14.o(.rodata.kern_class_values)
-    kern_classes                             0x08040f94   Data          16  lv_font_montserrat_14.o(.rodata.kern_classes)
-    [Anonymous Symbol]                       0x08040f94   Section        0  lv_font_montserrat_14.o(.rodata.kern_classes)
-    kern_left_class_mapping                  0x08040fa4   Data         158  lv_font_montserrat_14.o(.rodata.kern_left_class_mapping)
-    [Anonymous Symbol]                       0x08040fa4   Section        0  lv_font_montserrat_14.o(.rodata.kern_left_class_mapping)
-    kern_right_class_mapping                 0x08041042   Data         158  lv_font_montserrat_14.o(.rodata.kern_right_class_mapping)
-    [Anonymous Symbol]                       0x08041042   Section        0  lv_font_montserrat_14.o(.rodata.kern_right_class_mapping)
-    lv_palette_darken.colors                 0x08041498   Data         152  lv_color.o(.rodata.lv_palette_darken.colors)
-    [Anonymous Symbol]                       0x08041498   Section        0  lv_color.o(.rodata.lv_palette_darken.colors)
-    lv_palette_lighten.colors                0x08041530   Data         190  lv_color.o(.rodata.lv_palette_lighten.colors)
-    [Anonymous Symbol]                       0x08041530   Section        0  lv_color.o(.rodata.lv_palette_lighten.colors)
-    lv_palette_main.colors                   0x080415ee   Data          38  lv_color.o(.rodata.lv_palette_main.colors)
-    [Anonymous Symbol]                       0x080415ee   Section        0  lv_color.o(.rodata.lv_palette_main.colors)
-    month_names_def                          0x08041764   Data          48  lv_calendar_header_arrow.o(.rodata.month_names_def)
-    [Anonymous Symbol]                       0x08041764   Section        0  lv_calendar_header_arrow.o(.rodata.month_names_def)
-    sin0_90_table                            0x08041794   Data         182  lv_math.o(.rodata.sin0_90_table)
-    [Anonymous Symbol]                       0x08041794   Section        0  lv_math.o(.rodata.sin0_90_table)
-    .L.str.3                                 0x0804184a   Data           5  main.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x0804184a   Section        0  main.o(.rodata.str1.1)
-    .L.str.26                                0x0804184d   Data           2  main.o(.rodata.str1.1)
-    .L.str                                   0x0804184f   Data           8  lv_draw_img.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x0804184f   Section        0  lv_draw_img.o(.rodata.str1.1)
-    .L.str.23                                0x08041855   Data           2  lv_draw_img.o(.rodata.str1.1)
-    .L.str                                   0x08041857   Data           4  lv_img_decoder.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08041857   Section        0  lv_img_decoder.o(.rodata.str1.1)
-    .L.str.39                                0x08041859   Data           2  lv_img_decoder.o(.rodata.str1.1)
-    .L.str.9                                 0x0804185b   Data           3  lv_calendar.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x0804185b   Section        0  lv_calendar.o(.rodata.str1.1)
-    .L.str                                   0x0804185e   Data           3  lv_calendar.o(.rodata.str1.1)
-    .L.str                                   0x0804185e   Data           3  lv_calendar.o(.rodata.str1.1)
-    .L.str.25                                0x0804185f   Data           2  lv_calendar.o(.rodata.str1.1)
-    .L.str.6                                 0x08041861   Data           3  lv_calendar.o(.rodata.str1.1)
-    .L.str.7                                 0x08041864   Data           3  lv_calendar.o(.rodata.str1.1)
-    .L.str.4                                 0x08041867   Data           3  lv_calendar.o(.rodata.str1.1)
-    .L.str.20                                0x08041868   Data           2  lv_calendar.o(.rodata.str1.1)
-    .L.str.8                                 0x0804186a   Data           3  lv_calendar.o(.rodata.str1.1)
-    .L.str.3                                 0x0804186d   Data           3  lv_calendar.o(.rodata.str1.1)
-    .L.str.5                                 0x08041870   Data           3  lv_calendar.o(.rodata.str1.1)
-    .L.str.18                                0x08041871   Data           2  lv_calendar.o(.rodata.str1.1)
-    .L.str.8                                 0x08041873   Data           5  lv_calendar_header_arrow.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08041873   Section        0  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.14                                0x08041876   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.5                                 0x08041878   Data           6  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.28                                0x0804187c   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.6                                 0x0804187e   Data           6  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.31                                0x08041882   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.14                                0x08041884   Data           9  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.11                                0x0804188d   Data          10  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.13                                0x08041897   Data           9  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.12                                0x080418a0   Data           8  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.15                                0x080418a6   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.2                                 0x080418a8   Data           6  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.24                                0x080418ac   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.10                                0x080418ae   Data           7  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.16                                0x080418b3   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.7                                 0x080418b5   Data           4  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.9                                 0x080418b9   Data           5  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.3                                 0x080418be   Data           8  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.4                                 0x080418c6   Data           9  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str.17                                0x080418cd   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
-    .L.str                                   0x080418cf   Data         615  lv_calendar_header_dropdown.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x080418cf   Section        0  lv_calendar_header_dropdown.o(.rodata.str1.1)
-    .L.str.44                                0x08041b36   Data           2  lv_keyboard.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08041b36   Section        0  lv_keyboard.o(.rodata.str1.1)
-    .L.str.88                                0x08041b38   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.2                                 0x08041b3a   Data           3  lv_keyboard.o(.rodata.str1.1)
-    .L.str.90                                0x08041b3b   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.95                                0x08041b3d   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.87                                0x08041b3f   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.83                                0x08041b41   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.104                               0x08041b43   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.96                                0x08041b45   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.97                                0x08041b47   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.2                                 0x08041b49   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.85                                0x08041b49   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.82                                0x08041b4b   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.42                                0x08041b4d   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.11                                0x08041b4f   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str.33                                0x08041b51   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.41                                0x08041b53   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.84                                0x08041b55   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.81                                0x08041b57   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.77                                0x08041b59   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.78                                0x08041b5b   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.79                                0x08041b5d   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.80                                0x08041b5f   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.43                                0x08041b61   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.102                               0x08041b63   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.91                                0x08041b65   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.86                                0x08041b67   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.92                                0x08041b69   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.89                                0x08041b6b   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.94                                0x08041b6d   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.56                                0x08041b6f   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.69                                0x08041b71   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.1                                 0x08041b73   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str.67                                0x08041b75   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.58                                0x08041b77   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.48                                0x08041b79   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.59                                0x08041b7b   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.60                                0x08041b7d   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.61                                0x08041b7f   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.53                                0x08041b81   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.62                                0x08041b83   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.63                                0x08041b85   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.64                                0x08041b87   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.71                                0x08041b89   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.70                                0x08041b8b   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.54                                0x08041b8d   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.55                                0x08041b8f   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.46                                0x08041b91   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.49                                0x08041b93   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.57                                0x08041b95   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.50                                0x08041b97   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.52                                0x08041b99   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.68                                0x08041b9b   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.47                                0x08041b9d   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.66                                0x08041b9f   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.51                                0x08041ba1   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.65                                0x08041ba3   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.100                               0x08041ba5   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.93                                0x08041ba7   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.101                               0x08041ba9   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.32                                0x08041bab   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.38                                0x08041bad   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str                                   0x08041baf   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str.36                                0x08041bb1   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.27                                0x08041bb3   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.19                                0x08041bb5   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.29                                0x08041bb7   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.30                                0x08041bb9   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.40                                0x08041bbb   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.21                                0x08041bbd   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.12                                0x08041bbf   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.37                                0x08041bc1   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.13                                0x08041bc3   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.35                                0x08041bc5   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.34                                0x08041bc7   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.98                                0x08041bc9   Data           2  lv_keyboard.o(.rodata.str1.1)
-    .L.str.5                                 0x08041bcb   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str                                   0x08041bcf   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str.8                                 0x08041bcf   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str.9                                 0x08041bd3   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str.10                                0x08041bd7   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str.4                                 0x08041bdb   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str.7                                 0x08041bdf   Data           4  lv_keyboard.o(.rodata.str1.1)
-    .L.str                                   0x08041be2   Data           1  lv_keyboard.o(.rodata.str1.1)
-    .L.str                                   0x08041be2   Data           1  lv_keyboard.o(.rodata.str1.1)
-    .L.str                                   0x08041be2   Data           1  lv_keyboard.o(.rodata.str1.1)
-    .L.str.1                                 0x08041be2   Data           1  lv_keyboard.o(.rodata.str1.1)
-    .L.str.2                                 0x08041be2   Data           1  lv_keyboard.o(.rodata.str1.1)
-    .L.str.45                                0x08041be2   Data           1  lv_keyboard.o(.rodata.str1.1)
-    .L.str.6                                 0x08041be2   Data           1  lv_keyboard.o(.rodata.str1.1)
-    .L.str.1                                 0x08041be3   Data           5  lv_btnmatrix.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08041be3   Section        0  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.72                                0x08041be6   Data           2  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.2                                 0x08041be8   Data           5  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.73                                0x08041beb   Data           2  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.3                                 0x08041bed   Data           5  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.74                                0x08041bf0   Data           2  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.4                                 0x08041bf2   Data           5  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.75                                0x08041bf5   Data           2  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.5                                 0x08041bf7   Data           5  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.76                                0x08041bfa   Data           2  lv_btnmatrix.o(.rodata.str1.1)
-    .L.str.3                                 0x08041bfc   Data          27  lv_dropdown.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08041bfc   Section        0  lv_dropdown.o(.rodata.str1.1)
-    .L.str                                   0x08041c17   Data          45  lv_roller.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08041c17   Section        0  lv_roller.o(.rodata.str1.1)
-    .L.str.1                                 0x08041c44   Data           4  lv_textarea.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08041c44   Section        0  lv_textarea.o(.rodata.str1.1)
-    .L.str.8                                 0x08041c48   Data          81  wifi.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08041c48   Section        0  wifi.o(.rodata.str1.1)
-    .L.str.3                                 0x08041c99   Data           5  wifi.o(.rodata.str1.1)
-    .L.str                                   0x08041c9c   Data           2  wifi.o(.rodata.str1.1)
-    .L.str.22                                0x08041c9c   Data           2  wifi.o(.rodata.str1.1)
-    .L.str.7                                 0x08041c9e   Data         174  wifi.o(.rodata.str1.1)
-    .L.str.103                               0x08041d4a   Data           2  wifi.o(.rodata.str1.1)
-    .L.str.9                                 0x08041d4c   Data          65  wifi.o(.rodata.str1.1)
-    .L.str.11                                0x08041d8d   Data          83  wifi.o(.rodata.str1.1)
-    .L.str.99                                0x08041dde   Data           2  wifi.o(.rodata.str1.1)
-    style_init.trans_props                   0x08041de0   Data          22  lv_theme_default.o(.rodata.style_init.trans_props)
-    [Anonymous Symbol]                       0x08041de0   Section        0  lv_theme_default.o(.rodata.style_init.trans_props)
-    unicode_list_1                           0x08043e50   Data         124  lv_font_montserrat_14.o(.rodata.unicode_list_1)
-    [Anonymous Symbol]                       0x08043e50   Section        0  lv_font_montserrat_14.o(.rodata.unicode_list_1)
+    make_one_button_checked                  0x0803419d   Thumb Code   124  lv_btnmatrix.o(.text.make_one_button_checked)
+    [Anonymous Symbol]                       0x0803419c   Section        0  lv_btnmatrix.o(.text.make_one_button_checked)
+    month_event_cb                           0x08034219   Thumb Code   120  lv_calendar_header_arrow.o(.text.month_event_cb)
+    [Anonymous Symbol]                       0x08034218   Section        0  lv_calendar_header_arrow.o(.text.month_event_cb)
+    month_event_cb                           0x08034291   Thumb Code    54  lv_calendar_header_dropdown.o(.text.month_event_cb)
+    [Anonymous Symbol]                       0x08034290   Section        0  lv_calendar_header_dropdown.o(.text.month_event_cb)
+    my_constructor                           0x080342c9   Thumb Code   232  lv_calendar_header_arrow.o(.text.my_constructor)
+    [Anonymous Symbol]                       0x080342c8   Section        0  lv_calendar_header_arrow.o(.text.my_constructor)
+    my_constructor                           0x080343b1   Thumb Code   184  lv_calendar_header_dropdown.o(.text.my_constructor)
+    [Anonymous Symbol]                       0x080343b0   Section        0  lv_calendar_header_dropdown.o(.text.my_constructor)
+    new_points_alloc                         0x08034469   Thumb Code   756  lv_chart.o(.text.new_points_alloc)
+    [Anonymous Symbol]                       0x08034468   Section        0  lv_chart.o(.text.new_points_alloc)
+    obj_del_core                             0x0803475d   Thumb Code   762  lv_obj_tree.o(.text.obj_del_core)
+    [Anonymous Symbol]                       0x0803475c   Section        0  lv_obj_tree.o(.text.obj_del_core)
+    opa_scale_anim                           0x08034a59   Thumb Code     8  lv_disp.o(.text.opa_scale_anim)
+    [Anonymous Symbol]                       0x08034a58   Section        0  lv_disp.o(.text.opa_scale_anim)
+    position_knob                            0x08034a61   Thumb Code   180  lv_slider.o(.text.position_knob)
+    [Anonymous Symbol]                       0x08034a60   Section        0  lv_slider.o(.text.position_knob)
+    position_to_selected                     0x08034b15   Thumb Code    90  lv_dropdown.o(.text.position_to_selected)
+    [Anonymous Symbol]                       0x08034b14   Section        0  lv_dropdown.o(.text.position_to_selected)
+    pwd_char_hider                           0x08034b71   Thumb Code   160  lv_textarea.o(.text.pwd_char_hider)
+    [Anonymous Symbol]                       0x08034b70   Section        0  lv_textarea.o(.text.pwd_char_hider)
+    pwd_char_hider_anim                      0x08034c11   Thumb Code     2  lv_textarea.o(.text.pwd_char_hider_anim)
+    [Anonymous Symbol]                       0x08034c10   Section        0  lv_textarea.o(.text.pwd_char_hider_anim)
+    pwd_char_hider_anim_ready                0x08034c15   Thumb Code     6  lv_textarea.o(.text.pwd_char_hider_anim_ready)
+    [Anonymous Symbol]                       0x08034c14   Section        0  lv_textarea.o(.text.pwd_char_hider_anim_ready)
+    [Anonymous Symbol]                       0x08034c20   Section        0  sht20.o(.text.read_T_RH)
+    refr_area_part                           0x08034d61   Thumb Code  2674  lv_refr.o(.text.refr_area_part)
+    [Anonymous Symbol]                       0x08034d60   Section        0  lv_refr.o(.text.refr_area_part)
+    refr_cursor_area                         0x080357d5   Thumb Code   530  lv_textarea.o(.text.refr_cursor_area)
+    [Anonymous Symbol]                       0x080357d4   Section        0  lv_textarea.o(.text.refr_cursor_area)
+    refr_knob_pos                            0x080359e9   Thumb Code   428  lv_colorwheel.o(.text.refr_knob_pos)
+    [Anonymous Symbol]                       0x080359e8   Section        0  lv_colorwheel.o(.text.refr_knob_pos)
+    refr_obj                                 0x08035b95   Thumb Code   892  lv_refr.o(.text.refr_obj)
+    [Anonymous Symbol]                       0x08035b94   Section        0  lv_refr.o(.text.refr_obj)
+    refr_obj_and_children                    0x08035f11   Thumb Code   156  lv_refr.o(.text.refr_obj_and_children)
+    [Anonymous Symbol]                       0x08035f10   Section        0  lv_refr.o(.text.refr_obj_and_children)
+    refr_position                            0x08035fad   Thumb Code   310  lv_roller.o(.text.refr_position)
+    [Anonymous Symbol]                       0x08035fac   Section        0  lv_roller.o(.text.refr_position)
+    refr_size_form_row                       0x080360e5   Thumb Code   254  lv_table.o(.text.refr_size_form_row)
+    [Anonymous Symbol]                       0x080360e4   Section        0  lv_table.o(.text.refr_size_form_row)
+    refresh_children_style                   0x080361e5   Thumb Code    62  lv_obj_style.o(.text.refresh_children_style)
+    [Anonymous Symbol]                       0x080361e4   Section        0  lv_obj_style.o(.text.refresh_children_style)
+    report_style_change_core                 0x08036225   Thumb Code   136  lv_obj_style.o(.text.report_style_change_core)
+    [Anonymous Symbol]                       0x08036224   Section        0  lv_obj_style.o(.text.report_style_change_core)
+    scr_anim_ready                           0x080362ad   Thumb Code    86  lv_disp.o(.text.scr_anim_ready)
+    [Anonymous Symbol]                       0x080362ac   Section        0  lv_disp.o(.text.scr_anim_ready)
+    scr_load_anim_start                      0x08036305   Thumb Code    48  lv_disp.o(.text.scr_load_anim_start)
+    [Anonymous Symbol]                       0x08036304   Section        0  lv_disp.o(.text.scr_load_anim_start)
+    scr_load_internal                        0x08036335   Thumb Code    88  lv_disp.o(.text.scr_load_internal)
+    [Anonymous Symbol]                       0x08036334   Section        0  lv_disp.o(.text.scr_load_internal)
+    scroll_anim_ready_cb                     0x0803638d   Thumb Code    10  lv_obj_scroll.o(.text.scroll_anim_ready_cb)
+    [Anonymous Symbol]                       0x0803638c   Section        0  lv_obj_scroll.o(.text.scroll_anim_ready_cb)
+    scroll_anim_ready_cb                     0x08036399   Thumb Code    16  lv_roller.o(.text.scroll_anim_ready_cb)
+    [Anonymous Symbol]                       0x08036398   Section        0  lv_roller.o(.text.scroll_anim_ready_cb)
+    scroll_area_into_view                    0x080363a9   Thumb Code   774  lv_obj_scroll.o(.text.scroll_area_into_view)
+    [Anonymous Symbol]                       0x080363a8   Section        0  lv_obj_scroll.o(.text.scroll_area_into_view)
+    scroll_to_selected_cell                  0x080366b1   Thumb Code   130  lv_table.o(.text.scroll_to_selected_cell)
+    [Anonymous Symbol]                       0x080366b0   Section        0  lv_table.o(.text.scroll_to_selected_cell)
+    scroll_x_anim                            0x08036735   Thumb Code    76  lv_obj_scroll.o(.text.scroll_x_anim)
+    [Anonymous Symbol]                       0x08036734   Section        0  lv_obj_scroll.o(.text.scroll_x_anim)
+    scroll_y_anim                            0x08036781   Thumb Code    76  lv_obj_scroll.o(.text.scroll_y_anim)
+    [Anonymous Symbol]                       0x08036780   Section        0  lv_obj_scroll.o(.text.scroll_y_anim)
+    set_ofs_x_anim                           0x080367cd   Thumb Code     8  lv_label.o(.text.set_ofs_x_anim)
+    [Anonymous Symbol]                       0x080367cc   Section        0  lv_label.o(.text.set_ofs_x_anim)
+    set_ofs_y_anim                           0x080367d5   Thumb Code     8  lv_label.o(.text.set_ofs_y_anim)
+    [Anonymous Symbol]                       0x080367d4   Section        0  lv_label.o(.text.set_ofs_y_anim)
+    set_x_anim                               0x080367dd   Thumb Code     6  lv_disp.o(.text.set_x_anim)
+    [Anonymous Symbol]                       0x080367dc   Section        0  lv_disp.o(.text.set_x_anim)
+    set_y_anim                               0x080367e5   Thumb Code     6  lv_disp.o(.text.set_y_anim)
+    [Anonymous Symbol]                       0x080367e4   Section        0  lv_disp.o(.text.set_y_anim)
+    set_y_anim                               0x080367ed   Thumb Code     6  lv_roller.o(.text.set_y_anim)
+    [Anonymous Symbol]                       0x080367ec   Section        0  lv_roller.o(.text.set_y_anim)
+    shadow_blur_corner                       0x080367f5   Thumb Code  1652  lv_draw_sw_rect.o(.text.shadow_blur_corner)
+    [Anonymous Symbol]                       0x080367f4   Section        0  lv_draw_sw_rect.o(.text.shadow_blur_corner)
+    style_init                               0x08036e69   Thumb Code 13274  lv_theme_default.o(.text.style_init)
+    [Anonymous Symbol]                       0x08036e68   Section        0  lv_theme_default.o(.text.style_init)
+    __arm_cp.3_1                             0x0803955c   Number         4  lv_theme_default.o(.text.style_init)
+    theme_apply                              0x0803a245   Thumb Code  1722  lv_theme_basic.o(.text.theme_apply)
+    [Anonymous Symbol]                       0x0803a244   Section        0  lv_theme_basic.o(.text.theme_apply)
+    theme_apply                              0x0803a901   Thumb Code  4344  lv_theme_default.o(.text.theme_apply)
+    [Anonymous Symbol]                       0x0803a900   Section        0  lv_theme_default.o(.text.theme_apply)
+    tileview_event_cb                        0x0803b9f9   Thumb Code   196  lv_tileview.o(.text.tileview_event_cb)
+    [Anonymous Symbol]                       0x0803b9f8   Section        0  lv_tileview.o(.text.tileview_event_cb)
+    touchpad_read                            0x0803babd   Thumb Code    94  lv_port_indev.o(.text.touchpad_read)
+    [Anonymous Symbol]                       0x0803babc   Section        0  lv_port_indev.o(.text.touchpad_read)
+    trans_anim_cb                            0x0803bb1d   Thumb Code   388  lv_obj_style.o(.text.trans_anim_cb)
+    [Anonymous Symbol]                       0x0803bb1c   Section        0  lv_obj_style.o(.text.trans_anim_cb)
+    trans_anim_ready_cb                      0x0803bca1   Thumb Code   196  lv_obj_style.o(.text.trans_anim_ready_cb)
+    [Anonymous Symbol]                       0x0803bca0   Section        0  lv_obj_style.o(.text.trans_anim_ready_cb)
+    trans_anim_start_cb                      0x0803bd65   Thumb Code    62  lv_obj_style.o(.text.trans_anim_start_cb)
+    [Anonymous Symbol]                       0x0803bd64   Section        0  lv_obj_style.o(.text.trans_anim_start_cb)
+    trans_del                                0x0803bda5   Thumb Code   306  lv_obj_style.o(.text.trans_del)
+    [Anonymous Symbol]                       0x0803bda4   Section        0  lv_obj_style.o(.text.trans_del)
+    transform_point                          0x0803bed9   Thumb Code   274  lv_obj_pos.o(.text.transform_point)
+    [Anonymous Symbol]                       0x0803bed8   Section        0  lv_obj_pos.o(.text.transform_point)
+    [Anonymous Symbol]                       0x0803bfec   Section        0  ui_control1.o(.text.ui_control1_screen_init)
+    [Anonymous Symbol]                       0x0803c5cc   Section        0  ui_data.o(.text.ui_data_screen_init)
+    [Anonymous Symbol]                       0x0803ca04   Section        0  ui.o(.text.ui_event_Button1)
+    [Anonymous Symbol]                       0x0803ca34   Section        0  ui.o(.text.ui_event_Button3)
+    [Anonymous Symbol]                       0x0803ca64   Section        0  ui.o(.text.ui_init)
+    unicode_list_compare                     0x0803caad   Thumb Code     8  lv_font_fmt_txt.o(.text.unicode_list_compare)
+    [Anonymous Symbol]                       0x0803caac   Section        0  lv_font_fmt_txt.o(.text.unicode_list_compare)
+    value_changed_event_cb                   0x0803cab5   Thumb Code    64  lv_calendar_header_arrow.o(.text.value_changed_event_cb)
+    [Anonymous Symbol]                       0x0803cab4   Section        0  lv_calendar_header_arrow.o(.text.value_changed_event_cb)
+    value_changed_event_cb                   0x0803caf5   Thumb Code   110  lv_calendar_header_dropdown.o(.text.value_changed_event_cb)
+    [Anonymous Symbol]                       0x0803caf4   Section        0  lv_calendar_header_dropdown.o(.text.value_changed_event_cb)
+    value_update                             0x0803cb65   Thumb Code   232  lv_arc.o(.text.value_update)
+    [Anonymous Symbol]                       0x0803cb64   Section        0  lv_arc.o(.text.value_update)
+    year_event_cb                            0x0803cc4d   Thumb Code    98  lv_calendar_header_dropdown.o(.text.year_event_cb)
+    [Anonymous Symbol]                       0x0803cc4c   Section        0  lv_calendar_header_dropdown.o(.text.year_event_cb)
+    i.__0printf                              0x0803ccb0   Section        0  printfa.o(i.__0printf)
+    i.__0sprintf                             0x0803ccd0   Section        0  printfa.o(i.__0sprintf)
+    i.__scatterload_copy                     0x0803ccf8   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0803cd06   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x0803cd08   Section       14  handlers.o(i.__scatterload_zeroinit)
+    _fp_digits                               0x0803cd19   Thumb Code   366  printfa.o(i._fp_digits)
+    i._fp_digits                             0x0803cd18   Section        0  printfa.o(i._fp_digits)
+    _printf_core                             0x0803ce9d   Thumb Code  1744  printfa.o(i._printf_core)
+    i._printf_core                           0x0803ce9c   Section        0  printfa.o(i._printf_core)
+    _printf_post_padding                     0x0803d579   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_post_padding                   0x0803d578   Section        0  printfa.o(i._printf_post_padding)
+    _printf_pre_padding                      0x0803d59d   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i._printf_pre_padding                    0x0803d59c   Section        0  printfa.o(i._printf_pre_padding)
+    _sputc                                   0x0803d5cb   Thumb Code    10  printfa.o(i._sputc)
+    i._sputc                                 0x0803d5ca   Section        0  printfa.o(i._sputc)
+    i.putchar                                0x0803d5d4   Section        0  putchar.o(i.putchar)
+    i.puts                                   0x0803d5e0   Section        0  puts.o(i.puts)
+    .Lswitch.table.lv_draw_sw_blend_basic.4  0x0803d604   Data          12  lv_draw_sw_blend.o(.rodata..Lswitch.table.lv_draw_sw_blend_basic.4)
+    LPGPIO_Map                               0x0803d628   Data         128  stm32u5xx_hal_gpio.o(.rodata.LPGPIO_Map)
+    [Anonymous Symbol]                       0x0803d628   Section        0  stm32u5xx_hal_gpio.o(.rodata.LPGPIO_Map)
+    cmaps                                    0x0803d888   Data          40  lv_font_montserrat_14.o(.rodata.cmaps)
+    [Anonymous Symbol]                       0x0803d888   Section        0  lv_font_montserrat_14.o(.rodata.cmaps)
+    UARTEx_SetNbDataToProcess.numerator      0x0803d8b0   Data           8  stm32u5xx_hal_uart_ex.o(.rodata.cst8)
+    UARTEx_SetNbDataToProcess.denominator    0x0803d8b8   Data           8  stm32u5xx_hal_uart_ex.o(.rodata.cst8)
+    day_names_def                            0x0803d8c0   Data          28  lv_calendar.o(.rodata.day_names_def)
+    [Anonymous Symbol]                       0x0803d8c0   Section        0  lv_calendar.o(.rodata.day_names_def)
+    default_kb_ctrl_lc_map                   0x0803d8dc   Data          80  lv_keyboard.o(.rodata.default_kb_ctrl_lc_map)
+    [Anonymous Symbol]                       0x0803d8dc   Section        0  lv_keyboard.o(.rodata.default_kb_ctrl_lc_map)
+    default_kb_ctrl_num_map                  0x0803d92c   Data          34  lv_keyboard.o(.rodata.default_kb_ctrl_num_map)
+    [Anonymous Symbol]                       0x0803d92c   Section        0  lv_keyboard.o(.rodata.default_kb_ctrl_num_map)
+    default_kb_ctrl_spec_map                 0x0803d94e   Data          80  lv_keyboard.o(.rodata.default_kb_ctrl_spec_map)
+    [Anonymous Symbol]                       0x0803d94e   Section        0  lv_keyboard.o(.rodata.default_kb_ctrl_spec_map)
+    default_kb_ctrl_uc_map                   0x0803d99e   Data          80  lv_keyboard.o(.rodata.default_kb_ctrl_uc_map)
+    [Anonymous Symbol]                       0x0803d99e   Section        0  lv_keyboard.o(.rodata.default_kb_ctrl_uc_map)
+    default_kb_map_lc                        0x0803d9f0   Data         176  lv_keyboard.o(.rodata.default_kb_map_lc)
+    [Anonymous Symbol]                       0x0803d9f0   Section        0  lv_keyboard.o(.rodata.default_kb_map_lc)
+    default_kb_map_num                       0x0803daa0   Data          84  lv_keyboard.o(.rodata.default_kb_map_num)
+    [Anonymous Symbol]                       0x0803daa0   Section        0  lv_keyboard.o(.rodata.default_kb_map_num)
+    default_kb_map_spec                      0x0803daf4   Data         176  lv_keyboard.o(.rodata.default_kb_map_spec)
+    [Anonymous Symbol]                       0x0803daf4   Section        0  lv_keyboard.o(.rodata.default_kb_map_spec)
+    default_kb_map_uc                        0x0803dba4   Data         176  lv_keyboard.o(.rodata.default_kb_map_uc)
+    [Anonymous Symbol]                       0x0803dba4   Section        0  lv_keyboard.o(.rodata.default_kb_map_uc)
+    font_dsc                                 0x0803dc54   Data          24  lv_font_montserrat_14.o(.rodata.font_dsc)
+    [Anonymous Symbol]                       0x0803dc54   Section        0  lv_font_montserrat_14.o(.rodata.font_dsc)
+    glyph_bitmap                             0x0803dc6c   Data        8832  lv_font_montserrat_14.o(.rodata.glyph_bitmap)
+    [Anonymous Symbol]                       0x0803dc6c   Section        0  lv_font_montserrat_14.o(.rodata.glyph_bitmap)
+    glyph_dsc                                0x0803feec   Data        1264  lv_font_montserrat_14.o(.rodata.glyph_dsc)
+    [Anonymous Symbol]                       0x0803feec   Section        0  lv_font_montserrat_14.o(.rodata.glyph_dsc)
+    kern_class_values                        0x080403dc   Data        2989  lv_font_montserrat_14.o(.rodata.kern_class_values)
+    [Anonymous Symbol]                       0x080403dc   Section        0  lv_font_montserrat_14.o(.rodata.kern_class_values)
+    kern_classes                             0x08040f8c   Data          16  lv_font_montserrat_14.o(.rodata.kern_classes)
+    [Anonymous Symbol]                       0x08040f8c   Section        0  lv_font_montserrat_14.o(.rodata.kern_classes)
+    kern_left_class_mapping                  0x08040f9c   Data         158  lv_font_montserrat_14.o(.rodata.kern_left_class_mapping)
+    [Anonymous Symbol]                       0x08040f9c   Section        0  lv_font_montserrat_14.o(.rodata.kern_left_class_mapping)
+    kern_right_class_mapping                 0x0804103a   Data         158  lv_font_montserrat_14.o(.rodata.kern_right_class_mapping)
+    [Anonymous Symbol]                       0x0804103a   Section        0  lv_font_montserrat_14.o(.rodata.kern_right_class_mapping)
+    lv_palette_darken.colors                 0x08041490   Data         152  lv_color.o(.rodata.lv_palette_darken.colors)
+    [Anonymous Symbol]                       0x08041490   Section        0  lv_color.o(.rodata.lv_palette_darken.colors)
+    lv_palette_lighten.colors                0x08041528   Data         190  lv_color.o(.rodata.lv_palette_lighten.colors)
+    [Anonymous Symbol]                       0x08041528   Section        0  lv_color.o(.rodata.lv_palette_lighten.colors)
+    lv_palette_main.colors                   0x080415e6   Data          38  lv_color.o(.rodata.lv_palette_main.colors)
+    [Anonymous Symbol]                       0x080415e6   Section        0  lv_color.o(.rodata.lv_palette_main.colors)
+    month_names_def                          0x0804175c   Data          48  lv_calendar_header_arrow.o(.rodata.month_names_def)
+    [Anonymous Symbol]                       0x0804175c   Section        0  lv_calendar_header_arrow.o(.rodata.month_names_def)
+    sin0_90_table                            0x0804178c   Data         182  lv_math.o(.rodata.sin0_90_table)
+    [Anonymous Symbol]                       0x0804178c   Section        0  lv_math.o(.rodata.sin0_90_table)
+    .L.str.3                                 0x08041842   Data           5  main.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041842   Section        0  main.o(.rodata.str1.1)
+    .L.str.26                                0x08041845   Data           2  main.o(.rodata.str1.1)
+    .L.str                                   0x08041847   Data           8  lv_draw_img.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041847   Section        0  lv_draw_img.o(.rodata.str1.1)
+    .L.str.23                                0x0804184d   Data           2  lv_draw_img.o(.rodata.str1.1)
+    .L.str                                   0x0804184f   Data           4  lv_img_decoder.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x0804184f   Section        0  lv_img_decoder.o(.rodata.str1.1)
+    .L.str.39                                0x08041851   Data           2  lv_img_decoder.o(.rodata.str1.1)
+    .L.str.9                                 0x08041853   Data           3  lv_calendar.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041853   Section        0  lv_calendar.o(.rodata.str1.1)
+    .L.str                                   0x08041856   Data           3  lv_calendar.o(.rodata.str1.1)
+    .L.str                                   0x08041856   Data           3  lv_calendar.o(.rodata.str1.1)
+    .L.str.25                                0x08041857   Data           2  lv_calendar.o(.rodata.str1.1)
+    .L.str.6                                 0x08041859   Data           3  lv_calendar.o(.rodata.str1.1)
+    .L.str.7                                 0x0804185c   Data           3  lv_calendar.o(.rodata.str1.1)
+    .L.str.4                                 0x0804185f   Data           3  lv_calendar.o(.rodata.str1.1)
+    .L.str.20                                0x08041860   Data           2  lv_calendar.o(.rodata.str1.1)
+    .L.str.8                                 0x08041862   Data           3  lv_calendar.o(.rodata.str1.1)
+    .L.str.3                                 0x08041865   Data           3  lv_calendar.o(.rodata.str1.1)
+    .L.str.5                                 0x08041868   Data           3  lv_calendar.o(.rodata.str1.1)
+    .L.str.18                                0x08041869   Data           2  lv_calendar.o(.rodata.str1.1)
+    .L.str.8                                 0x0804186b   Data           5  lv_calendar_header_arrow.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x0804186b   Section        0  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.14                                0x0804186e   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.5                                 0x08041870   Data           6  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.28                                0x08041874   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.6                                 0x08041876   Data           6  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.31                                0x0804187a   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.14                                0x0804187c   Data           9  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.11                                0x08041885   Data          10  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.13                                0x0804188f   Data           9  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.12                                0x08041898   Data           8  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.15                                0x0804189e   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.2                                 0x080418a0   Data           6  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.24                                0x080418a4   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.10                                0x080418a6   Data           7  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.16                                0x080418ab   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.7                                 0x080418ad   Data           4  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.9                                 0x080418b1   Data           5  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.3                                 0x080418b6   Data           8  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.4                                 0x080418be   Data           9  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str.17                                0x080418c5   Data           2  lv_calendar_header_arrow.o(.rodata.str1.1)
+    .L.str                                   0x080418c7   Data         615  lv_calendar_header_dropdown.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x080418c7   Section        0  lv_calendar_header_dropdown.o(.rodata.str1.1)
+    .L.str.44                                0x08041b2e   Data           2  lv_keyboard.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041b2e   Section        0  lv_keyboard.o(.rodata.str1.1)
+    .L.str.88                                0x08041b30   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.2                                 0x08041b32   Data           3  lv_keyboard.o(.rodata.str1.1)
+    .L.str.90                                0x08041b33   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.95                                0x08041b35   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.87                                0x08041b37   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.83                                0x08041b39   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.104                               0x08041b3b   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.96                                0x08041b3d   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.97                                0x08041b3f   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.2                                 0x08041b41   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.85                                0x08041b41   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.82                                0x08041b43   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.42                                0x08041b45   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.11                                0x08041b47   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str.33                                0x08041b49   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.41                                0x08041b4b   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.84                                0x08041b4d   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.81                                0x08041b4f   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.77                                0x08041b51   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.78                                0x08041b53   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.79                                0x08041b55   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.80                                0x08041b57   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.43                                0x08041b59   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.102                               0x08041b5b   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.91                                0x08041b5d   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.86                                0x08041b5f   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.92                                0x08041b61   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.89                                0x08041b63   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.94                                0x08041b65   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.56                                0x08041b67   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.69                                0x08041b69   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.1                                 0x08041b6b   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str.67                                0x08041b6d   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.58                                0x08041b6f   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.48                                0x08041b71   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.59                                0x08041b73   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.60                                0x08041b75   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.61                                0x08041b77   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.53                                0x08041b79   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.62                                0x08041b7b   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.63                                0x08041b7d   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.64                                0x08041b7f   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.71                                0x08041b81   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.70                                0x08041b83   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.54                                0x08041b85   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.55                                0x08041b87   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.46                                0x08041b89   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.49                                0x08041b8b   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.57                                0x08041b8d   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.50                                0x08041b8f   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.52                                0x08041b91   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.68                                0x08041b93   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.47                                0x08041b95   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.66                                0x08041b97   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.51                                0x08041b99   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.65                                0x08041b9b   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.100                               0x08041b9d   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.93                                0x08041b9f   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.101                               0x08041ba1   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.32                                0x08041ba3   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.38                                0x08041ba5   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str                                   0x08041ba7   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str.36                                0x08041ba9   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.27                                0x08041bab   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.19                                0x08041bad   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.29                                0x08041baf   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.30                                0x08041bb1   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.40                                0x08041bb3   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.21                                0x08041bb5   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.12                                0x08041bb7   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.37                                0x08041bb9   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.13                                0x08041bbb   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.35                                0x08041bbd   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.34                                0x08041bbf   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.98                                0x08041bc1   Data           2  lv_keyboard.o(.rodata.str1.1)
+    .L.str.5                                 0x08041bc3   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str                                   0x08041bc7   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str.8                                 0x08041bc7   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str.9                                 0x08041bcb   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str.10                                0x08041bcf   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str.4                                 0x08041bd3   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str.7                                 0x08041bd7   Data           4  lv_keyboard.o(.rodata.str1.1)
+    .L.str                                   0x08041bda   Data           1  lv_keyboard.o(.rodata.str1.1)
+    .L.str                                   0x08041bda   Data           1  lv_keyboard.o(.rodata.str1.1)
+    .L.str                                   0x08041bda   Data           1  lv_keyboard.o(.rodata.str1.1)
+    .L.str.1                                 0x08041bda   Data           1  lv_keyboard.o(.rodata.str1.1)
+    .L.str.2                                 0x08041bda   Data           1  lv_keyboard.o(.rodata.str1.1)
+    .L.str.45                                0x08041bda   Data           1  lv_keyboard.o(.rodata.str1.1)
+    .L.str.6                                 0x08041bda   Data           1  lv_keyboard.o(.rodata.str1.1)
+    .L.str.1                                 0x08041bdb   Data           5  lv_btnmatrix.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041bdb   Section        0  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.72                                0x08041bde   Data           2  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.2                                 0x08041be0   Data           5  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.73                                0x08041be3   Data           2  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.3                                 0x08041be5   Data           5  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.74                                0x08041be8   Data           2  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.4                                 0x08041bea   Data           5  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.75                                0x08041bed   Data           2  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.5                                 0x08041bef   Data           5  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.76                                0x08041bf2   Data           2  lv_btnmatrix.o(.rodata.str1.1)
+    .L.str.3                                 0x08041bf4   Data          27  lv_dropdown.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041bf4   Section        0  lv_dropdown.o(.rodata.str1.1)
+    .L.str                                   0x08041c0f   Data          45  lv_roller.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041c0f   Section        0  lv_roller.o(.rodata.str1.1)
+    .L.str.1                                 0x08041c3c   Data           4  lv_textarea.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041c3c   Section        0  lv_textarea.o(.rodata.str1.1)
+    .L.str.8                                 0x08041c40   Data          81  wifi.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08041c40   Section        0  wifi.o(.rodata.str1.1)
+    .L.str.3                                 0x08041c91   Data           5  wifi.o(.rodata.str1.1)
+    .L.str                                   0x08041c94   Data           2  wifi.o(.rodata.str1.1)
+    .L.str.22                                0x08041c94   Data           2  wifi.o(.rodata.str1.1)
+    .L.str.7                                 0x08041c96   Data         174  wifi.o(.rodata.str1.1)
+    .L.str.103                               0x08041d42   Data           2  wifi.o(.rodata.str1.1)
+    .L.str.9                                 0x08041d44   Data          65  wifi.o(.rodata.str1.1)
+    .L.str.11                                0x08041d85   Data          83  wifi.o(.rodata.str1.1)
+    .L.str.99                                0x08041dd6   Data           2  wifi.o(.rodata.str1.1)
+    style_init.trans_props                   0x08041dd8   Data          22  lv_theme_default.o(.rodata.style_init.trans_props)
+    [Anonymous Symbol]                       0x08041dd8   Section        0  lv_theme_default.o(.rodata.style_init.trans_props)
+    unicode_list_1                           0x08043e48   Data         124  lv_font_montserrat_14.o(.rodata.unicode_list_1)
+    [Anonymous Symbol]                       0x08043e48   Section        0  lv_font_montserrat_14.o(.rodata.unicode_list_1)
     .data                                    0x20000000   Section        4  stdout.o(.data)
     .L_MergedGlobals                         0x20000004   Data           8  stm32u5xx_hal.o(.data..L_MergedGlobals)
     [Anonymous Symbol]                       0x20000004   Section        0  stm32u5xx_hal.o(.data..L_MergedGlobals)
@@ -15415,89 +15414,89 @@ Image Symbol Table
     lv_txt_get_size                          0x080339ad   Thumb Code   206  lv_txt.o(.text.lv_txt_get_size)
     lv_txt_get_width                         0x08033a7d   Thumb Code   280  lv_txt.o(.text.lv_txt_get_width)
     lv_vsnprintf                             0x08033e55   Thumb Code    32  lv_printf.o(.text.lv_vsnprintf)
-    main                                     0x08033eed   Thumb Code   696  main.o(.text.main)
-    read_T_RH                                0x08034c29   Thumb Code   320  sht20.o(.text.read_T_RH)
-    ui_control1_screen_init                  0x0803bff5   Thumb Code  1504  ui_control1.o(.text.ui_control1_screen_init)
-    ui_data_screen_init                      0x0803c5d5   Thumb Code  1080  ui_data.o(.text.ui_data_screen_init)
-    ui_event_Button1                         0x0803ca0d   Thumb Code    48  ui.o(.text.ui_event_Button1)
-    ui_event_Button3                         0x0803ca3d   Thumb Code    48  ui.o(.text.ui_event_Button3)
-    ui_init                                  0x0803ca6d   Thumb Code    72  ui.o(.text.ui_init)
-    __0printf                                0x0803ccb9   Thumb Code    22  printfa.o(i.__0printf)
-    __1printf                                0x0803ccb9   Thumb Code     0  printfa.o(i.__0printf)
-    __2printf                                0x0803ccb9   Thumb Code     0  printfa.o(i.__0printf)
-    __c89printf                              0x0803ccb9   Thumb Code     0  printfa.o(i.__0printf)
-    printf                                   0x0803ccb9   Thumb Code     0  printfa.o(i.__0printf)
-    __0sprintf                               0x0803ccd9   Thumb Code    34  printfa.o(i.__0sprintf)
-    __1sprintf                               0x0803ccd9   Thumb Code     0  printfa.o(i.__0sprintf)
-    __2sprintf                               0x0803ccd9   Thumb Code     0  printfa.o(i.__0sprintf)
-    __c89sprintf                             0x0803ccd9   Thumb Code     0  printfa.o(i.__0sprintf)
-    sprintf                                  0x0803ccd9   Thumb Code     0  printfa.o(i.__0sprintf)
-    __scatterload_copy                       0x0803cd01   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x0803cd0f   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x0803cd11   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    putchar                                  0x0803d5dd   Thumb Code     6  putchar.o(i.putchar)
-    puts                                     0x0803d5e9   Thumb Code    30  puts.o(i.puts)
-    AHBPrescTable                            0x0803d618   Data          16  system_stm32u5xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x0803d628   Data           8  system_stm32u5xx.o(.rodata.APBPrescTable)
-    MSIRangeTable                            0x0803d6b0   Data          64  system_stm32u5xx.o(.rodata.MSIRangeTable)
-    UARTPrescTable                           0x0803d6f0   Data          24  stm32u5xx_hal_uart.o(.rodata.UARTPrescTable)
-    _lv_bpp1_opa_table                       0x0803d708   Data           2  lv_draw_sw_letter.o(.rodata._lv_bpp1_opa_table)
-    _lv_bpp2_opa_table                       0x0803d70a   Data           4  lv_draw_sw_letter.o(.rodata._lv_bpp2_opa_table)
-    _lv_bpp4_opa_table                       0x0803d70e   Data          16  lv_draw_sw_letter.o(.rodata._lv_bpp4_opa_table)
-    _lv_bpp8_opa_table                       0x0803d71e   Data         256  lv_draw_sw_letter.o(.rodata._lv_bpp8_opa_table)
-    _lv_style_builtin_prop_flag_lookup_table 0x0803d81e   Data         113  lv_style.o(.rodata._lv_style_builtin_prop_flag_lookup_table)
-    lv_arc_class                             0x080410e0   Data          28  lv_arc.o(.rodata.lv_arc_class)
-    lv_bar_class                             0x080410fc   Data          28  lv_bar.o(.rodata.lv_bar_class)
-    lv_btn_class                             0x08041118   Data          28  lv_btn.o(.rodata.lv_btn_class)
-    lv_btnmatrix_class                       0x08041134   Data          28  lv_btnmatrix.o(.rodata.lv_btnmatrix_class)
-    lv_calendar_class                        0x08041150   Data          28  lv_calendar.o(.rodata.lv_calendar_class)
-    lv_calendar_header_arrow_class           0x0804116c   Data          28  lv_calendar_header_arrow.o(.rodata.lv_calendar_header_arrow_class)
-    lv_calendar_header_dropdown_class        0x08041188   Data          28  lv_calendar_header_dropdown.o(.rodata.lv_calendar_header_dropdown_class)
-    lv_chart_class                           0x080411a4   Data          28  lv_chart.o(.rodata.lv_chart_class)
-    lv_checkbox_class                        0x080411c0   Data          28  lv_checkbox.o(.rodata.lv_checkbox_class)
-    lv_colorwheel_class                      0x080411dc   Data          28  lv_colorwheel.o(.rodata.lv_colorwheel_class)
-    lv_dropdown_class                        0x080411f8   Data          28  lv_dropdown.o(.rodata.lv_dropdown_class)
-    lv_dropdownlist_class                    0x08041214   Data          28  lv_dropdown.o(.rodata.lv_dropdownlist_class)
-    lv_font_montserrat_14                    0x08041230   Data          28  lv_font_montserrat_14.o(.rodata.lv_font_montserrat_14)
-    lv_img_class                             0x0804124c   Data          28  lv_img.o(.rodata.lv_img_class)
-    lv_keyboard_class                        0x08041268   Data          28  lv_keyboard.o(.rodata.lv_keyboard_class)
-    lv_label_class                           0x08041284   Data          28  lv_label.o(.rodata.lv_label_class)
-    lv_led_class                             0x080412a0   Data          28  lv_led.o(.rodata.lv_led_class)
-    lv_line_class                            0x080412bc   Data          28  lv_line.o(.rodata.lv_line_class)
-    lv_list_btn_class                        0x080412d8   Data          28  lv_list.o(.rodata.lv_list_btn_class)
-    lv_list_class                            0x080412f4   Data          28  lv_list.o(.rodata.lv_list_class)
-    lv_list_text_class                       0x08041310   Data          28  lv_list.o(.rodata.lv_list_text_class)
-    lv_menu_class                            0x0804132c   Data          28  lv_menu.o(.rodata.lv_menu_class)
-    lv_menu_cont_class                       0x08041348   Data          28  lv_menu.o(.rodata.lv_menu_cont_class)
-    lv_menu_main_cont_class                  0x08041364   Data          28  lv_menu.o(.rodata.lv_menu_main_cont_class)
-    lv_menu_main_header_cont_class           0x08041380   Data          28  lv_menu.o(.rodata.lv_menu_main_header_cont_class)
-    lv_menu_page_class                       0x0804139c   Data          28  lv_menu.o(.rodata.lv_menu_page_class)
-    lv_menu_section_class                    0x080413b8   Data          28  lv_menu.o(.rodata.lv_menu_section_class)
-    lv_menu_separator_class                  0x080413d4   Data          28  lv_menu.o(.rodata.lv_menu_separator_class)
-    lv_menu_sidebar_cont_class               0x080413f0   Data          28  lv_menu.o(.rodata.lv_menu_sidebar_cont_class)
-    lv_menu_sidebar_header_cont_class        0x0804140c   Data          28  lv_menu.o(.rodata.lv_menu_sidebar_header_cont_class)
-    lv_meter_class                           0x08041428   Data          28  lv_meter.o(.rodata.lv_meter_class)
-    lv_msgbox_backdrop_class                 0x08041444   Data          28  lv_msgbox.o(.rodata.lv_msgbox_backdrop_class)
-    lv_msgbox_class                          0x08041460   Data          28  lv_msgbox.o(.rodata.lv_msgbox_class)
-    lv_obj_class                             0x0804147c   Data          28  lv_obj.o(.rodata.lv_obj_class)
-    lv_roller_class                          0x08041614   Data          28  lv_roller.o(.rodata.lv_roller_class)
-    lv_roller_label_class                    0x08041630   Data          28  lv_roller.o(.rodata.lv_roller_label_class)
-    lv_slider_class                          0x0804164c   Data          28  lv_slider.o(.rodata.lv_slider_class)
-    lv_spinbox_class                         0x08041668   Data          28  lv_spinbox.o(.rodata.lv_spinbox_class)
-    lv_spinner_class                         0x08041684   Data          28  lv_spinner.o(.rodata.lv_spinner_class)
-    lv_switch_class                          0x080416a0   Data          28  lv_switch.o(.rodata.lv_switch_class)
-    lv_table_class                           0x080416bc   Data          28  lv_table.o(.rodata.lv_table_class)
-    lv_tabview_class                         0x080416d8   Data          28  lv_tabview.o(.rodata.lv_tabview_class)
-    lv_textarea_class                        0x080416f4   Data          28  lv_textarea.o(.rodata.lv_textarea_class)
-    lv_tileview_class                        0x08041710   Data          28  lv_tileview.o(.rodata.lv_tileview_class)
-    lv_tileview_tile_class                   0x0804172c   Data          28  lv_tileview.o(.rodata.lv_tileview_tile_class)
-    lv_win_class                             0x08041748   Data          28  lv_win.o(.rodata.lv_win_class)
-    ui_img_pattern_png                       0x08041df8   Data          12  ui_img_pattern_png.o(.rodata.ui_img_pattern_png)
-    ui_img_pattern_png_data                  0x08041e04   Data        7200  ui_img_pattern_png.o(.rodata.ui_img_pattern_png_data)
-    ui_img_weather_1_png                     0x08043a24   Data          12  ui_img_weather_1_png.o(.rodata.ui_img_weather_1_png)
-    ui_img_weather_1_png_data                0x08043a30   Data        1056  ui_img_weather_1_png.o(.rodata.ui_img_weather_1_png_data)
-    Region$$Table$$Base                      0x08043ecc   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08043eec   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x08033eed   Thumb Code   688  main.o(.text.main)
+    read_T_RH                                0x08034c21   Thumb Code   320  sht20.o(.text.read_T_RH)
+    ui_control1_screen_init                  0x0803bfed   Thumb Code  1504  ui_control1.o(.text.ui_control1_screen_init)
+    ui_data_screen_init                      0x0803c5cd   Thumb Code  1080  ui_data.o(.text.ui_data_screen_init)
+    ui_event_Button1                         0x0803ca05   Thumb Code    48  ui.o(.text.ui_event_Button1)
+    ui_event_Button3                         0x0803ca35   Thumb Code    48  ui.o(.text.ui_event_Button3)
+    ui_init                                  0x0803ca65   Thumb Code    72  ui.o(.text.ui_init)
+    __0printf                                0x0803ccb1   Thumb Code    22  printfa.o(i.__0printf)
+    __1printf                                0x0803ccb1   Thumb Code     0  printfa.o(i.__0printf)
+    __2printf                                0x0803ccb1   Thumb Code     0  printfa.o(i.__0printf)
+    __c89printf                              0x0803ccb1   Thumb Code     0  printfa.o(i.__0printf)
+    printf                                   0x0803ccb1   Thumb Code     0  printfa.o(i.__0printf)
+    __0sprintf                               0x0803ccd1   Thumb Code    34  printfa.o(i.__0sprintf)
+    __1sprintf                               0x0803ccd1   Thumb Code     0  printfa.o(i.__0sprintf)
+    __2sprintf                               0x0803ccd1   Thumb Code     0  printfa.o(i.__0sprintf)
+    __c89sprintf                             0x0803ccd1   Thumb Code     0  printfa.o(i.__0sprintf)
+    sprintf                                  0x0803ccd1   Thumb Code     0  printfa.o(i.__0sprintf)
+    __scatterload_copy                       0x0803ccf9   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0803cd07   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x0803cd09   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    putchar                                  0x0803d5d5   Thumb Code     6  putchar.o(i.putchar)
+    puts                                     0x0803d5e1   Thumb Code    30  puts.o(i.puts)
+    AHBPrescTable                            0x0803d610   Data          16  system_stm32u5xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x0803d620   Data           8  system_stm32u5xx.o(.rodata.APBPrescTable)
+    MSIRangeTable                            0x0803d6a8   Data          64  system_stm32u5xx.o(.rodata.MSIRangeTable)
+    UARTPrescTable                           0x0803d6e8   Data          24  stm32u5xx_hal_uart.o(.rodata.UARTPrescTable)
+    _lv_bpp1_opa_table                       0x0803d700   Data           2  lv_draw_sw_letter.o(.rodata._lv_bpp1_opa_table)
+    _lv_bpp2_opa_table                       0x0803d702   Data           4  lv_draw_sw_letter.o(.rodata._lv_bpp2_opa_table)
+    _lv_bpp4_opa_table                       0x0803d706   Data          16  lv_draw_sw_letter.o(.rodata._lv_bpp4_opa_table)
+    _lv_bpp8_opa_table                       0x0803d716   Data         256  lv_draw_sw_letter.o(.rodata._lv_bpp8_opa_table)
+    _lv_style_builtin_prop_flag_lookup_table 0x0803d816   Data         113  lv_style.o(.rodata._lv_style_builtin_prop_flag_lookup_table)
+    lv_arc_class                             0x080410d8   Data          28  lv_arc.o(.rodata.lv_arc_class)
+    lv_bar_class                             0x080410f4   Data          28  lv_bar.o(.rodata.lv_bar_class)
+    lv_btn_class                             0x08041110   Data          28  lv_btn.o(.rodata.lv_btn_class)
+    lv_btnmatrix_class                       0x0804112c   Data          28  lv_btnmatrix.o(.rodata.lv_btnmatrix_class)
+    lv_calendar_class                        0x08041148   Data          28  lv_calendar.o(.rodata.lv_calendar_class)
+    lv_calendar_header_arrow_class           0x08041164   Data          28  lv_calendar_header_arrow.o(.rodata.lv_calendar_header_arrow_class)
+    lv_calendar_header_dropdown_class        0x08041180   Data          28  lv_calendar_header_dropdown.o(.rodata.lv_calendar_header_dropdown_class)
+    lv_chart_class                           0x0804119c   Data          28  lv_chart.o(.rodata.lv_chart_class)
+    lv_checkbox_class                        0x080411b8   Data          28  lv_checkbox.o(.rodata.lv_checkbox_class)
+    lv_colorwheel_class                      0x080411d4   Data          28  lv_colorwheel.o(.rodata.lv_colorwheel_class)
+    lv_dropdown_class                        0x080411f0   Data          28  lv_dropdown.o(.rodata.lv_dropdown_class)
+    lv_dropdownlist_class                    0x0804120c   Data          28  lv_dropdown.o(.rodata.lv_dropdownlist_class)
+    lv_font_montserrat_14                    0x08041228   Data          28  lv_font_montserrat_14.o(.rodata.lv_font_montserrat_14)
+    lv_img_class                             0x08041244   Data          28  lv_img.o(.rodata.lv_img_class)
+    lv_keyboard_class                        0x08041260   Data          28  lv_keyboard.o(.rodata.lv_keyboard_class)
+    lv_label_class                           0x0804127c   Data          28  lv_label.o(.rodata.lv_label_class)
+    lv_led_class                             0x08041298   Data          28  lv_led.o(.rodata.lv_led_class)
+    lv_line_class                            0x080412b4   Data          28  lv_line.o(.rodata.lv_line_class)
+    lv_list_btn_class                        0x080412d0   Data          28  lv_list.o(.rodata.lv_list_btn_class)
+    lv_list_class                            0x080412ec   Data          28  lv_list.o(.rodata.lv_list_class)
+    lv_list_text_class                       0x08041308   Data          28  lv_list.o(.rodata.lv_list_text_class)
+    lv_menu_class                            0x08041324   Data          28  lv_menu.o(.rodata.lv_menu_class)
+    lv_menu_cont_class                       0x08041340   Data          28  lv_menu.o(.rodata.lv_menu_cont_class)
+    lv_menu_main_cont_class                  0x0804135c   Data          28  lv_menu.o(.rodata.lv_menu_main_cont_class)
+    lv_menu_main_header_cont_class           0x08041378   Data          28  lv_menu.o(.rodata.lv_menu_main_header_cont_class)
+    lv_menu_page_class                       0x08041394   Data          28  lv_menu.o(.rodata.lv_menu_page_class)
+    lv_menu_section_class                    0x080413b0   Data          28  lv_menu.o(.rodata.lv_menu_section_class)
+    lv_menu_separator_class                  0x080413cc   Data          28  lv_menu.o(.rodata.lv_menu_separator_class)
+    lv_menu_sidebar_cont_class               0x080413e8   Data          28  lv_menu.o(.rodata.lv_menu_sidebar_cont_class)
+    lv_menu_sidebar_header_cont_class        0x08041404   Data          28  lv_menu.o(.rodata.lv_menu_sidebar_header_cont_class)
+    lv_meter_class                           0x08041420   Data          28  lv_meter.o(.rodata.lv_meter_class)
+    lv_msgbox_backdrop_class                 0x0804143c   Data          28  lv_msgbox.o(.rodata.lv_msgbox_backdrop_class)
+    lv_msgbox_class                          0x08041458   Data          28  lv_msgbox.o(.rodata.lv_msgbox_class)
+    lv_obj_class                             0x08041474   Data          28  lv_obj.o(.rodata.lv_obj_class)
+    lv_roller_class                          0x0804160c   Data          28  lv_roller.o(.rodata.lv_roller_class)
+    lv_roller_label_class                    0x08041628   Data          28  lv_roller.o(.rodata.lv_roller_label_class)
+    lv_slider_class                          0x08041644   Data          28  lv_slider.o(.rodata.lv_slider_class)
+    lv_spinbox_class                         0x08041660   Data          28  lv_spinbox.o(.rodata.lv_spinbox_class)
+    lv_spinner_class                         0x0804167c   Data          28  lv_spinner.o(.rodata.lv_spinner_class)
+    lv_switch_class                          0x08041698   Data          28  lv_switch.o(.rodata.lv_switch_class)
+    lv_table_class                           0x080416b4   Data          28  lv_table.o(.rodata.lv_table_class)
+    lv_tabview_class                         0x080416d0   Data          28  lv_tabview.o(.rodata.lv_tabview_class)
+    lv_textarea_class                        0x080416ec   Data          28  lv_textarea.o(.rodata.lv_textarea_class)
+    lv_tileview_class                        0x08041708   Data          28  lv_tileview.o(.rodata.lv_tileview_class)
+    lv_tileview_tile_class                   0x08041724   Data          28  lv_tileview.o(.rodata.lv_tileview_tile_class)
+    lv_win_class                             0x08041740   Data          28  lv_win.o(.rodata.lv_win_class)
+    ui_img_pattern_png                       0x08041df0   Data          12  ui_img_pattern_png.o(.rodata.ui_img_pattern_png)
+    ui_img_pattern_png_data                  0x08041dfc   Data        7200  ui_img_pattern_png.o(.rodata.ui_img_pattern_png_data)
+    ui_img_weather_1_png                     0x08043a1c   Data          12  ui_img_weather_1_png.o(.rodata.ui_img_weather_1_png)
+    ui_img_weather_1_png_data                0x08043a28   Data        1056  ui_img_weather_1_png.o(.rodata.ui_img_weather_1_png_data)
+    Region$$Table$$Base                      0x08043ec4   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08043ee4   Number         0  anon$$obj.o(Region$$Table)
     __stdout                                 0x20000000   Data           4  stdout.o(.data)
     uwTickFreq                               0x20000004   Data           1  stm32u5xx_hal.o(.data..L_MergedGlobals)
     uwTickPrio                               0x20000008   Data           4  stm32u5xx_hal.o(.data..L_MergedGlobals)
@@ -15592,9 +15591,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000239
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00043fb0, Max: 0x00200000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00043fa8, Max: 0x00200000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00043eec, Max: 0x00200000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00043ee4, Max: 0x00200000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -16835,234 +16834,234 @@ Memory Map of the image
     0x08033e54   0x08033e54   0x00000020   Code   RO         4812    .text.lv_vsnprintf  lv_printf.o
     0x08033e74   0x08033e74   0x00000076   Code   RO         4217    .text.lv_win_constructor  lv_win.o
     0x08033eea   0x08033eea   0x00000002   PAD
-    0x08033eec   0x08033eec   0x000002b8   Code   RO           15    .text.main          main.o
-    0x080341a4   0x080341a4   0x0000007c   Code   RO         5357    .text.make_one_button_checked  lv_btnmatrix.o
-    0x08034220   0x08034220   0x00000078   Code   RO         3572    .text.month_event_cb  lv_calendar_header_arrow.o
-    0x08034298   0x08034298   0x00000036   Code   RO         3596    .text.month_event_cb  lv_calendar_header_dropdown.o
-    0x080342ce   0x080342ce   0x00000002   PAD
-    0x080342d0   0x080342d0   0x000000e8   Code   RO         3568    .text.my_constructor  lv_calendar_header_arrow.o
-    0x080343b8   0x080343b8   0x000000b8   Code   RO         3588    .text.my_constructor  lv_calendar_header_dropdown.o
-    0x08034470   0x08034470   0x000002f4   Code   RO         3625    .text.new_points_alloc  lv_chart.o
-    0x08034764   0x08034764   0x000002fa   Code   RO         2693    .text.obj_del_core  lv_obj_tree.o
-    0x08034a5e   0x08034a5e   0x00000002   PAD
-    0x08034a60   0x08034a60   0x00000008   Code   RO         1923    .text.opa_scale_anim  lv_disp.o
-    0x08034a68   0x08034a68   0x000000b4   Code   RO         5718    .text.position_knob  lv_slider.o
-    0x08034b1c   0x08034b1c   0x0000005a   Code   RO         5485    .text.position_to_selected  lv_dropdown.o
-    0x08034b76   0x08034b76   0x00000002   PAD
-    0x08034b78   0x08034b78   0x000000a0   Code   RO         5821    .text.pwd_char_hider  lv_textarea.o
-    0x08034c18   0x08034c18   0x00000002   Code   RO         5897    .text.pwd_char_hider_anim  lv_textarea.o
-    0x08034c1a   0x08034c1a   0x00000002   PAD
-    0x08034c1c   0x08034c1c   0x00000006   Code   RO         5899    .text.pwd_char_hider_anim_ready  lv_textarea.o
-    0x08034c22   0x08034c22   0x00000006   PAD
-    0x08034c28   0x08034c28   0x00000140   Code   RO         6313    .text.read_T_RH     sht20.o
-    0x08034d68   0x08034d68   0x00000a72   Code   RO         2748    .text.refr_area_part  lv_refr.o
-    0x080357da   0x080357da   0x00000002   PAD
-    0x080357dc   0x080357dc   0x00000212   Code   RO         5843    .text.refr_cursor_area  lv_textarea.o
-    0x080359ee   0x080359ee   0x00000002   PAD
-    0x080359f0   0x080359f0   0x000001ac   Code   RO         3718    .text.refr_knob_pos  lv_colorwheel.o
-    0x08035b9c   0x08035b9c   0x0000037c   Code   RO         2740    .text.refr_obj      lv_refr.o
-    0x08035f18   0x08035f18   0x0000009c   Code   RO         2752    .text.refr_obj_and_children  lv_refr.o
-    0x08035fb4   0x08035fb4   0x00000136   Code   RO         5682    .text.refr_position  lv_roller.o
-    0x080360ea   0x080360ea   0x00000002   PAD
-    0x080360ec   0x080360ec   0x000000fe   Code   RO         5770    .text.refr_size_form_row  lv_table.o
-    0x080361ea   0x080361ea   0x00000002   PAD
-    0x080361ec   0x080361ec   0x0000003e   Code   RO         2456    .text.refresh_children_style  lv_obj_style.o
-    0x0803622a   0x0803622a   0x00000002   PAD
-    0x0803622c   0x0803622c   0x00000088   Code   RO         2454    .text.report_style_change_core  lv_obj_style.o
-    0x080362b4   0x080362b4   0x00000056   Code   RO         1917    .text.scr_anim_ready  lv_disp.o
-    0x0803630a   0x0803630a   0x00000002   PAD
-    0x0803630c   0x0803630c   0x00000030   Code   RO         1915    .text.scr_load_anim_start  lv_disp.o
-    0x0803633c   0x0803633c   0x00000058   Code   RO         1913    .text.scr_load_internal  lv_disp.o
-    0x08036394   0x08036394   0x0000000a   Code   RO         2403    .text.scroll_anim_ready_cb  lv_obj_scroll.o
-    0x0803639e   0x0803639e   0x00000002   PAD
-    0x080363a0   0x080363a0   0x00000010   Code   RO         5696    .text.scroll_anim_ready_cb  lv_roller.o
-    0x080363b0   0x080363b0   0x00000306   Code   RO         2415    .text.scroll_area_into_view  lv_obj_scroll.o
-    0x080366b6   0x080366b6   0x00000002   PAD
-    0x080366b8   0x080366b8   0x00000082   Code   RO         5794    .text.scroll_to_selected_cell  lv_table.o
-    0x0803673a   0x0803673a   0x00000002   PAD
-    0x0803673c   0x0803673c   0x0000004c   Code   RO         2395    .text.scroll_x_anim  lv_obj_scroll.o
-    0x08036788   0x08036788   0x0000004c   Code   RO         2397    .text.scroll_y_anim  lv_obj_scroll.o
-    0x080367d4   0x080367d4   0x00000008   Code   RO         5605    .text.set_ofs_x_anim  lv_label.o
-    0x080367dc   0x080367dc   0x00000008   Code   RO         5607    .text.set_ofs_y_anim  lv_label.o
-    0x080367e4   0x080367e4   0x00000006   Code   RO         1919    .text.set_x_anim    lv_disp.o
+    0x08033eec   0x08033eec   0x000002b0   Code   RO           15    .text.main          main.o
+    0x0803419c   0x0803419c   0x0000007c   Code   RO         5357    .text.make_one_button_checked  lv_btnmatrix.o
+    0x08034218   0x08034218   0x00000078   Code   RO         3572    .text.month_event_cb  lv_calendar_header_arrow.o
+    0x08034290   0x08034290   0x00000036   Code   RO         3596    .text.month_event_cb  lv_calendar_header_dropdown.o
+    0x080342c6   0x080342c6   0x00000002   PAD
+    0x080342c8   0x080342c8   0x000000e8   Code   RO         3568    .text.my_constructor  lv_calendar_header_arrow.o
+    0x080343b0   0x080343b0   0x000000b8   Code   RO         3588    .text.my_constructor  lv_calendar_header_dropdown.o
+    0x08034468   0x08034468   0x000002f4   Code   RO         3625    .text.new_points_alloc  lv_chart.o
+    0x0803475c   0x0803475c   0x000002fa   Code   RO         2693    .text.obj_del_core  lv_obj_tree.o
+    0x08034a56   0x08034a56   0x00000002   PAD
+    0x08034a58   0x08034a58   0x00000008   Code   RO         1923    .text.opa_scale_anim  lv_disp.o
+    0x08034a60   0x08034a60   0x000000b4   Code   RO         5718    .text.position_knob  lv_slider.o
+    0x08034b14   0x08034b14   0x0000005a   Code   RO         5485    .text.position_to_selected  lv_dropdown.o
+    0x08034b6e   0x08034b6e   0x00000002   PAD
+    0x08034b70   0x08034b70   0x000000a0   Code   RO         5821    .text.pwd_char_hider  lv_textarea.o
+    0x08034c10   0x08034c10   0x00000002   Code   RO         5897    .text.pwd_char_hider_anim  lv_textarea.o
+    0x08034c12   0x08034c12   0x00000002   PAD
+    0x08034c14   0x08034c14   0x00000006   Code   RO         5899    .text.pwd_char_hider_anim_ready  lv_textarea.o
+    0x08034c1a   0x08034c1a   0x00000006   PAD
+    0x08034c20   0x08034c20   0x00000140   Code   RO         6313    .text.read_T_RH     sht20.o
+    0x08034d60   0x08034d60   0x00000a72   Code   RO         2748    .text.refr_area_part  lv_refr.o
+    0x080357d2   0x080357d2   0x00000002   PAD
+    0x080357d4   0x080357d4   0x00000212   Code   RO         5843    .text.refr_cursor_area  lv_textarea.o
+    0x080359e6   0x080359e6   0x00000002   PAD
+    0x080359e8   0x080359e8   0x000001ac   Code   RO         3718    .text.refr_knob_pos  lv_colorwheel.o
+    0x08035b94   0x08035b94   0x0000037c   Code   RO         2740    .text.refr_obj      lv_refr.o
+    0x08035f10   0x08035f10   0x0000009c   Code   RO         2752    .text.refr_obj_and_children  lv_refr.o
+    0x08035fac   0x08035fac   0x00000136   Code   RO         5682    .text.refr_position  lv_roller.o
+    0x080360e2   0x080360e2   0x00000002   PAD
+    0x080360e4   0x080360e4   0x000000fe   Code   RO         5770    .text.refr_size_form_row  lv_table.o
+    0x080361e2   0x080361e2   0x00000002   PAD
+    0x080361e4   0x080361e4   0x0000003e   Code   RO         2456    .text.refresh_children_style  lv_obj_style.o
+    0x08036222   0x08036222   0x00000002   PAD
+    0x08036224   0x08036224   0x00000088   Code   RO         2454    .text.report_style_change_core  lv_obj_style.o
+    0x080362ac   0x080362ac   0x00000056   Code   RO         1917    .text.scr_anim_ready  lv_disp.o
+    0x08036302   0x08036302   0x00000002   PAD
+    0x08036304   0x08036304   0x00000030   Code   RO         1915    .text.scr_load_anim_start  lv_disp.o
+    0x08036334   0x08036334   0x00000058   Code   RO         1913    .text.scr_load_internal  lv_disp.o
+    0x0803638c   0x0803638c   0x0000000a   Code   RO         2403    .text.scroll_anim_ready_cb  lv_obj_scroll.o
+    0x08036396   0x08036396   0x00000002   PAD
+    0x08036398   0x08036398   0x00000010   Code   RO         5696    .text.scroll_anim_ready_cb  lv_roller.o
+    0x080363a8   0x080363a8   0x00000306   Code   RO         2415    .text.scroll_area_into_view  lv_obj_scroll.o
+    0x080366ae   0x080366ae   0x00000002   PAD
+    0x080366b0   0x080366b0   0x00000082   Code   RO         5794    .text.scroll_to_selected_cell  lv_table.o
+    0x08036732   0x08036732   0x00000002   PAD
+    0x08036734   0x08036734   0x0000004c   Code   RO         2395    .text.scroll_x_anim  lv_obj_scroll.o
+    0x08036780   0x08036780   0x0000004c   Code   RO         2397    .text.scroll_y_anim  lv_obj_scroll.o
+    0x080367cc   0x080367cc   0x00000008   Code   RO         5605    .text.set_ofs_x_anim  lv_label.o
+    0x080367d4   0x080367d4   0x00000008   Code   RO         5607    .text.set_ofs_y_anim  lv_label.o
+    0x080367dc   0x080367dc   0x00000006   Code   RO         1919    .text.set_x_anim    lv_disp.o
+    0x080367e2   0x080367e2   0x00000002   PAD
+    0x080367e4   0x080367e4   0x00000006   Code   RO         1921    .text.set_y_anim    lv_disp.o
     0x080367ea   0x080367ea   0x00000002   PAD
-    0x080367ec   0x080367ec   0x00000006   Code   RO         1921    .text.set_y_anim    lv_disp.o
+    0x080367ec   0x080367ec   0x00000006   Code   RO         5694    .text.set_y_anim    lv_roller.o
     0x080367f2   0x080367f2   0x00000002   PAD
-    0x080367f4   0x080367f4   0x00000006   Code   RO         5694    .text.set_y_anim    lv_roller.o
-    0x080367fa   0x080367fa   0x00000002   PAD
-    0x080367fc   0x080367fc   0x00000674   Code   RO         2968    .text.shadow_blur_corner  lv_draw_sw_rect.o
-    0x08036e70   0x08036e70   0x000033da   Code   RO         3469    .text.style_init    lv_theme_default.o
-    0x0803a24a   0x0803a24a   0x00000002   PAD
-    0x0803a24c   0x0803a24c   0x000006ba   Code   RO         3451    .text.theme_apply   lv_theme_basic.o
-    0x0803a906   0x0803a906   0x00000002   PAD
-    0x0803a908   0x0803a908   0x000010f8   Code   RO         3467    .text.theme_apply   lv_theme_default.o
-    0x0803ba00   0x0803ba00   0x000000c4   Code   RO         4203    .text.tileview_event_cb  lv_tileview.o
-    0x0803bac4   0x0803bac4   0x0000005e   Code   RO         1875    .text.touchpad_read  lv_port_indev.o
-    0x0803bb22   0x0803bb22   0x00000002   PAD
-    0x0803bb24   0x0803bb24   0x00000184   Code   RO         2476    .text.trans_anim_cb  lv_obj_style.o
-    0x0803bca8   0x0803bca8   0x000000c4   Code   RO         2480    .text.trans_anim_ready_cb  lv_obj_style.o
-    0x0803bd6c   0x0803bd6c   0x0000003e   Code   RO         2478    .text.trans_anim_start_cb  lv_obj_style.o
-    0x0803bdaa   0x0803bdaa   0x00000002   PAD
-    0x0803bdac   0x0803bdac   0x00000132   Code   RO         2442    .text.trans_del     lv_obj_style.o
-    0x0803bede   0x0803bede   0x00000002   PAD
-    0x0803bee0   0x0803bee0   0x00000112   Code   RO         2338    .text.transform_point  lv_obj_pos.o
-    0x0803bff2   0x0803bff2   0x00000002   PAD
-    0x0803bff4   0x0803bff4   0x000005e0   Code   RO         6177    .text.ui_control1_screen_init  ui_control1.o
-    0x0803c5d4   0x0803c5d4   0x00000438   Code   RO         6188    .text.ui_data_screen_init  ui_data.o
-    0x0803ca0c   0x0803ca0c   0x00000030   Code   RO         5925    .text.ui_event_Button1  ui.o
-    0x0803ca3c   0x0803ca3c   0x00000030   Code   RO         5923    .text.ui_event_Button3  ui.o
-    0x0803ca6c   0x0803ca6c   0x00000048   Code   RO         5927    .text.ui_init       ui.o
-    0x0803cab4   0x0803cab4   0x00000008   Code   RO         4273    .text.unicode_list_compare  lv_font_fmt_txt.o
-    0x0803cabc   0x0803cabc   0x00000040   Code   RO         3574    .text.value_changed_event_cb  lv_calendar_header_arrow.o
-    0x0803cafc   0x0803cafc   0x0000006e   Code   RO         3598    .text.value_changed_event_cb  lv_calendar_header_dropdown.o
-    0x0803cb6a   0x0803cb6a   0x00000002   PAD
-    0x0803cb6c   0x0803cb6c   0x000000e8   Code   RO         5217    .text.value_update  lv_arc.o
-    0x0803cc54   0x0803cc54   0x00000062   Code   RO         3594    .text.year_event_cb  lv_calendar_header_dropdown.o
-    0x0803ccb6   0x0803ccb6   0x00000002   PAD
-    0x0803ccb8   0x0803ccb8   0x00000020   Code   RO         6613    i.__0printf         mc_w.l(printfa.o)
-    0x0803ccd8   0x0803ccd8   0x00000028   Code   RO         6615    i.__0sprintf        mc_w.l(printfa.o)
-    0x0803cd00   0x0803cd00   0x0000000e   Code   RO         6687    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x0803cd0e   0x0803cd0e   0x00000002   Code   RO         6688    i.__scatterload_null  mc_w.l(handlers.o)
-    0x0803cd10   0x0803cd10   0x0000000e   Code   RO         6689    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x0803cd1e   0x0803cd1e   0x00000002   PAD
-    0x0803cd20   0x0803cd20   0x00000184   Code   RO         6620    i._fp_digits        mc_w.l(printfa.o)
-    0x0803cea4   0x0803cea4   0x000006dc   Code   RO         6621    i._printf_core      mc_w.l(printfa.o)
-    0x0803d580   0x0803d580   0x00000024   Code   RO         6622    i._printf_post_padding  mc_w.l(printfa.o)
-    0x0803d5a4   0x0803d5a4   0x0000002e   Code   RO         6623    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x0803d5d2   0x0803d5d2   0x0000000a   Code   RO         6625    i._sputc            mc_w.l(printfa.o)
-    0x0803d5dc   0x0803d5dc   0x0000000c   Code   RO         6352    i.putchar           mc_w.l(putchar.o)
-    0x0803d5e8   0x0803d5e8   0x00000024   Code   RO         6350    i.puts              mc_w.l(puts.o)
-    0x0803d60c   0x0803d60c   0x0000000c   Data   RO         2860    .rodata..Lswitch.table.lv_draw_sw_blend_basic.4  lv_draw_sw_blend.o
-    0x0803d618   0x0803d618   0x00000010   Data   RO         1794    .rodata.AHBPrescTable  system_stm32u5xx.o
-    0x0803d628   0x0803d628   0x00000008   Data   RO         1795    .rodata.APBPrescTable  system_stm32u5xx.o
-    0x0803d630   0x0803d630   0x00000080   Data   RO          709    .rodata.LPGPIO_Map  stm32u5xx_hal_gpio.o
-    0x0803d6b0   0x0803d6b0   0x00000040   Data   RO         1796    .rodata.MSIRangeTable  system_stm32u5xx.o
-    0x0803d6f0   0x0803d6f0   0x00000018   Data   RO         1733    .rodata.UARTPrescTable  stm32u5xx_hal_uart.o
-    0x0803d708   0x0803d708   0x00000002   Data   RO         2921    .rodata._lv_bpp1_opa_table  lv_draw_sw_letter.o
-    0x0803d70a   0x0803d70a   0x00000004   Data   RO         2922    .rodata._lv_bpp2_opa_table  lv_draw_sw_letter.o
-    0x0803d70e   0x0803d70e   0x00000010   Data   RO         2924    .rodata._lv_bpp4_opa_table  lv_draw_sw_letter.o
-    0x0803d71e   0x0803d71e   0x00000100   Data   RO         2925    .rodata._lv_bpp8_opa_table  lv_draw_sw_letter.o
-    0x0803d81e   0x0803d81e   0x00000071   Data   RO         4853    .rodata._lv_style_builtin_prop_flag_lookup_table  lv_style.o
-    0x0803d88f   0x0803d88f   0x00000001   PAD
-    0x0803d890   0x0803d890   0x00000028   Data   RO         4310    .rodata.cmaps       lv_font_montserrat_14.o
-    0x0803d8b8   0x0803d8b8   0x00000010   Data   RO         1779    .rodata.cst8        stm32u5xx_hal_uart_ex.o
-    0x0803d8c8   0x0803d8c8   0x0000001c   Data   RO         3558    .rodata.day_names_def  lv_calendar.o
-    0x0803d8e4   0x0803d8e4   0x00000050   Data   RO         3805    .rodata.default_kb_ctrl_lc_map  lv_keyboard.o
-    0x0803d934   0x0803d934   0x00000022   Data   RO         3808    .rodata.default_kb_ctrl_num_map  lv_keyboard.o
-    0x0803d956   0x0803d956   0x00000050   Data   RO         3807    .rodata.default_kb_ctrl_spec_map  lv_keyboard.o
-    0x0803d9a6   0x0803d9a6   0x00000050   Data   RO         3806    .rodata.default_kb_ctrl_uc_map  lv_keyboard.o
-    0x0803d9f6   0x0803d9f6   0x00000002   PAD
-    0x0803d9f8   0x0803d9f8   0x000000b0   Data   RO         3801    .rodata.default_kb_map_lc  lv_keyboard.o
-    0x0803daa8   0x0803daa8   0x00000054   Data   RO         3804    .rodata.default_kb_map_num  lv_keyboard.o
-    0x0803dafc   0x0803dafc   0x000000b0   Data   RO         3803    .rodata.default_kb_map_spec  lv_keyboard.o
-    0x0803dbac   0x0803dbac   0x000000b0   Data   RO         3802    .rodata.default_kb_map_uc  lv_keyboard.o
-    0x0803dc5c   0x0803dc5c   0x00000018   Data   RO         4313    .rodata.font_dsc    lv_font_montserrat_14.o
-    0x0803dc74   0x0803dc74   0x00002280   Data   RO         4309    .rodata.glyph_bitmap  lv_font_montserrat_14.o
-    0x0803fef4   0x0803fef4   0x000004f0   Data   RO         4314    .rodata.glyph_dsc   lv_font_montserrat_14.o
-    0x080403e4   0x080403e4   0x00000bad   Data   RO         4316    .rodata.kern_class_values  lv_font_montserrat_14.o
-    0x08040f91   0x08040f91   0x00000003   PAD
-    0x08040f94   0x08040f94   0x00000010   Data   RO         4311    .rodata.kern_classes  lv_font_montserrat_14.o
-    0x08040fa4   0x08040fa4   0x0000009e   Data   RO         4317    .rodata.kern_left_class_mapping  lv_font_montserrat_14.o
-    0x08041042   0x08041042   0x0000009e   Data   RO         4318    .rodata.kern_right_class_mapping  lv_font_montserrat_14.o
-    0x080410e0   0x080410e0   0x0000001c   Data   RO         5259    .rodata.lv_arc_class  lv_arc.o
-    0x080410fc   0x080410fc   0x0000001c   Data   RO         5305    .rodata.lv_bar_class  lv_bar.o
-    0x08041118   0x08041118   0x0000001c   Data   RO         5319    .rodata.lv_btn_class  lv_btn.o
-    0x08041134   0x08041134   0x0000001c   Data   RO         5371    .rodata.lv_btnmatrix_class  lv_btnmatrix.o
-    0x08041150   0x08041150   0x0000001c   Data   RO         3556    .rodata.lv_calendar_class  lv_calendar.o
-    0x0804116c   0x0804116c   0x0000001c   Data   RO         3576    .rodata.lv_calendar_header_arrow_class  lv_calendar_header_arrow.o
-    0x08041188   0x08041188   0x0000001c   Data   RO         3600    .rodata.lv_calendar_header_dropdown_class  lv_calendar_header_dropdown.o
-    0x080411a4   0x080411a4   0x0000001c   Data   RO         3699    .rodata.lv_chart_class  lv_chart.o
-    0x080411c0   0x080411c0   0x0000001c   Data   RO         5449    .rodata.lv_checkbox_class  lv_checkbox.o
-    0x080411dc   0x080411dc   0x0000001c   Data   RO         3734    .rodata.lv_colorwheel_class  lv_colorwheel.o
-    0x080411f8   0x080411f8   0x0000001c   Data   RO         5525    .rodata.lv_dropdown_class  lv_dropdown.o
-    0x08041214   0x08041214   0x0000001c   Data   RO         5526    .rodata.lv_dropdownlist_class  lv_dropdown.o
-    0x08041230   0x08041230   0x0000001c   Data   RO         4308    .rodata.lv_font_montserrat_14  lv_font_montserrat_14.o
-    0x0804124c   0x0804124c   0x0000001c   Data   RO         5577    .rodata.lv_img_class  lv_img.o
-    0x08041268   0x08041268   0x0000001c   Data   RO         3799    .rodata.lv_keyboard_class  lv_keyboard.o
-    0x08041284   0x08041284   0x0000001c   Data   RO         5635    .rodata.lv_label_class  lv_label.o
-    0x080412a0   0x080412a0   0x0000001c   Data   RO         3837    .rodata.lv_led_class  lv_led.o
-    0x080412bc   0x080412bc   0x0000001c   Data   RO         5657    .rodata.lv_line_class  lv_line.o
-    0x080412d8   0x080412d8   0x0000001c   Data   RO         3856    .rodata.lv_list_btn_class  lv_list.o
-    0x080412f4   0x080412f4   0x0000001c   Data   RO         3855    .rodata.lv_list_class  lv_list.o
-    0x08041310   0x08041310   0x0000001c   Data   RO         3857    .rodata.lv_list_text_class  lv_list.o
-    0x0804132c   0x0804132c   0x0000001c   Data   RO         3928    .rodata.lv_menu_class  lv_menu.o
-    0x08041348   0x08041348   0x0000001c   Data   RO         3930    .rodata.lv_menu_cont_class  lv_menu.o
-    0x08041364   0x08041364   0x0000001c   Data   RO         3934    .rodata.lv_menu_main_cont_class  lv_menu.o
-    0x08041380   0x08041380   0x0000001c   Data   RO         3935    .rodata.lv_menu_main_header_cont_class  lv_menu.o
-    0x0804139c   0x0804139c   0x0000001c   Data   RO         3929    .rodata.lv_menu_page_class  lv_menu.o
-    0x080413b8   0x080413b8   0x0000001c   Data   RO         3931    .rodata.lv_menu_section_class  lv_menu.o
-    0x080413d4   0x080413d4   0x0000001c   Data   RO         3932    .rodata.lv_menu_separator_class  lv_menu.o
-    0x080413f0   0x080413f0   0x0000001c   Data   RO         3933    .rodata.lv_menu_sidebar_cont_class  lv_menu.o
-    0x0804140c   0x0804140c   0x0000001c   Data   RO         3936    .rodata.lv_menu_sidebar_header_cont_class  lv_menu.o
-    0x08041428   0x08041428   0x0000001c   Data   RO         3981    .rodata.lv_meter_class  lv_meter.o
-    0x08041444   0x08041444   0x0000001c   Data   RO         4015    .rodata.lv_msgbox_backdrop_class  lv_msgbox.o
-    0x08041460   0x08041460   0x0000001c   Data   RO         4013    .rodata.lv_msgbox_class  lv_msgbox.o
-    0x0804147c   0x0804147c   0x0000001c   Data   RO         2194    .rodata.lv_obj_class  lv_obj.o
-    0x08041498   0x08041498   0x00000098   Data   RO         4610    .rodata.lv_palette_darken.colors  lv_color.o
-    0x08041530   0x08041530   0x000000be   Data   RO         4609    .rodata.lv_palette_lighten.colors  lv_color.o
-    0x080415ee   0x080415ee   0x00000026   Data   RO         4608    .rodata.lv_palette_main.colors  lv_color.o
-    0x08041614   0x08041614   0x0000001c   Data   RO         5698    .rodata.lv_roller_class  lv_roller.o
-    0x08041630   0x08041630   0x0000001c   Data   RO         5699    .rodata.lv_roller_label_class  lv_roller.o
-    0x0804164c   0x0804164c   0x0000001c   Data   RO         5720    .rodata.lv_slider_class  lv_slider.o
-    0x08041668   0x08041668   0x0000001c   Data   RO         4124    .rodata.lv_spinbox_class  lv_spinbox.o
-    0x08041684   0x08041684   0x0000001c   Data   RO         4142    .rodata.lv_spinner_class  lv_spinner.o
-    0x080416a0   0x080416a0   0x0000001c   Data   RO         5742    .rodata.lv_switch_class  lv_switch.o
-    0x080416bc   0x080416bc   0x0000001c   Data   RO         5800    .rodata.lv_table_class  lv_table.o
-    0x080416d8   0x080416d8   0x0000001c   Data   RO         4177    .rodata.lv_tabview_class  lv_tabview.o
-    0x080416f4   0x080416f4   0x0000001c   Data   RO         5901    .rodata.lv_textarea_class  lv_textarea.o
-    0x08041710   0x08041710   0x0000001c   Data   RO         4205    .rodata.lv_tileview_class  lv_tileview.o
-    0x0804172c   0x0804172c   0x0000001c   Data   RO         4206    .rodata.lv_tileview_tile_class  lv_tileview.o
-    0x08041748   0x08041748   0x0000001c   Data   RO         4229    .rodata.lv_win_class  lv_win.o
-    0x08041764   0x08041764   0x00000030   Data   RO         3578    .rodata.month_names_def  lv_calendar_header_arrow.o
-    0x08041794   0x08041794   0x000000b6   Data   RO         4753    .rodata.sin0_90_table  lv_math.o
-    0x0804184a   0x0804184a   0x00000005   Data   RO           24    .rodata.str1.1      main.o
-    0x0804184f   0x0804184f   0x00000008   Data   RO         3032    .rodata.str1.1      lv_draw_img.o
-    0x08041857   0x08041857   0x00000004   Data   RO         3247    .rodata.str1.1      lv_img_decoder.o
-    0x0804185b   0x0804185b   0x00000018   Data   RO         3557    .rodata.str1.1      lv_calendar.o
-    0x08041873   0x08041873   0x0000005c   Data   RO         3577    .rodata.str1.1      lv_calendar_header_arrow.o
-    0x080418cf   0x080418cf   0x00000267   Data   RO         3601    .rodata.str1.1      lv_calendar_header_dropdown.o
-    0x08041b36   0x08041b36   0x000000ad   Data   RO         3800    .rodata.str1.1      lv_keyboard.o
-    0x08041be3   0x08041be3   0x00000019   Data   RO         5372    .rodata.str1.1      lv_btnmatrix.o
-    0x08041bfc   0x08041bfc   0x0000001b   Data   RO         5527    .rodata.str1.1      lv_dropdown.o
-    0x08041c17   0x08041c17   0x0000002d   Data   RO         5700    .rodata.str1.1      lv_roller.o
-    0x08041c44   0x08041c44   0x00000004   Data   RO         5902    .rodata.str1.1      lv_textarea.o
-    0x08041c48   0x08041c48   0x00000198   Data   RO         6337    .rodata.str1.1      wifi.o
-    0x08041de0   0x08041de0   0x00000016   Data   RO         3477    .rodata.style_init.trans_props  lv_theme_default.o
-    0x08041df6   0x08041df6   0x00000002   PAD
-    0x08041df8   0x08041df8   0x0000000c   Data   RO         6146    .rodata.ui_img_pattern_png  ui_img_pattern_png.o
-    0x08041e04   0x08041e04   0x00001c20   Data   RO         6145    .rodata.ui_img_pattern_png_data  ui_img_pattern_png.o
-    0x08043a24   0x08043a24   0x0000000c   Data   RO         6154    .rodata.ui_img_weather_1_png  ui_img_weather_1_png.o
-    0x08043a30   0x08043a30   0x00000420   Data   RO         6153    .rodata.ui_img_weather_1_png_data  ui_img_weather_1_png.o
-    0x08043e50   0x08043e50   0x0000007c   Data   RO         4315    .rodata.unicode_list_1  lv_font_montserrat_14.o
-    0x08043ecc   0x08043ecc   0x00000020   Data   RO         6686    Region$$Table       anon$$obj.o
+    0x080367f4   0x080367f4   0x00000674   Code   RO         2968    .text.shadow_blur_corner  lv_draw_sw_rect.o
+    0x08036e68   0x08036e68   0x000033da   Code   RO         3469    .text.style_init    lv_theme_default.o
+    0x0803a242   0x0803a242   0x00000002   PAD
+    0x0803a244   0x0803a244   0x000006ba   Code   RO         3451    .text.theme_apply   lv_theme_basic.o
+    0x0803a8fe   0x0803a8fe   0x00000002   PAD
+    0x0803a900   0x0803a900   0x000010f8   Code   RO         3467    .text.theme_apply   lv_theme_default.o
+    0x0803b9f8   0x0803b9f8   0x000000c4   Code   RO         4203    .text.tileview_event_cb  lv_tileview.o
+    0x0803babc   0x0803babc   0x0000005e   Code   RO         1875    .text.touchpad_read  lv_port_indev.o
+    0x0803bb1a   0x0803bb1a   0x00000002   PAD
+    0x0803bb1c   0x0803bb1c   0x00000184   Code   RO         2476    .text.trans_anim_cb  lv_obj_style.o
+    0x0803bca0   0x0803bca0   0x000000c4   Code   RO         2480    .text.trans_anim_ready_cb  lv_obj_style.o
+    0x0803bd64   0x0803bd64   0x0000003e   Code   RO         2478    .text.trans_anim_start_cb  lv_obj_style.o
+    0x0803bda2   0x0803bda2   0x00000002   PAD
+    0x0803bda4   0x0803bda4   0x00000132   Code   RO         2442    .text.trans_del     lv_obj_style.o
+    0x0803bed6   0x0803bed6   0x00000002   PAD
+    0x0803bed8   0x0803bed8   0x00000112   Code   RO         2338    .text.transform_point  lv_obj_pos.o
+    0x0803bfea   0x0803bfea   0x00000002   PAD
+    0x0803bfec   0x0803bfec   0x000005e0   Code   RO         6177    .text.ui_control1_screen_init  ui_control1.o
+    0x0803c5cc   0x0803c5cc   0x00000438   Code   RO         6188    .text.ui_data_screen_init  ui_data.o
+    0x0803ca04   0x0803ca04   0x00000030   Code   RO         5925    .text.ui_event_Button1  ui.o
+    0x0803ca34   0x0803ca34   0x00000030   Code   RO         5923    .text.ui_event_Button3  ui.o
+    0x0803ca64   0x0803ca64   0x00000048   Code   RO         5927    .text.ui_init       ui.o
+    0x0803caac   0x0803caac   0x00000008   Code   RO         4273    .text.unicode_list_compare  lv_font_fmt_txt.o
+    0x0803cab4   0x0803cab4   0x00000040   Code   RO         3574    .text.value_changed_event_cb  lv_calendar_header_arrow.o
+    0x0803caf4   0x0803caf4   0x0000006e   Code   RO         3598    .text.value_changed_event_cb  lv_calendar_header_dropdown.o
+    0x0803cb62   0x0803cb62   0x00000002   PAD
+    0x0803cb64   0x0803cb64   0x000000e8   Code   RO         5217    .text.value_update  lv_arc.o
+    0x0803cc4c   0x0803cc4c   0x00000062   Code   RO         3594    .text.year_event_cb  lv_calendar_header_dropdown.o
+    0x0803ccae   0x0803ccae   0x00000002   PAD
+    0x0803ccb0   0x0803ccb0   0x00000020   Code   RO         6613    i.__0printf         mc_w.l(printfa.o)
+    0x0803ccd0   0x0803ccd0   0x00000028   Code   RO         6615    i.__0sprintf        mc_w.l(printfa.o)
+    0x0803ccf8   0x0803ccf8   0x0000000e   Code   RO         6687    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0803cd06   0x0803cd06   0x00000002   Code   RO         6688    i.__scatterload_null  mc_w.l(handlers.o)
+    0x0803cd08   0x0803cd08   0x0000000e   Code   RO         6689    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0803cd16   0x0803cd16   0x00000002   PAD
+    0x0803cd18   0x0803cd18   0x00000184   Code   RO         6620    i._fp_digits        mc_w.l(printfa.o)
+    0x0803ce9c   0x0803ce9c   0x000006dc   Code   RO         6621    i._printf_core      mc_w.l(printfa.o)
+    0x0803d578   0x0803d578   0x00000024   Code   RO         6622    i._printf_post_padding  mc_w.l(printfa.o)
+    0x0803d59c   0x0803d59c   0x0000002e   Code   RO         6623    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x0803d5ca   0x0803d5ca   0x0000000a   Code   RO         6625    i._sputc            mc_w.l(printfa.o)
+    0x0803d5d4   0x0803d5d4   0x0000000c   Code   RO         6352    i.putchar           mc_w.l(putchar.o)
+    0x0803d5e0   0x0803d5e0   0x00000024   Code   RO         6350    i.puts              mc_w.l(puts.o)
+    0x0803d604   0x0803d604   0x0000000c   Data   RO         2860    .rodata..Lswitch.table.lv_draw_sw_blend_basic.4  lv_draw_sw_blend.o
+    0x0803d610   0x0803d610   0x00000010   Data   RO         1794    .rodata.AHBPrescTable  system_stm32u5xx.o
+    0x0803d620   0x0803d620   0x00000008   Data   RO         1795    .rodata.APBPrescTable  system_stm32u5xx.o
+    0x0803d628   0x0803d628   0x00000080   Data   RO          709    .rodata.LPGPIO_Map  stm32u5xx_hal_gpio.o
+    0x0803d6a8   0x0803d6a8   0x00000040   Data   RO         1796    .rodata.MSIRangeTable  system_stm32u5xx.o
+    0x0803d6e8   0x0803d6e8   0x00000018   Data   RO         1733    .rodata.UARTPrescTable  stm32u5xx_hal_uart.o
+    0x0803d700   0x0803d700   0x00000002   Data   RO         2921    .rodata._lv_bpp1_opa_table  lv_draw_sw_letter.o
+    0x0803d702   0x0803d702   0x00000004   Data   RO         2922    .rodata._lv_bpp2_opa_table  lv_draw_sw_letter.o
+    0x0803d706   0x0803d706   0x00000010   Data   RO         2924    .rodata._lv_bpp4_opa_table  lv_draw_sw_letter.o
+    0x0803d716   0x0803d716   0x00000100   Data   RO         2925    .rodata._lv_bpp8_opa_table  lv_draw_sw_letter.o
+    0x0803d816   0x0803d816   0x00000071   Data   RO         4853    .rodata._lv_style_builtin_prop_flag_lookup_table  lv_style.o
+    0x0803d887   0x0803d887   0x00000001   PAD
+    0x0803d888   0x0803d888   0x00000028   Data   RO         4310    .rodata.cmaps       lv_font_montserrat_14.o
+    0x0803d8b0   0x0803d8b0   0x00000010   Data   RO         1779    .rodata.cst8        stm32u5xx_hal_uart_ex.o
+    0x0803d8c0   0x0803d8c0   0x0000001c   Data   RO         3558    .rodata.day_names_def  lv_calendar.o
+    0x0803d8dc   0x0803d8dc   0x00000050   Data   RO         3805    .rodata.default_kb_ctrl_lc_map  lv_keyboard.o
+    0x0803d92c   0x0803d92c   0x00000022   Data   RO         3808    .rodata.default_kb_ctrl_num_map  lv_keyboard.o
+    0x0803d94e   0x0803d94e   0x00000050   Data   RO         3807    .rodata.default_kb_ctrl_spec_map  lv_keyboard.o
+    0x0803d99e   0x0803d99e   0x00000050   Data   RO         3806    .rodata.default_kb_ctrl_uc_map  lv_keyboard.o
+    0x0803d9ee   0x0803d9ee   0x00000002   PAD
+    0x0803d9f0   0x0803d9f0   0x000000b0   Data   RO         3801    .rodata.default_kb_map_lc  lv_keyboard.o
+    0x0803daa0   0x0803daa0   0x00000054   Data   RO         3804    .rodata.default_kb_map_num  lv_keyboard.o
+    0x0803daf4   0x0803daf4   0x000000b0   Data   RO         3803    .rodata.default_kb_map_spec  lv_keyboard.o
+    0x0803dba4   0x0803dba4   0x000000b0   Data   RO         3802    .rodata.default_kb_map_uc  lv_keyboard.o
+    0x0803dc54   0x0803dc54   0x00000018   Data   RO         4313    .rodata.font_dsc    lv_font_montserrat_14.o
+    0x0803dc6c   0x0803dc6c   0x00002280   Data   RO         4309    .rodata.glyph_bitmap  lv_font_montserrat_14.o
+    0x0803feec   0x0803feec   0x000004f0   Data   RO         4314    .rodata.glyph_dsc   lv_font_montserrat_14.o
+    0x080403dc   0x080403dc   0x00000bad   Data   RO         4316    .rodata.kern_class_values  lv_font_montserrat_14.o
+    0x08040f89   0x08040f89   0x00000003   PAD
+    0x08040f8c   0x08040f8c   0x00000010   Data   RO         4311    .rodata.kern_classes  lv_font_montserrat_14.o
+    0x08040f9c   0x08040f9c   0x0000009e   Data   RO         4317    .rodata.kern_left_class_mapping  lv_font_montserrat_14.o
+    0x0804103a   0x0804103a   0x0000009e   Data   RO         4318    .rodata.kern_right_class_mapping  lv_font_montserrat_14.o
+    0x080410d8   0x080410d8   0x0000001c   Data   RO         5259    .rodata.lv_arc_class  lv_arc.o
+    0x080410f4   0x080410f4   0x0000001c   Data   RO         5305    .rodata.lv_bar_class  lv_bar.o
+    0x08041110   0x08041110   0x0000001c   Data   RO         5319    .rodata.lv_btn_class  lv_btn.o
+    0x0804112c   0x0804112c   0x0000001c   Data   RO         5371    .rodata.lv_btnmatrix_class  lv_btnmatrix.o
+    0x08041148   0x08041148   0x0000001c   Data   RO         3556    .rodata.lv_calendar_class  lv_calendar.o
+    0x08041164   0x08041164   0x0000001c   Data   RO         3576    .rodata.lv_calendar_header_arrow_class  lv_calendar_header_arrow.o
+    0x08041180   0x08041180   0x0000001c   Data   RO         3600    .rodata.lv_calendar_header_dropdown_class  lv_calendar_header_dropdown.o
+    0x0804119c   0x0804119c   0x0000001c   Data   RO         3699    .rodata.lv_chart_class  lv_chart.o
+    0x080411b8   0x080411b8   0x0000001c   Data   RO         5449    .rodata.lv_checkbox_class  lv_checkbox.o
+    0x080411d4   0x080411d4   0x0000001c   Data   RO         3734    .rodata.lv_colorwheel_class  lv_colorwheel.o
+    0x080411f0   0x080411f0   0x0000001c   Data   RO         5525    .rodata.lv_dropdown_class  lv_dropdown.o
+    0x0804120c   0x0804120c   0x0000001c   Data   RO         5526    .rodata.lv_dropdownlist_class  lv_dropdown.o
+    0x08041228   0x08041228   0x0000001c   Data   RO         4308    .rodata.lv_font_montserrat_14  lv_font_montserrat_14.o
+    0x08041244   0x08041244   0x0000001c   Data   RO         5577    .rodata.lv_img_class  lv_img.o
+    0x08041260   0x08041260   0x0000001c   Data   RO         3799    .rodata.lv_keyboard_class  lv_keyboard.o
+    0x0804127c   0x0804127c   0x0000001c   Data   RO         5635    .rodata.lv_label_class  lv_label.o
+    0x08041298   0x08041298   0x0000001c   Data   RO         3837    .rodata.lv_led_class  lv_led.o
+    0x080412b4   0x080412b4   0x0000001c   Data   RO         5657    .rodata.lv_line_class  lv_line.o
+    0x080412d0   0x080412d0   0x0000001c   Data   RO         3856    .rodata.lv_list_btn_class  lv_list.o
+    0x080412ec   0x080412ec   0x0000001c   Data   RO         3855    .rodata.lv_list_class  lv_list.o
+    0x08041308   0x08041308   0x0000001c   Data   RO         3857    .rodata.lv_list_text_class  lv_list.o
+    0x08041324   0x08041324   0x0000001c   Data   RO         3928    .rodata.lv_menu_class  lv_menu.o
+    0x08041340   0x08041340   0x0000001c   Data   RO         3930    .rodata.lv_menu_cont_class  lv_menu.o
+    0x0804135c   0x0804135c   0x0000001c   Data   RO         3934    .rodata.lv_menu_main_cont_class  lv_menu.o
+    0x08041378   0x08041378   0x0000001c   Data   RO         3935    .rodata.lv_menu_main_header_cont_class  lv_menu.o
+    0x08041394   0x08041394   0x0000001c   Data   RO         3929    .rodata.lv_menu_page_class  lv_menu.o
+    0x080413b0   0x080413b0   0x0000001c   Data   RO         3931    .rodata.lv_menu_section_class  lv_menu.o
+    0x080413cc   0x080413cc   0x0000001c   Data   RO         3932    .rodata.lv_menu_separator_class  lv_menu.o
+    0x080413e8   0x080413e8   0x0000001c   Data   RO         3933    .rodata.lv_menu_sidebar_cont_class  lv_menu.o
+    0x08041404   0x08041404   0x0000001c   Data   RO         3936    .rodata.lv_menu_sidebar_header_cont_class  lv_menu.o
+    0x08041420   0x08041420   0x0000001c   Data   RO         3981    .rodata.lv_meter_class  lv_meter.o
+    0x0804143c   0x0804143c   0x0000001c   Data   RO         4015    .rodata.lv_msgbox_backdrop_class  lv_msgbox.o
+    0x08041458   0x08041458   0x0000001c   Data   RO         4013    .rodata.lv_msgbox_class  lv_msgbox.o
+    0x08041474   0x08041474   0x0000001c   Data   RO         2194    .rodata.lv_obj_class  lv_obj.o
+    0x08041490   0x08041490   0x00000098   Data   RO         4610    .rodata.lv_palette_darken.colors  lv_color.o
+    0x08041528   0x08041528   0x000000be   Data   RO         4609    .rodata.lv_palette_lighten.colors  lv_color.o
+    0x080415e6   0x080415e6   0x00000026   Data   RO         4608    .rodata.lv_palette_main.colors  lv_color.o
+    0x0804160c   0x0804160c   0x0000001c   Data   RO         5698    .rodata.lv_roller_class  lv_roller.o
+    0x08041628   0x08041628   0x0000001c   Data   RO         5699    .rodata.lv_roller_label_class  lv_roller.o
+    0x08041644   0x08041644   0x0000001c   Data   RO         5720    .rodata.lv_slider_class  lv_slider.o
+    0x08041660   0x08041660   0x0000001c   Data   RO         4124    .rodata.lv_spinbox_class  lv_spinbox.o
+    0x0804167c   0x0804167c   0x0000001c   Data   RO         4142    .rodata.lv_spinner_class  lv_spinner.o
+    0x08041698   0x08041698   0x0000001c   Data   RO         5742    .rodata.lv_switch_class  lv_switch.o
+    0x080416b4   0x080416b4   0x0000001c   Data   RO         5800    .rodata.lv_table_class  lv_table.o
+    0x080416d0   0x080416d0   0x0000001c   Data   RO         4177    .rodata.lv_tabview_class  lv_tabview.o
+    0x080416ec   0x080416ec   0x0000001c   Data   RO         5901    .rodata.lv_textarea_class  lv_textarea.o
+    0x08041708   0x08041708   0x0000001c   Data   RO         4205    .rodata.lv_tileview_class  lv_tileview.o
+    0x08041724   0x08041724   0x0000001c   Data   RO         4206    .rodata.lv_tileview_tile_class  lv_tileview.o
+    0x08041740   0x08041740   0x0000001c   Data   RO         4229    .rodata.lv_win_class  lv_win.o
+    0x0804175c   0x0804175c   0x00000030   Data   RO         3578    .rodata.month_names_def  lv_calendar_header_arrow.o
+    0x0804178c   0x0804178c   0x000000b6   Data   RO         4753    .rodata.sin0_90_table  lv_math.o
+    0x08041842   0x08041842   0x00000005   Data   RO           24    .rodata.str1.1      main.o
+    0x08041847   0x08041847   0x00000008   Data   RO         3032    .rodata.str1.1      lv_draw_img.o
+    0x0804184f   0x0804184f   0x00000004   Data   RO         3247    .rodata.str1.1      lv_img_decoder.o
+    0x08041853   0x08041853   0x00000018   Data   RO         3557    .rodata.str1.1      lv_calendar.o
+    0x0804186b   0x0804186b   0x0000005c   Data   RO         3577    .rodata.str1.1      lv_calendar_header_arrow.o
+    0x080418c7   0x080418c7   0x00000267   Data   RO         3601    .rodata.str1.1      lv_calendar_header_dropdown.o
+    0x08041b2e   0x08041b2e   0x000000ad   Data   RO         3800    .rodata.str1.1      lv_keyboard.o
+    0x08041bdb   0x08041bdb   0x00000019   Data   RO         5372    .rodata.str1.1      lv_btnmatrix.o
+    0x08041bf4   0x08041bf4   0x0000001b   Data   RO         5527    .rodata.str1.1      lv_dropdown.o
+    0x08041c0f   0x08041c0f   0x0000002d   Data   RO         5700    .rodata.str1.1      lv_roller.o
+    0x08041c3c   0x08041c3c   0x00000004   Data   RO         5902    .rodata.str1.1      lv_textarea.o
+    0x08041c40   0x08041c40   0x00000198   Data   RO         6337    .rodata.str1.1      wifi.o
+    0x08041dd8   0x08041dd8   0x00000016   Data   RO         3477    .rodata.style_init.trans_props  lv_theme_default.o
+    0x08041dee   0x08041dee   0x00000002   PAD
+    0x08041df0   0x08041df0   0x0000000c   Data   RO         6146    .rodata.ui_img_pattern_png  ui_img_pattern_png.o
+    0x08041dfc   0x08041dfc   0x00001c20   Data   RO         6145    .rodata.ui_img_pattern_png_data  ui_img_pattern_png.o
+    0x08043a1c   0x08043a1c   0x0000000c   Data   RO         6154    .rodata.ui_img_weather_1_png  ui_img_weather_1_png.o
+    0x08043a28   0x08043a28   0x00000420   Data   RO         6153    .rodata.ui_img_weather_1_png_data  ui_img_weather_1_png.o
+    0x08043e48   0x08043e48   0x0000007c   Data   RO         4315    .rodata.unicode_list_1  lv_font_montserrat_14.o
+    0x08043ec4   0x08043ec4   0x00000020   Data   RO         6686    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08043ef0, Size: 0x00010de0, Max: 0x000c0000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08043ee8, Size: 0x00010de0, Max: 0x000c0000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08043ef0   0x00000004   Data   RW         6663    .data               mc_w.l(stdout.o)
-    0x20000004   0x08043ef4   0x00000008   Data   RW          298    .data..L_MergedGlobals  stm32u5xx_hal.o
-    0x2000000c   0x08043efc   0x00000004   Data   RW         3736    .data..L_MergedGlobals  lv_colorwheel.o
-    0x20000010   0x08043f00   0x00000048   Data   RW         3809    .data..L_MergedGlobals  lv_keyboard.o
-    0x20000058   0x08043f48   0x00000008   Data   RW         5180    .data..L_MergedGlobals  lv_txt.o
-    0x20000060   0x08043f50   0x00000004   Data   RW         1793    .data.SystemCoreClock  system_stm32u5xx.o
-    0x20000064   0x08043f54   0x00000004   Data   RW         5177    .data._lv_txt_encoded_get_byte_id  lv_txt.o
-    0x20000068   0x08043f58   0x00000004   Data   RW         5178    .data._lv_txt_encoded_get_char_id  lv_txt.o
-    0x2000006c   0x08043f5c   0x00000004   Data   RW         5176    .data._lv_txt_encoded_prev  lv_txt.o
-    0x20000070   0x08043f60   0x00000004   Data   RW         5179    .data._lv_txt_get_encoded_length  lv_txt.o
-    0x20000074   0x08043f64   0x00000004   Data   RW         5174    .data._lv_txt_unicode_to_encoded  lv_txt.o
-    0x20000078   0x08043f68   0x00000001   Data   RW         1862    .data.disp_flush_enabled  lv_port_disp.o
-    0x20000079   0x08043f69   0x00000001   PAD
-    0x2000007a   0x08043f6a   0x00000002   Data   RW         4855    .data.last_custom_prop_id  lv_style.o
-    0x2000007c   0x08043f6c   0x0000001c   Data   RW         5373    .data.lv_btnmatrix_def_map  lv_btnmatrix.o
-    0x20000098   0x08043f88   0x00000004   Data   RW         2003    .data.lv_event_register_id.last_id  lv_event.o
-    0x2000009c   0x08043f8c   0x00000004   Data   RW         4561    .data.lv_point_transform.angle_prev  lv_area.o
-    0x200000a0   0x08043f90   0x00000001   Data   RW         2498    .data.style_refr    lv_obj_style.o
-    0x200000a1   0x08043f91   0x00000001   PAD
-    0x200000a2   0x08043f92   0x00000016   Data   RW         6190    .data.ui_data_screen_init.ui_Chart2_series_1_array  ui_data.o
-    0x200000b8   0x08043fa8   0x00000004   Data   RW         4795    .data.zero_mem      lv_mem.o
-    0x200000bc   0x08043fac   0x00000004   PAD
+    0x20000000   0x08043ee8   0x00000004   Data   RW         6663    .data               mc_w.l(stdout.o)
+    0x20000004   0x08043eec   0x00000008   Data   RW          298    .data..L_MergedGlobals  stm32u5xx_hal.o
+    0x2000000c   0x08043ef4   0x00000004   Data   RW         3736    .data..L_MergedGlobals  lv_colorwheel.o
+    0x20000010   0x08043ef8   0x00000048   Data   RW         3809    .data..L_MergedGlobals  lv_keyboard.o
+    0x20000058   0x08043f40   0x00000008   Data   RW         5180    .data..L_MergedGlobals  lv_txt.o
+    0x20000060   0x08043f48   0x00000004   Data   RW         1793    .data.SystemCoreClock  system_stm32u5xx.o
+    0x20000064   0x08043f4c   0x00000004   Data   RW         5177    .data._lv_txt_encoded_get_byte_id  lv_txt.o
+    0x20000068   0x08043f50   0x00000004   Data   RW         5178    .data._lv_txt_encoded_get_char_id  lv_txt.o
+    0x2000006c   0x08043f54   0x00000004   Data   RW         5176    .data._lv_txt_encoded_prev  lv_txt.o
+    0x20000070   0x08043f58   0x00000004   Data   RW         5179    .data._lv_txt_get_encoded_length  lv_txt.o
+    0x20000074   0x08043f5c   0x00000004   Data   RW         5174    .data._lv_txt_unicode_to_encoded  lv_txt.o
+    0x20000078   0x08043f60   0x00000001   Data   RW         1862    .data.disp_flush_enabled  lv_port_disp.o
+    0x20000079   0x08043f61   0x00000001   PAD
+    0x2000007a   0x08043f62   0x00000002   Data   RW         4855    .data.last_custom_prop_id  lv_style.o
+    0x2000007c   0x08043f64   0x0000001c   Data   RW         5373    .data.lv_btnmatrix_def_map  lv_btnmatrix.o
+    0x20000098   0x08043f80   0x00000004   Data   RW         2003    .data.lv_event_register_id.last_id  lv_event.o
+    0x2000009c   0x08043f84   0x00000004   Data   RW         4561    .data.lv_point_transform.angle_prev  lv_area.o
+    0x200000a0   0x08043f88   0x00000001   Data   RW         2498    .data.style_refr    lv_obj_style.o
+    0x200000a1   0x08043f89   0x00000001   PAD
+    0x200000a2   0x08043f8a   0x00000016   Data   RW         6190    .data.ui_data_screen_init.ui_Chart2_series_1_array  ui_data.o
+    0x200000b8   0x08043fa0   0x00000004   Data   RW         4795    .data.zero_mem      lv_mem.o
+    0x200000bc   0x08043fa4   0x00000004   PAD
     0x200000c0        -       0x00000008   Zero   RW           29    .bss..L_MergedGlobals  main.o
     0x200000c8        -       0x0000006c   Zero   RW         1863    .bss..L_MergedGlobals  lv_port_disp.o
     0x20000134        -       0x00000028   Zero   RW         1881    .bss..L_MergedGlobals  lv_port_indev.o
@@ -17072,7 +17071,7 @@ Memory Map of the image
     0x20000178        -       0x00000008   Zero   RW         2927    .bss..L_MergedGlobals  lv_draw_sw_letter.o
     0x20000180        -       0x0000000c   Zero   RW         3296    .bss..L_MergedGlobals  lv_flex.o
     0x2000018c        -       0x00000016   Zero   RW         3358    .bss..L_MergedGlobals  lv_grid.o
-    0x200001a2   0x08043fac   0x00000002   PAD
+    0x200001a2   0x08043fa4   0x00000002   PAD
     0x200001a4        -       0x0000002c   Zero   RW         3453    .bss..L_MergedGlobals  lv_theme_basic.o
     0x200001d0        -       0x0000006c   Zero   RW         3478    .bss..L_MergedGlobals  lv_theme_default.o
     0x2000023c        -       0x00000008   Zero   RW         4143    .bss..L_MergedGlobals  lv_spinner.o
@@ -17098,7 +17097,7 @@ Memory Map of the image
     0x200004c8        -       0x00000008   Zero   RW         4312    .bss.cache          lv_font_montserrat_14.o
     0x200004d0        -       0x00000002   Zero   RW         4230    .bss.create_header_height  lv_win.o
     0x200004d2        -       0x00000001   Zero   RW         3735    .bss.create_knob_recolor  lv_colorwheel.o
-    0x200004d3   0x08043fac   0x00000001   PAD
+    0x200004d3   0x08043fa4   0x00000001   PAD
     0x200004d4        -       0x00000004   Zero   RW         2063    .bss.default_group  lv_group.o
     0x200004d8        -       0x00000004   Zero   RW         4402    .bss.disp_def       lv_hal_disp.o
     0x200004dc        -       0x00000100   Zero   RW         2926    .bss.draw_letter_normal.opa_table  lv_draw_sw_letter.o
@@ -17110,14 +17109,14 @@ Memory Map of the image
     0x200007a4        -       0x00000094   Zero   RW          116    .bss.huart5         usart.o
     0x20000838        -       0x00000004   Zero   RW         2355    .bss.layout_cnt     lv_obj_pos.o
     0x2000083c        -       0x00000001   Zero   RW         2195    .bss.lv_initialized  lv_obj.o
-    0x2000083d   0x08043fac   0x00000003   PAD
+    0x2000083d   0x08043fa4   0x00000003   PAD
     0x20000840        -       0x00000080   Zero   RW         4669    .bss.lv_mem_buf     lv_gc.o
     0x200008c0        -       0x0000c000   Zero   RW         4794    .bss.lv_mem_init.work_mem_int  lv_mem.o
     0x2000c8c0        -       0x00000004   Zero   RW         2196    .bss.lv_obj_allocate_spec_attr.x  lv_obj.o
     0x2000c8c4        -       0x00000001   Zero   RW         2354    .bss.lv_obj_update_layout.mutex  lv_obj_pos.o
-    0x2000c8c5   0x08043fac   0x00000001   PAD
+    0x2000c8c5   0x08043fa4   0x00000001   PAD
     0x2000c8c6        -       0x000012c0   Zero   RW         1861    .bss.lv_port_disp_init.buf_1  lv_port_disp.o
-    0x2000db86   0x08043fac   0x00000002   PAD
+    0x2000db86   0x08043fa4   0x00000002   PAD
     0x2000db88        -       0x00000200   Zero   RW         6336    .bss.rx_buffer      wifi.o
     0x2000dd88        -       0x00000004   Zero   RW         5903    .bss.ta_insert_replace  lv_textarea.o
     0x2000dd8c        -       0x00000004   Zero   RW         5948    .bss.ui_Button1     ui.o
@@ -17140,7 +17139,7 @@ Memory Map of the image
     0x2000ddd0        -       0x00000004   Zero   RW         5931    .bss.ui_control1    ui.o
     0x2000ddd4        -       0x00000004   Zero   RW         5935    .bss.ui_w1          ui.o
     0x2000ddd8        -       0x00000004   Zero   RW          297    .bss.uwTick         stm32u5xx_hal.o
-    0x2000dddc   0x08043fac   0x00000004   PAD
+    0x2000dddc   0x08043fa4   0x00000004   PAD
     0x2000dde0        -       0x00003000   Zero   RW            1    STACK               startup_stm32u575xx.o
 
 
@@ -17252,7 +17251,7 @@ Image component sizes
       2826        192          0         28          0      14904   lv_txt.o
         88          0          0          0          0       1184   lv_utils.o
        118          0         28          0          2      10754   lv_win.o
-       800        112          5          0        138       9366   main.o
+       792        112          5          0        138       9362   main.o
        320         40          0          0          0       1814   sht20.o
        286          0          0          0        144       8835   spi.o
         40         10        568          0      12288        856   startup_stm32u575xx.o
@@ -17287,7 +17286,7 @@ Image component sizes
       1104         92        408          0        516       7424   wifi.o
 
     ----------------------------------------------------------------------
-    246748       2668      27416        184      68900    2545340   Object Totals
+    246740       2668      27416        184      68900    2545336   Object Totals
          0          0         32          0          0          0   (incl. Generated)
        868          0          8          2         17          0   (incl. Padding)
 
@@ -17351,15 +17350,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    250836       2792      27416        188      68900    2544768   Grand Totals
-    250836       2792      27416        188      68900    2544768   ELF Image Totals
-    250836       2792      27416        188          0          0   ROM Totals
+    250828       2792      27416        188      68900    2544764   Grand Totals
+    250828       2792      27416        188      68900    2544764   ELF Image Totals
+    250828       2792      27416        188          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               278252 ( 271.73kB)
+    Total RO  Size (Code + RO Data)               278244 ( 271.72kB)
     Total RW  Size (RW Data + ZI Data)             69088 (  67.47kB)
-    Total ROM Size (Code + RO Data + RW Data)     278440 ( 271.91kB)
+    Total ROM Size (Code + RO Data + RW Data)     278432 ( 271.91kB)
 
 ==============================================================================
 

@@ -88,7 +88,7 @@ int flag=0;
 //修改chart2============
 void setup_chart_axis() {
     // 设置纵坐标范围
-    lv_chart_set_range(ui_Chart2, LV_CHART_AXIS_PRIMARY_Y, 45, 90);
+    lv_chart_set_range(ui_Chart2, LV_CHART_AXIS_PRIMARY_Y, 40, 90);
 
     // 设置 X、Y 轴的偏移量
     lv_obj_set_pos(ui_Chart2, 5, -8);
@@ -174,9 +174,9 @@ if (existing_series == NULL) {
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		 /* USER CODE END WHILE */
-		
-		 /* USER CODE BEGIN 3 */
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
 		
 //=====调用刷新函数==================
 			lv_timer_handler();			
@@ -229,7 +229,6 @@ if (existing_series == NULL) {
 		printf("transmit succeed:%s\n\r",buf);
 		flag=0;
 	}
-    HAL_Delay(1000);
   } 
   
   /* USER CODE END 3 */
