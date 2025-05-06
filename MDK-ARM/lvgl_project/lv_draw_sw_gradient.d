@@ -28,7 +28,7 @@ lvgl_project/lv_draw_sw_gradient.o: \
   ..\LVGL\src\draw\sw\..\..\misc\lv_style_gen.h \
   ..\LVGL\src\draw\sw\lv_draw_sw_dither.h \
   ..\LVGL\src\draw\sw\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_area.h \
+  ..\LVGL\src\core\..\misc\lv_area.h \
   ..\LVGL\src\draw\sw\..\..\misc\lv_gc.h \
   ..\LVGL\src\draw\sw\..\..\misc\lv_ll.h \
   ..\LVGL\src\draw\sw\..\..\misc\lv_timer.h \

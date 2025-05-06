@@ -29,13 +29,12 @@ lvgl_project/lv_draw_mask.o: ..\LVGL\src\draw\lv_draw_mask.c \
   ..\LVGL\src\draw\sw\..\..\misc\lv_style.h \
   ..\LVGL\src\draw\sw\lv_draw_sw_dither.h \
   ..\LVGL\src\draw\sw\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_area.h \
-  ..\LVGL\src\draw\lv_draw_label.h ..\LVGL\src\draw\lv_draw_img.h \
-  ..\LVGL\src\draw\lv_draw_line.h ..\LVGL\src\draw\lv_draw_triangle.h \
-  ..\LVGL\src\draw\lv_draw_arc.h ..\LVGL\src\draw\lv_draw_mask.h \
-  ..\LVGL\src\draw\lv_draw_transform.h ..\LVGL\src\draw\lv_draw_layer.h \
-  ..\LVGL\src\draw\..\misc\lv_gc.h ..\LVGL\src\draw\..\misc\lv_ll.h \
-  ..\LVGL\src\draw\..\misc\lv_timer.h \
+  ..\LVGL\src\core\..\misc\lv_area.h ..\LVGL\src\draw\lv_draw_label.h \
+  ..\LVGL\src\draw\lv_draw_img.h ..\LVGL\src\draw\lv_draw_line.h \
+  ..\LVGL\src\draw\lv_draw_triangle.h ..\LVGL\src\draw\lv_draw_arc.h \
+  ..\LVGL\src\draw\lv_draw_mask.h ..\LVGL\src\draw\lv_draw_transform.h \
+  ..\LVGL\src\draw\lv_draw_layer.h ..\LVGL\src\draw\..\misc\lv_gc.h \
+  ..\LVGL\src\draw\..\misc\lv_ll.h ..\LVGL\src\draw\..\misc\lv_timer.h \
   ..\LVGL\src\draw\..\misc\..\hal\lv_hal_tick.h \
   ..\LVGL\src\draw\..\misc\..\hal\..\lv_conf_internal.h \
   ..\LVGL\src\draw\..\misc\..\draw\lv_img_cache.h \

@@ -39,7 +39,7 @@ lvgl_project/lv_font_montserrat_26.o: \
   ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\misc\lv_style.h \
   ..\LVGL\src\misc\..\hal\..\draw\sw\lv_draw_sw_dither.h \
   ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_area.h \
+  ..\LVGL\src\core\..\misc\lv_area.h \
   ..\LVGL\src\misc\..\hal\..\draw\lv_draw_label.h \
   ..\LVGL\src\misc\..\hal\..\draw\..\misc\lv_bidi.h \
   ..\LVGL\src\misc\..\hal\..\draw\lv_draw_img.h \
@@ -55,31 +55,21 @@ lvgl_project/lv_font_montserrat_26.o: \
   ..\LVGL\src\misc\..\hal\..\misc\lv_ll.h \
   ..\LVGL\src\misc\..\hal\..\misc\lv_timer.h \
   ..\LVGL\src\misc\..\hal\lv_hal_indev.h ..\LVGL\src\core\lv_obj.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\lv_conf_internal.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_style.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_types.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_color.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_assert.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\hal\lv_hal.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_tree.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_scroll.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_anim.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_style.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_bidi.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_style_gen.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_draw.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\draw\lv_draw.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_class.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_event.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_group.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_ll.h \
-  ..\LVGL\src\core\lv_group.h ..\LVGL\src\core\lv_indev.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\hal\lv_hal_indev.h \
-  ..\LVGL\src\core\lv_refr.h ..\LVGL\src\core\lv_disp.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_theme.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\core\lv_obj.h \
-  ..\LVGL\src\core\lv_theme.h ..\LVGL\src\font\lv_font.h \
+  ..\LVGL\src\core\..\lv_conf_internal.h \
+  ..\LVGL\src\core\..\misc\lv_style.h \
+  ..\LVGL\src\core\..\misc\lv_types.h \
+  ..\LVGL\src\core\..\misc\lv_color.h \
+  ..\LVGL\src\core\..\misc\lv_assert.h ..\LVGL\src\core\..\hal\lv_hal.h \
+  ..\LVGL\src\core\lv_obj_tree.h ..\LVGL\src\core\lv_obj_pos.h \
+  ..\LVGL\src\core\lv_obj_scroll.h ..\LVGL\src\core\..\misc\lv_anim.h \
+  ..\LVGL\src\core\lv_obj_style.h ..\LVGL\src\core\..\misc\lv_bidi.h \
+  ..\LVGL\src\core\lv_obj_style_gen.h ..\LVGL\src\core\lv_obj_draw.h \
+  ..\LVGL\src\core\..\draw\lv_draw.h ..\LVGL\src\core\lv_obj_class.h \
+  ..\LVGL\src\core\lv_event.h ..\LVGL\src\core\lv_group.h \
+  ..\LVGL\src\core\..\misc\lv_ll.h ..\LVGL\src\core\lv_indev.h \
+  ..\LVGL\src\core\..\hal\lv_hal_indev.h ..\LVGL\src\core\lv_refr.h \
+  ..\LVGL\src\core\lv_disp.h ..\LVGL\src\core\lv_theme.h \
+  ..\LVGL\src\core\..\core\lv_obj.h ..\LVGL\src\font\lv_font.h \
   ..\LVGL\src\font\lv_font_loader.h ..\LVGL\src\font\lv_font_fmt_txt.h \
   ..\LVGL\src\widgets\lv_arc.h ..\LVGL\src\widgets\..\lv_conf_internal.h \
   ..\LVGL\src\widgets\..\core\lv_obj.h ..\LVGL\src\widgets\lv_btn.h \

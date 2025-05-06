@@ -188,7 +188,6 @@ static void touchpad_init(void)
     /*Your code comes here*/
 	 // 调用 FT6336 的初始化函数
     FT6336_init();
-
 }
 
 /*Will be called by the library to read the touchpad*/

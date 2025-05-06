@@ -36,7 +36,7 @@ lvgl_project/lv_draw_sw_img.o: ..\LVGL\src\draw\sw\lv_draw_sw_img.c \
   ..\LVGL\src\draw\sw\..\sw\lv_draw_sw_gradient.h \
   ..\LVGL\src\draw\sw\lv_draw_sw_dither.h \
   ..\LVGL\src\draw\sw\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_area.h \
+  ..\LVGL\src\core\..\misc\lv_area.h \
   ..\LVGL\src\draw\sw\..\lv_draw_label.h \
   ..\LVGL\src\draw\sw\..\lv_draw_img.h \
   ..\LVGL\src\draw\sw\..\lv_draw_line.h \
@@ -55,23 +55,16 @@ lvgl_project/lv_draw_sw_img.o: ..\LVGL\src\draw\sw\lv_draw_sw_img.c \
   ..\LVGL\src\draw\sw\..\..\hal\..\draw\lv_draw.h \
   ..\LVGL\src\draw\sw\..\..\hal\..\misc\lv_color.h \
   ..\LVGL\src\draw\sw\..\..\hal\..\misc\lv_ll.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_refr.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_obj.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\lv_conf_internal.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_style.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_types.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_color.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_assert.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\hal\lv_hal.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_obj_tree.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_obj_scroll.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_anim.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_obj_style.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_bidi.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_obj_style_gen.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_obj_draw.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\draw\lv_draw.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_obj_class.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_event.h \
-  ..\LVGL\src\draw\sw\..\..\core\lv_group.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_ll.h
+  ..\LVGL\src\draw\sw\..\..\core\lv_refr.h ..\LVGL\src\core\lv_obj.h \
+  ..\LVGL\src\core\..\lv_conf_internal.h \
+  ..\LVGL\src\core\..\misc\lv_style.h \
+  ..\LVGL\src\core\..\misc\lv_types.h \
+  ..\LVGL\src\core\..\misc\lv_color.h \
+  ..\LVGL\src\core\..\misc\lv_assert.h ..\LVGL\src\core\..\hal\lv_hal.h \
+  ..\LVGL\src\core\lv_obj_tree.h ..\LVGL\src\core\lv_obj_pos.h \
+  ..\LVGL\src\core\lv_obj_scroll.h ..\LVGL\src\core\..\misc\lv_anim.h \
+  ..\LVGL\src\core\lv_obj_style.h ..\LVGL\src\core\..\misc\lv_bidi.h \
+  ..\LVGL\src\core\lv_obj_style_gen.h ..\LVGL\src\core\lv_obj_draw.h \
+  ..\LVGL\src\core\..\draw\lv_draw.h ..\LVGL\src\core\lv_obj_class.h \
+  ..\LVGL\src\core\lv_event.h ..\LVGL\src\core\lv_group.h \
+  ..\LVGL\src\core\..\misc\lv_ll.h

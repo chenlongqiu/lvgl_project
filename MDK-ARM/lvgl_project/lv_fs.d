@@ -22,4 +22,4 @@ lvgl_project/lv_fs.o: ..\LVGL\src\misc\lv_fs.c ..\LVGL\src\misc\lv_fs.h \
   ..\LVGL\src\misc\..\draw\lv_draw_mask.h \
   ..\LVGL\src\misc\..\draw\..\misc\lv_math.h \
   ..\LVGL\src\misc\..\core\lv_obj_pos.h \
-  ..\LVGL\src\misc\..\core\..\misc\lv_area.h
+  ..\LVGL\src\core\..\misc\lv_area.h

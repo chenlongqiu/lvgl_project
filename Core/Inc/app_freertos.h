@@ -55,6 +55,8 @@ extern "C" {
 
 /* USER CODE END EM */
 extern osThreadId_t defaultTaskHandle;
+extern osThreadId_t lvgl_task_handlerHandle;
+extern osThreadId_t lvgl_refresh_taskHandle;
 
 /* Exported function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -62,9 +64,14 @@ extern osThreadId_t defaultTaskHandle;
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
+void lvgl_task_handler(void *argument);
+void lvgl_refresh_task(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
+/* Hook prototypes */
+void vApplicationTickHook(void);
+void vApplicationIdleHook(void);
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
 

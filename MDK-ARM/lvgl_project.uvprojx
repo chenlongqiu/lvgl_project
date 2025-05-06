@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32U575xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32U5xx/Include;../Drivers/CMSIS/Include;./LCD_lib;../LVGL;../LVGL/porting;../LVGL/src;./Bsp6336_lib;../lvgl_ui_project;../lvgl_ui_project/components;./SHT20_lib;./wifi_lib;../Middlewares/Third_Party/FreeRTOS/Source/include/;../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/;../Middlewares/Third_Party/CMSIS/RTOS2/Include/</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc;../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32U5xx/Include;../Drivers/CMSIS/Include;./LCD_lib;../LVGL/porting;../LVGL/src;./Bsp6336_lib;../lvgl_ui_project;../lvgl_ui_project/components;./SHT20_lib;./wifi_lib;../Middlewares/Third_Party/FreeRTOS/Source/include/;../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/;../Middlewares/Third_Party/CMSIS/RTOS2/Include/;../LVGL;../LVGL/src/core</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2067,34 +2067,9 @@
               <FilePath>..\lvgl_ui_project\ui_helpers.c</FilePath>
             </File>
             <File>
-              <FileName>ui_comp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl_ui_project\components\ui_comp.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_comp_alarm_comp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl_ui_project\components\ui_comp_alarm_comp.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_comp_clock_dot.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl_ui_project\components\ui_comp_clock_dot.c</FilePath>
-            </File>
-            <File>
               <FileName>ui_comp_hook.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl_ui_project\components\ui_comp_hook.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_comp_scrolldots.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl_ui_project\components\ui_comp_scrolldots.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_comp_small_label.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl_ui_project\components\ui_comp_small_label.c</FilePath>
             </File>
             <File>
               <FileName>ui_font_Number.c</FileName>
@@ -2167,9 +2142,6 @@
               <FilePath>.\wifi_lib\wifi.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
           <GroupName>Middlewares/RTOS2/CMSIS/RTOS2/Core/TZ_Non_Supported</GroupName>
@@ -2934,6 +2906,9 @@
               </FileOption>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
     </Target>

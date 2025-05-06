@@ -28,16 +28,13 @@ lvgl_project/lv_gpu_d2_draw_label.o: \
   ..\LVGL\src\draw\renesas\..\..\draw\..\misc\lv_style_gen.h \
   ..\LVGL\src\draw\renesas\..\..\misc\lv_assert.h \
   ..\LVGL\src\draw\renesas\..\..\core\lv_refr.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_obj.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\lv_conf_internal.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\misc\lv_style.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\misc\lv_types.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\misc\lv_area.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\misc\lv_color.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\misc\lv_assert.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\lv_hal.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\lv_hal_disp.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\..\draw\lv_draw.h \
+  ..\LVGL\src\core\lv_obj.h ..\LVGL\src\core\..\lv_conf_internal.h \
+  ..\LVGL\src\core\..\misc\lv_style.h \
+  ..\LVGL\src\core\..\misc\lv_types.h ..\LVGL\src\core\..\misc\lv_area.h \
+  ..\LVGL\src\core\..\misc\lv_color.h \
+  ..\LVGL\src\core\..\misc\lv_assert.h ..\LVGL\src\core\..\hal\lv_hal.h \
+  ..\LVGL\src\core\..\hal\lv_hal_disp.h \
+  ..\LVGL\src\core\..\hal\..\draw\lv_draw.h \
   ..\LVGL\src\draw\renesas\..\..\draw\..\lv_conf_internal.h \
   ..\LVGL\src\draw\renesas\..\..\draw\lv_img_decoder.h \
   ..\LVGL\src\draw\renesas\..\..\draw\lv_img_buf.h \
@@ -56,26 +53,19 @@ lvgl_project/lv_gpu_d2_draw_label.o: \
   ..\LVGL\src\draw\renesas\..\..\draw\lv_draw_mask.h \
   ..\LVGL\src\draw\renesas\..\..\draw\lv_draw_transform.h \
   ..\LVGL\src\draw\renesas\..\..\draw\lv_draw_layer.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\..\misc\lv_color.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\..\misc\lv_area.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\..\misc\lv_ll.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\..\misc\lv_timer.h \
+  ..\LVGL\src\core\..\hal\..\misc\lv_color.h \
+  ..\LVGL\src\core\..\hal\..\misc\lv_area.h \
+  ..\LVGL\src\core\..\hal\..\misc\lv_ll.h \
+  ..\LVGL\src\core\..\hal\..\misc\lv_timer.h \
   ..\LVGL\src\draw\renesas\..\..\draw\..\misc\..\hal\lv_hal_tick.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\..\lv_conf_internal.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\lv_hal_indev.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\hal\lv_hal_tick.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_obj_tree.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_obj_scroll.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\misc\lv_anim.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_obj_style.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\misc\lv_bidi.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_obj_style_gen.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_obj_draw.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\draw\lv_draw.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_obj_class.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_event.h \
-  ..\LVGL\src\draw\renesas\..\..\core\lv_group.h \
-  ..\LVGL\src\draw\renesas\..\..\core\..\misc\lv_ll.h \
+  ..\LVGL\src\core\..\hal\..\lv_conf_internal.h \
+  ..\LVGL\src\core\..\hal\lv_hal_indev.h \
+  ..\LVGL\src\core\..\hal\lv_hal_tick.h ..\LVGL\src\core\lv_obj_tree.h \
+  ..\LVGL\src\core\lv_obj_pos.h ..\LVGL\src\core\lv_obj_scroll.h \
+  ..\LVGL\src\core\..\misc\lv_anim.h ..\LVGL\src\core\lv_obj_style.h \
+  ..\LVGL\src\core\..\misc\lv_bidi.h ..\LVGL\src\core\lv_obj_style_gen.h \
+  ..\LVGL\src\core\lv_obj_draw.h ..\LVGL\src\core\..\draw\lv_draw.h \
+  ..\LVGL\src\core\lv_obj_class.h ..\LVGL\src\core\lv_event.h \
+  ..\LVGL\src\core\lv_group.h ..\LVGL\src\core\..\misc\lv_ll.h \
   ..\LVGL\src\draw\renesas\lv_gpu_d2_ra6m3.h \
   ..\LVGL\src\draw\renesas\..\..\misc\lv_color.h

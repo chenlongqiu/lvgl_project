@@ -21,4 +21,4 @@ lvgl_project/lv_mem.o: ..\LVGL\src\misc\lv_mem.c \
   ..\LVGL\src\misc\..\draw\lv_draw_mask.h \
   ..\LVGL\src\misc\..\draw\..\misc\lv_math.h \
   ..\LVGL\src\misc\..\core\lv_obj_pos.h \
-  ..\LVGL\src\misc\..\core\..\misc\lv_area.h
+  ..\LVGL\src\core\..\misc\lv_area.h

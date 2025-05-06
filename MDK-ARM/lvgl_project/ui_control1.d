@@ -1,7 +1,7 @@
 lvgl_project/ui_control1.o: ..\lvgl_ui_project\screens\ui_control1.c \
-  ..\lvgl_ui_project\screens\..\ui.h ..\lvgl_ui_project\ui.h \
-  ..\lvgl_ui_project\ui_helpers.h ..\LVGL\lvgl.h \
-  ..\LVGL\src\misc\lv_log.h ..\LVGL\src\misc\..\lv_conf_internal.h \
+  ..\lvgl_ui_project\screens\..\ui.h ..\LVGL\src\lvgl.h \
+  ..\LVGL\src\..\lvgl.h ..\LVGL\src\misc\lv_log.h \
+  ..\LVGL\src\misc\..\lv_conf_internal.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\LVGL\src\lv_conf_kconfig.h ..\LVGL\lv_conf.h \
   ..\LVGL\src\misc\lv_types.h ..\LVGL\src\misc\lv_timer.h \
@@ -41,7 +41,7 @@ lvgl_project/ui_control1.o: ..\lvgl_ui_project\screens\ui_control1.c \
   ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\misc\lv_style.h \
   ..\LVGL\src\misc\..\hal\..\draw\sw\lv_draw_sw_dither.h \
   ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_area.h \
+  ..\LVGL\src\core\..\misc\lv_area.h \
   ..\LVGL\src\misc\..\hal\..\draw\lv_draw_label.h \
   ..\LVGL\src\misc\..\hal\..\draw\..\misc\lv_bidi.h \
   ..\LVGL\src\misc\..\hal\..\draw\lv_draw_img.h \
@@ -57,31 +57,21 @@ lvgl_project/ui_control1.o: ..\lvgl_ui_project\screens\ui_control1.c \
   ..\LVGL\src\misc\..\hal\..\misc\lv_ll.h \
   ..\LVGL\src\misc\..\hal\..\misc\lv_timer.h \
   ..\LVGL\src\misc\..\hal\lv_hal_indev.h ..\LVGL\src\core\lv_obj.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\lv_conf_internal.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_style.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_types.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_color.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_assert.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\hal\lv_hal.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_tree.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_scroll.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_anim.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_style.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_bidi.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_style_gen.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_draw.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\draw\lv_draw.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj_class.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_event.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_group.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\misc\lv_ll.h \
-  ..\LVGL\src\core\lv_group.h ..\LVGL\src\core\lv_indev.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_obj.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\hal\lv_hal_indev.h \
-  ..\LVGL\src\core\lv_refr.h ..\LVGL\src\core\lv_disp.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\lv_theme.h \
-  ..\LVGL\src\misc\..\hal\..\draw\sw\..\..\core\..\core\lv_obj.h \
-  ..\LVGL\src\core\lv_theme.h ..\LVGL\src\font\lv_font.h \
+  ..\LVGL\src\core\..\lv_conf_internal.h \
+  ..\LVGL\src\core\..\misc\lv_style.h \
+  ..\LVGL\src\core\..\misc\lv_types.h \
+  ..\LVGL\src\core\..\misc\lv_color.h \
+  ..\LVGL\src\core\..\misc\lv_assert.h ..\LVGL\src\core\..\hal\lv_hal.h \
+  ..\LVGL\src\core\lv_obj_tree.h ..\LVGL\src\core\lv_obj_pos.h \
+  ..\LVGL\src\core\lv_obj_scroll.h ..\LVGL\src\core\..\misc\lv_anim.h \
+  ..\LVGL\src\core\lv_obj_style.h ..\LVGL\src\core\..\misc\lv_bidi.h \
+  ..\LVGL\src\core\lv_obj_style_gen.h ..\LVGL\src\core\lv_obj_draw.h \
+  ..\LVGL\src\core\..\draw\lv_draw.h ..\LVGL\src\core\lv_obj_class.h \
+  ..\LVGL\src\core\lv_event.h ..\LVGL\src\core\lv_group.h \
+  ..\LVGL\src\core\..\misc\lv_ll.h ..\LVGL\src\core\lv_indev.h \
+  ..\LVGL\src\core\..\hal\lv_hal_indev.h ..\LVGL\src\core\lv_refr.h \
+  ..\LVGL\src\core\lv_disp.h ..\LVGL\src\core\lv_theme.h \
+  ..\LVGL\src\core\..\core\lv_obj.h ..\LVGL\src\font\lv_font.h \
   ..\LVGL\src\font\lv_font_loader.h ..\LVGL\src\font\lv_font_fmt_txt.h \
   ..\LVGL\src\widgets\lv_arc.h ..\LVGL\src\widgets\..\lv_conf_internal.h \
   ..\LVGL\src\widgets\..\core\lv_obj.h ..\LVGL\src\widgets\lv_btn.h \
@@ -100,8 +90,8 @@ lvgl_project/ui_control1.o: ..\lvgl_ui_project\screens\ui_control1.c \
   ..\LVGL\src\widgets\..\widgets\lv_img.h \
   ..\LVGL\src\widgets\..\draw\lv_draw_img.h \
   ..\LVGL\src\widgets\lv_switch.h ..\LVGL\src\draw\lv_draw.h \
-  ..\LVGL\src\lv_api_map.h ..\LVGL\src\..\lvgl.h \
-  ..\LVGL\src\extra\lv_extra.h ..\LVGL\src\extra\layouts\lv_layouts.h \
+  ..\LVGL\src\lv_api_map.h ..\LVGL\src\extra\lv_extra.h \
+  ..\LVGL\src\extra\layouts\lv_layouts.h \
   ..\LVGL\src\extra\layouts\flex\lv_flex.h \
   ..\LVGL\src\extra\layouts\flex\..\..\..\core\lv_obj.h \
   ..\LVGL\src\extra\layouts\grid\lv_grid.h \
@@ -187,11 +177,5 @@ lvgl_project/ui_control1.o: ..\lvgl_ui_project\screens\ui_control1.c \
   ..\LVGL\src\extra\widgets\imgbtn\..\..\..\lvgl.h \
   ..\LVGL\src\extra\widgets\span\lv_span.h \
   ..\LVGL\src\extra\widgets\span\..\..\..\lvgl.h \
-  ..\lvgl_ui_project\components\ui_comp.h \
-  ..\lvgl_ui_project\components\..\ui.h \
-  ..\lvgl_ui_project\components\ui_comp_alarm_comp.h \
-  ..\lvgl_ui_project\components\ui_comp_clock_dot.h \
-  ..\lvgl_ui_project\components\ui_comp_scrolldots.h \
-  ..\lvgl_ui_project\components\ui_comp_small_label.h \
-  ..\lvgl_ui_project\components\ui_comp_hook.h \
+  ..\lvgl_ui_project\ui_helpers.h ..\lvgl_ui_project\ui.h \
   ..\lvgl_ui_project\ui_events.h

@@ -32,5 +32,4 @@ lvgl_project/lv_style.o: ..\LVGL\src\misc\lv_style.c \
   ..\LVGL\src\misc\..\draw\lv_draw_mask.h \
   ..\LVGL\src\misc\..\draw\..\misc\lv_math.h \
   ..\LVGL\src\misc\..\core\lv_obj_pos.h \
-  ..\LVGL\src\misc\..\core\..\misc\lv_area.h \
-  ..\LVGL\src\misc\..\misc\lv_mem.h
+  ..\LVGL\src\core\..\misc\lv_area.h ..\LVGL\src\misc\..\misc\lv_mem.h

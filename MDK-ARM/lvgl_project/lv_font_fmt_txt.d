@@ -26,5 +26,4 @@ lvgl_project/lv_font_fmt_txt.o: ..\LVGL\src\font\lv_font_fmt_txt.c \
   ..\LVGL\src\font\..\misc\..\draw\lv_draw_mask.h \
   ..\LVGL\src\font\..\misc\..\draw\..\misc\lv_math.h \
   ..\LVGL\src\font\..\misc\..\core\lv_obj_pos.h \
-  ..\LVGL\src\font\..\misc\..\core\..\misc\lv_area.h \
-  ..\LVGL\src\font\..\misc\lv_utils.h
+  ..\LVGL\src\core\..\misc\lv_area.h ..\LVGL\src\font\..\misc\lv_utils.h

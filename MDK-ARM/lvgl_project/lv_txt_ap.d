@@ -35,7 +35,7 @@ lvgl_project/lv_txt_ap.o: ..\LVGL\src\misc\lv_txt_ap.c \
   ..\LVGL\src\misc\..\draw\sw\..\..\misc\lv_style.h \
   ..\LVGL\src\misc\..\draw\sw\lv_draw_sw_dither.h \
   ..\LVGL\src\misc\..\draw\sw\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\misc\..\draw\sw\..\..\core\..\misc\lv_area.h \
+  ..\LVGL\src\core\..\misc\lv_area.h \
   ..\LVGL\src\misc\..\draw\lv_draw_label.h \
   ..\LVGL\src\misc\..\draw\..\misc\lv_bidi.h \
   ..\LVGL\src\misc\..\draw\lv_draw_img.h \

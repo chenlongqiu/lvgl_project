@@ -31,4 +31,4 @@ lvgl_project/lv_img_cache.o: ..\LVGL\src\draw\lv_img_cache.c \
   ..\LVGL\src\draw\..\misc\..\draw\lv_img_cache.h \
   ..\LVGL\src\draw\..\misc\..\draw\lv_draw_mask.h \
   ..\LVGL\src\draw\..\misc\..\core\lv_obj_pos.h \
-  ..\LVGL\src\draw\..\misc\..\core\..\misc\lv_area.h
+  ..\LVGL\src\core\..\misc\lv_area.h

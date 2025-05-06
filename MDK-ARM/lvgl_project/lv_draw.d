@@ -29,12 +29,11 @@ lvgl_project/lv_draw.o: ..\LVGL\src\draw\lv_draw.c \
   ..\LVGL\src\draw\sw\..\..\misc\lv_style.h \
   ..\LVGL\src\draw\sw\lv_draw_sw_dither.h \
   ..\LVGL\src\draw\sw\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\draw\sw\..\..\core\..\misc\lv_area.h \
-  ..\LVGL\src\draw\lv_draw_label.h ..\LVGL\src\draw\lv_draw_img.h \
-  ..\LVGL\src\draw\lv_draw_line.h ..\LVGL\src\draw\lv_draw_triangle.h \
-  ..\LVGL\src\draw\lv_draw_arc.h ..\LVGL\src\draw\lv_draw_mask.h \
-  ..\LVGL\src\draw\lv_draw_transform.h ..\LVGL\src\draw\lv_draw_layer.h \
-  ..\LVGL\src\draw\sw\lv_draw_sw.h \
+  ..\LVGL\src\core\..\misc\lv_area.h ..\LVGL\src\draw\lv_draw_label.h \
+  ..\LVGL\src\draw\lv_draw_img.h ..\LVGL\src\draw\lv_draw_line.h \
+  ..\LVGL\src\draw\lv_draw_triangle.h ..\LVGL\src\draw\lv_draw_arc.h \
+  ..\LVGL\src\draw\lv_draw_mask.h ..\LVGL\src\draw\lv_draw_transform.h \
+  ..\LVGL\src\draw\lv_draw_layer.h ..\LVGL\src\draw\sw\lv_draw_sw.h \
   ..\LVGL\src\draw\sw\lv_draw_sw_blend.h \
   ..\LVGL\src\draw\sw\..\..\misc\lv_area.h \
   ..\LVGL\src\draw\sw\..\lv_draw_mask.h ..\LVGL\src\draw\sw\..\lv_draw.h \

@@ -50,7 +50,7 @@ lvgl_project/lv_gpu_swm341_dma2d.o: \
   ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\misc\lv_style.h \
   ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\lv_draw_sw_dither.h \
   ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_obj_pos.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\misc\lv_area.h \
+  ..\LVGL\src\core\..\misc\lv_area.h \
   ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\lv_draw_label.h \
   ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\..\misc\lv_bidi.h \
   ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\lv_draw_img.h \
@@ -70,22 +70,15 @@ lvgl_project/lv_gpu_swm341_dma2d.o: \
   ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\lv_draw.h \
   ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\hal\lv_hal_disp.h \
   ..\LVGL\src\draw\swm341_dma2d\..\..\core\lv_refr.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_obj.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\lv_conf_internal.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\misc\lv_style.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\misc\lv_types.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\misc\lv_color.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\misc\lv_assert.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\hal\lv_hal.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_obj_tree.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_obj_scroll.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\misc\lv_anim.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_obj_style.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\misc\lv_bidi.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_obj_style_gen.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_obj_draw.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\draw\lv_draw.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_obj_class.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_event.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\lv_group.h \
-  ..\LVGL\src\draw\swm341_dma2d\..\..\hal\..\draw\sw\..\..\core\..\misc\lv_ll.h
+  ..\LVGL\src\core\lv_obj.h ..\LVGL\src\core\..\lv_conf_internal.h \
+  ..\LVGL\src\core\..\misc\lv_style.h \
+  ..\LVGL\src\core\..\misc\lv_types.h \
+  ..\LVGL\src\core\..\misc\lv_color.h \
+  ..\LVGL\src\core\..\misc\lv_assert.h ..\LVGL\src\core\..\hal\lv_hal.h \
+  ..\LVGL\src\core\lv_obj_tree.h ..\LVGL\src\core\lv_obj_pos.h \
+  ..\LVGL\src\core\lv_obj_scroll.h ..\LVGL\src\core\..\misc\lv_anim.h \
+  ..\LVGL\src\core\lv_obj_style.h ..\LVGL\src\core\..\misc\lv_bidi.h \
+  ..\LVGL\src\core\lv_obj_style_gen.h ..\LVGL\src\core\lv_obj_draw.h \
+  ..\LVGL\src\core\..\draw\lv_draw.h ..\LVGL\src\core\lv_obj_class.h \
+  ..\LVGL\src\core\lv_event.h ..\LVGL\src\core\lv_group.h \
+  ..\LVGL\src\core\..\misc\lv_ll.h
